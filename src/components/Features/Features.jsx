@@ -78,7 +78,7 @@ const Features = () => {
                     <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4 text-gray-100'>Providing Comprehensive Solutions for Your Infrastructure Needs</h2>
                     <p className='text-xs md:text-sm font-poppins text-center text-gray-100'>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
                 </div>
-                <div className='max-w-[1400px] gap-x-40 lg:gap-x-20 xl:gap-x-20 mx-auto flex flex-col lg:flex-row py-8'>
+                <div className='max-w-[1400px] md:gap-y-0 gap-y-20 gap-x-40 lg:gap-x-20 xl:gap-x-20 mx-auto flex flex-col lg:flex-row py-8'>
                     <FeatureCard
                         image={civil}
                         title="Civil Infrastructure Solutions"
