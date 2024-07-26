@@ -7,7 +7,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const Hero = () => {
     return (
         <div
-            className='xl:h-[70vh] max-w-[1400px] px-4 md:gap-x-40 flex xl:flex-row flex-col justify-center items-center mx-auto'>
+            className='border xl:h-[70vh] max-w-[1400px] px-4 md:gap-x-40 flex xl:flex-row flex-col justify-center items-center mx-auto'>
             <motion.div
                 initial={{ x: -250 }}
                 animate={{ x: 1 }}

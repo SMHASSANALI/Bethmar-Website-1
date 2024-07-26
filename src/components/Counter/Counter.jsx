@@ -57,7 +57,7 @@ const CounterSection = () => {
 
     return (
         <motion.div
-            className="py-12"
+            className="py-12 border"
             initial="hidden"
             animate="visible"
             variants={sectionVariants}

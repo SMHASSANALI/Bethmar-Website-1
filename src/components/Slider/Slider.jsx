@@ -20,8 +20,8 @@ const Slider = () => {
     ];
 
     return (
-        <div className="bg-primary bg-moving-gradient">
-            <div className='text-justify w-full mx-auto content-center py-12 rounded-lg '>
+        <div className="border my-12">
+            <div className='text-justify w-full mx-auto content-center py-12 rounded-lg'>
                 <div className='max-w-[1400px] mx-auto'>
                     <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4  mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-t from-accentRed-dark to-accentRed'>Meet Our Clients</h2>
 

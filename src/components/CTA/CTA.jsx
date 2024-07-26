@@ -20,7 +20,7 @@ const CTA = () => {
                 <p className='text-sm md:text-base font-poppins text-center'>Contact Bethmar today for a consultation or quote on our comprehensive range of services.</p>
                 <div className='flex justify-center pt-8'>
                     <ScrollLink
-                        to='About'
+                        to='Contact'
                         smooth={true}
                         duration={500}
                         className='cursor-pointer'

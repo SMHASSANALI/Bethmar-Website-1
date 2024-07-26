@@ -8,6 +8,7 @@ import CounterSection from '../components/Counter/Counter.jsx'
 import CTA from '../components/CTA/CTA.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import ContactForm from '../components/ContactForm/ContactForm.jsx'
+import Benefits from '../components/Benefits/Benefits.jsx'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Hero />
             <Features />
             <Services />
+            <Benefits />
             <CTA />
             <Slider />
             <CounterSection />

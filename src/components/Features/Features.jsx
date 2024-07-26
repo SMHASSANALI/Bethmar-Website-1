@@ -69,14 +69,14 @@ const FeatureCard = ({ image, title, description }) => {
 
 const Features = () => {
     return (
-        <div id='About' className='bg-primary bg-moving-gradient'>
+        <div id='About' className='border my-12'>
             <div className='max-w-[1400px] px-4 mx-auto py-12'>
                 <div className='w-full xl:w-6/12 mx-auto'>
                     <h4 className='text-base md:text-lg text-center font-poppins mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                         Innovative
                     </h4>
-                    <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4 text-gray-100'>Providing Comprehensive Solutions for Your Infrastructure Needs</h2>
-                    <p className='text-xs md:text-sm font-poppins text-center text-gray-100'>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
+                    <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4 '>Providing Comprehensive Solutions for Your Infrastructure Needs</h2>
+                    <p className='text-xs md:text-sm font-poppins text-center '>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
                 </div>
                 <div className='max-w-[1400px] md:gap-y-0 gap-y-20 gap-x-40 lg:gap-x-20 xl:gap-x-20 mx-auto flex flex-col lg:flex-row py-8'>
                     <FeatureCard
