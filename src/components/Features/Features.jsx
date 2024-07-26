@@ -56,27 +56,27 @@ const FeatureCard = ({ image, title, description }) => {
                 transform,
                 transformStyle: "preserve-3d"
             }}
-            className='w-full lg:w-3/12 p-4 flex flex-col items-center shadow-sm shadow-white rounded bg-white'
+            className='w-full lg:w-3/12 p-4 flex flex-col items-center bg-primary-light shadow-sm shadow-accentGreen-dark rounded'
         >
-            <div className='h-28 w-28 md:w-1/2'>
+            <div className='w-16 h-auto lg:w-24 md:w-1/2'>
                 <img src={image} alt={title} />
             </div>
-            <h2 className='text-xl py-4 font-poppins text-center font-medium'>{title}</h2>
-            <p className='text-sm font-montserrat text-pretty'>{description}</p>
+            <h2 className='text-xl text-white py-4 font-poppins text-center font-medium'>{title}</h2>
+            <p className='text-sm text-white font-montserrat text-pretty'>{description}</p>
         </motion.div>
     );
 };
 
 const Features = () => {
     return (
-        <div id='About' className='border my-12'>
+        <div id='About' className='bg-moving-gradient'>
             <div className='max-w-[1400px] px-4 mx-auto py-12'>
                 <div className='w-full xl:w-6/12 mx-auto'>
-                    <h4 className='text-base md:text-lg text-center font-poppins mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
+                    <h4 className='text-base lg:text-xl text-center font-semibold font-poppins mb-2 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                         Innovative
                     </h4>
-                    <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4 '>Providing Comprehensive Solutions for Your Infrastructure Needs</h2>
-                    <p className='text-xs md:text-sm font-poppins text-center '>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
+                    <h2 className='text-white mx-auto font-semibold text-lg lg:text-2xl text-center font-montserrat pb-4 '>Providing Comprehensive Solutions for Your Infrastructure Needs</h2>
+                    <p className='text-white text-sm lg:text-base font-medium font-poppins text-center '>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
                 </div>
                 <div className='max-w-[1400px] md:gap-y-0 gap-y-20 gap-x-40 lg:gap-x-20 xl:gap-x-20 mx-auto flex flex-col lg:flex-row py-8'>
                     <FeatureCard

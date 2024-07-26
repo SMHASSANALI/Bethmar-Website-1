@@ -6,7 +6,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const CTA = () => {
     const divStyle = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${contact})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${contact})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -16,8 +16,8 @@ const CTA = () => {
     return (
         <div style={divStyle} className='bg-fixed flex items-center'>
             <div className='max-w-[1400px] px-4 mx-auto text-white'>
-                <h2 className='mx-auto font-semibold text-3xl lg:text-4xl xl:text-4xl text-center font-montserrat pb-4'>Transforming Infrastructure with Innovative Solutions</h2>
-                <p className='text-sm md:text-base font-poppins text-center'>Contact Bethmar today for a consultation or quote on our comprehensive range of services.</p>
+                <h2 className='mx-auto font-semibold text-lg lg:text-2xl text-center font-montserrat pb-4 text-accentGreen-light'>Transforming Infrastructure with Innovative Solutions</h2>
+                <p className='text-sm lg:text-base font-poppins text-center'>Contact Bethmar today for a consultation or quote on our comprehensive range of services.</p>
                 <div className='flex justify-center pt-8'>
                     <ScrollLink
                         to='Contact'
@@ -25,7 +25,7 @@ const CTA = () => {
                         duration={500}
                         className='cursor-pointer'
                     >
-                        <Button text={'Contact Us'} color={'white'} />
+                        <Button text={'Contact Us'} color={'accentGreen-light'} />
                     </ScrollLink>
                 </div>
             </div>

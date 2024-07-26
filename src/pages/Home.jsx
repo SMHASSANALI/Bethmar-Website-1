@@ -5,22 +5,23 @@ import Features from '../components/Features/Features.jsx'
 import Services from '../components/Services/Services.jsx'
 import Slider from '../components/Slider/Slider.jsx'
 import CounterSection from '../components/Counter/Counter.jsx'
-import CTA from '../components/CTA/CTA.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import ContactForm from '../components/ContactForm/ContactForm.jsx'
 import Benefits from '../components/Benefits/Benefits.jsx'
+import Seprator from '../components/Seprator/Seprator.jsx'
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className='bg-primary'>
             <Navbar />
             <Hero />
             <Features />
             <Services />
+            <Seprator color={'bg-accentGreen-dark'} />
             <Benefits />
-            <CTA />
             <Slider />
             <CounterSection />
+            <Seprator color={'bg-accentRed-dark'} />
             <ContactForm />
             <Footer />
         </div>

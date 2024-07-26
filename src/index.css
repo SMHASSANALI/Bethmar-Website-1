@@ -62,7 +62,7 @@ body {
 }
   
 .bg-moving-gradient {
-    background: linear-gradient(135deg, #1c1c1e, #383838, #1c1c1e);
+    background: linear-gradient(135deg, #1c1c1e, #27b344, #1c1c1e);
     background-size: 200% 200%;
     animation: gradient-animation 15s ease-in-out infinite;
   }

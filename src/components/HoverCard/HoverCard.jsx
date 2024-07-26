@@ -11,10 +11,10 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
 
             }
         >
-            <div className=' h-[50%] flex flex-col bg-primary text-white justify-center border-b border-black'>
-                <h2 className={`ml-auto w-6/12 text-xl md:text-2xl text-left font-extrabold font-serif rotate-90 transition-colors duration-[400ms]`}>{title}</h2>
+            <div className=' h-[50%] flex flex-col bg-accentRed text-white justify-center'>
+                <h2 className={`ml-auto w-6/12 text-xl lg:text-2xl text-left font-extrabold font-serif rotate-90 transition-colors duration-[400ms]`}>{title}</h2>
             </div>
-            <div className='h-[50%] flex flex-row'>
+            <div className='h-[50%] flex flex-row bg-white'>
                 <div className='w-12/12 px-4 py-2'>
                     <p className='text-sm font-semibold'>{desc}</p>
                     <ul className='flex flex-col py-2'>
@@ -33,10 +33,10 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
                 <img src={imgSrc} className='h-full w-full object-cover' alt="" />
             </motion.div>
             {/* Border animation */}
-            <span className={`absolute left-0 top-0 h-[2px] w-0 bg-black transition-all duration-100 group-hover:w-full`} />
-            <span className={`absolute right-0 top-0 h-0 w-[2px] bg-black transition-all delay-100 duration-100 group-hover:h-full`} />
-            <span className={`absolute bottom-0 right-0 h-[2px] w-0 bg-black transition-all delay-200 duration-100 group-hover:w-full`} />
-            <span className={`absolute bottom-0 left-0 h-0 w-[2px] bg-black transition-all delay-300 duration-100 group-hover:h-full`} />
+            <span className={`absolute left-0 top-0 h-[4px] w-0 bg-black transition-all duration-100 group-hover:w-full`} />
+            <span className={`absolute right-0 top-0 h-0 w-[4px] bg-black transition-all delay-100 duration-100 group-hover:h-full`} />
+            <span className={`absolute bottom-0 right-0 h-[4px] w-0 bg-black transition-all delay-200 duration-100 group-hover:w-full`} />
+            <span className={`absolute bottom-0 left-0 h-0 w-[4px] bg-black transition-all delay-300 duration-100 group-hover:h-full`} />
         </div>
     );
 };
