@@ -9,11 +9,13 @@ import Footer from '../components/Footer/Footer.jsx'
 import ContactForm from '../components/ContactForm/ContactForm.jsx'
 import Benefits from '../components/Benefits/Benefits.jsx'
 import Seprator from '../components/Seprator/Seprator.jsx'
+import Banner from '../components/Banner/Banner.jsx'
 
 const Home = () => {
     return (
-        <div className='bg-primary'>
+        <div className='bg-slate-200'>
             <Navbar />
+            <Banner />
             <Hero />
             <Features />
             <Services />

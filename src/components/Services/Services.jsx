@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } }
 };
 
 const container = {
@@ -24,12 +24,12 @@ const container = {
 };
 
 const Services = () => {
-    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
+    const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     return (
-        <div className='my-12'>
-            <div id="Services" className='max-w-[1400px] px-4 mx-auto py-6'>
-                <div className='flex flex-col lg:flex-row'>
+        <div className='my-12 min-h-[120vh] max-w-[1400px] rounded shadow-md mx-auto bg-white flex items-center'>
+            <div id="Services" className='px-12 py-8'>
+                <div className='flex flex-col lg:flex-row pb-6'>
                     <motion.div
                         className='w-12/12 lg:w-4/12'
                         ref={ref}
@@ -40,7 +40,7 @@ const Services = () => {
                         <h4 className='text-base lg:text-lg text-start font-poppins mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                             Reliable
                         </h4>
-                        <h1 className='text-white mx-auto font-semibold text-lg lg:text-2xl font-montserrat pb-4 lg:text-start text-center'>
+                        <h1 className=' mx-auto font-semibold text-2xl lg:text-4xl font-oswald pb-4 lg:text-start text-center text-primary'>
                             Services & Solutions for Your Needs
                         </h1>
                     </motion.div>
@@ -51,7 +51,7 @@ const Services = () => {
                         animate={inView ? 'visible' : 'hidden'}
                         variants={fadeInUp}
                     >
-                        <p className='text-sm text-white lg:text-base font-light font-poppins'>
+                        <p className='text-sm  lg:text-base font-light font-poppins text-primary-light'>
                             At Bethmar, we offer a wide range of infrastructure, telecom, and traffic management services to meet your specific requirements.
                             From telecom turnkey solutions to traffic management diversions, our experienced team is dedicated to delivering high-quality results.
                         </p>
