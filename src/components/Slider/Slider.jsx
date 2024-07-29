@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import 'swiper/css/pagination';
-import connect from '../../assets/customer/connectFibre.png';
+import connect from '../../assets/customer/connect.png';
 import gigaclear from '../../assets/customer/gigaclear.png';
 import gNetwork from '../../assets/customer/gNetwork.png';
 import Kier from '../../assets/customer/Kier.png';
@@ -44,7 +44,7 @@ const Slider = () => {
                         {customers.map((customer, index) => (
                             <SwiperSlide key={index}>
                                 <motion.div
-                                    className='flex flex-col items-center justify-center bg-white p-6 rounded-lg shadow-md cursor-pointer'
+                                    className='flex flex-col items-center justify-center bg-primary-light p-6 rounded-lg shadow-md cursor-pointer'
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
@@ -54,7 +54,7 @@ const Slider = () => {
                                         className='w-auto h-20 md:w-auto md:h-24 object-cover object-center mx-auto mb-4'
                                         whileHover={{ rotate: 10 }}
                                     />
-                                    <p className='text-center text-lg md:text-md font-medium text-slate-400'>{customer.text}</p>
+                                    <p className='text-center text-lg md:text-md font-medium text-white'>{customer.text}</p>
                                 </motion.div>
                             </SwiperSlide>
                         ))}
