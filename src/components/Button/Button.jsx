@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Button = ({ text, color }) => {
     return (

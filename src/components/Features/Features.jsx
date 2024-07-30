@@ -10,6 +10,7 @@ import {
     useSpring,
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Button from '../Button/Button';
 
 const ROTATION_RANGE = 32.5;
@@ -56,17 +57,17 @@ const FeatureCard = ({ image, title, description }) => {
             onMouseLeave={handleMouseLeave}
             style={{
                 transform,
-                // transformStyle: "preserve-3d"
+                transformStyle: "preserve-3d"
             }}
-            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-moving-gradient rounded'
+            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-white rounded hover:shadow-2xl'
         >
             <div className='flex flex-row items-center justify-between h-3/5'>
-                <div className='h-auto w-4/12 border-2 rounded-full p-4 flex items-center justify-center'>
+                <div className='h-auto w-4/12 border-2 border-primary rounded-full p-4 flex items-center justify-center'>
                     <img src={image} alt={title} />
                 </div>
-                <h2 className='w-6/12 text-xl text-white py-4 font-oswald text-left'>{title}</h2>
+                <h2 className='w-6/12 text-xl bg-clip-text text-transparent bg-gradient-to-t from-accentRed-dark to-accentRed-light py-4 font-oswald text-left'>{title}</h2>
             </div>
-            <p className='text-sm text-white font-montserrat text-pretty h-2/5'>{description}</p>
+            <p className='text-sm text-primaryhite font-montserrat text-pretty h-2/5'>{description}</p>
         </motion.div >
     );
 };
@@ -80,7 +81,7 @@ const Features = () => {
     })
 
     return (
-        <div id='Services' className='flex max-w-[1400px] mx-auto rounded h-auto lg:min-h-[120vh] items-center'>
+        <div id='About' className='flex max-w-[1400px] mx-auto rounded h-auto lg:min-h-[120vh] items-center'>
             <div ref={ref} className='px-4 mx-auto py-12'>
                 <div className='w-full xl:w-6/12 mx-auto'>
                     <h4 className='text-base lg:text-xl text-center font-semibold font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
@@ -92,7 +93,7 @@ const Features = () => {
                         className='text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-12 pb-4 '>Providing Comprehensive Solutions for Your Infrastructure Needs</motion.h2>
                     <p className='text-primary text-sm lg:text-base font-poppins text-center pb-6'>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
                 </div>
-                <div className='max-w-[1400px] mx-auto gap-x-3 flex flex-col lg:flex-row py-12'>
+                <div className='max-w-[1400px] mx-auto gap-x-3 flex flex-col lg:flex-row pt-12 pb-6'>
                     <FeatureCard
                         image={civil}
                         title="Civil Infrastructure Solutions"
@@ -114,8 +115,15 @@ const Features = () => {
                         description="We offer EV charger installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
                     />
                 </div>
-                <div className='mx-auto flex items-center justify-center'>
-                    <Button text="Contact Now" color="black" to='Contact' />
+                <div className='flex mx-auto items-center justify-center'>
+                    <ScrollLink
+                        to='Services'
+                        smooth={true}
+                        duration={500}
+                        className='cursor-pointer'
+                    >
+                        <Button text={'Our Services'} color={'black'} />
+                    </ScrollLink>
                 </div>
             </div>
         </div>

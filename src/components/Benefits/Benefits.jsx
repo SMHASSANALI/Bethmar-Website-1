@@ -28,9 +28,6 @@ const Benefits = () => {
                                 Choose Bethmar for your infrastructure projects and experience the benefits of expertise
                             </h2>
                         </div>
-                        <div className='flex flex-col lg:flex-row lg:justify-start justify-center pt-4'>
-                            <Button text={'Learn More'} color={'accentRed-dark'} to={'About'} />
-                        </div>
                     </div>
                     <div className='w-full md:w-6/12 h-full'>
                         <p className='text-xs lg:text-base font-poppins text-white'>

@@ -23,7 +23,7 @@ const Slider = () => {
     ];
 
     return (
-        <div className="min-h-[70vh] flex items-center bg-white">
+        <div className="min-h-[70vh] flex items-center">
             <div className='text-justify w-full mx-auto content-center pt-12'>
                 <div className='max-w-[1400px] mx-auto '>
                     <h2 className='mx-auto font-semibold text-xl lg:text-3xl text-center font-montserrat pb-4  mb-2 md:mb-4 xl:mb-6 text-primary'>Meet Our Clients</h2>
@@ -47,7 +47,7 @@ const Slider = () => {
                         {customers.map((customer, index) => (
                             <SwiperSlide key={index}>
                                 <motion.div
-                                    className='flex flex-col items-center justify-center p-6 rounded-lg shadow-md cursor-pointer bg-primary'
+                                    className='flex flex-col items-center justify-center p-6 rounded-lg shadow-md cursor-pointer bg-white'
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                 >
@@ -57,7 +57,7 @@ const Slider = () => {
                                         className='w-auto h-20 md:w-auto md:h-24 object-cover object-center mx-auto mb-4'
                                         whileHover={{ rotate: 10 }}
                                     />
-                                    <p className='text-center text-lg md:text-md font-medium text-white'>{customer.text}</p>
+                                    <p className='text-center text-lg md:text-md font-medium text-primary'>{customer.text}</p>
                                 </motion.div>
                             </SwiperSlide>
                         ))}

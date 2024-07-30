@@ -1,7 +1,7 @@
 import React from 'react'
 import contact from '../../assets/contact/fiberRoll.jpg'
-import Button from '../Button/Button'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 const CTA = () => {
@@ -11,8 +11,14 @@ const CTA = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         height: '70vh',
+    };
 
-    }
+    const buttonVariants = {
+        initial: { opacity: 0, y: 100 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: 100 },
+    };
+
     return (
         <div style={divStyle} className='bg-fixed relative flex items-center top-[-15vh] left-0'>
             <div className='max-w-[1400px] px-4 mx-auto text-white'>
@@ -25,7 +31,16 @@ const CTA = () => {
                         duration={500}
                         className='cursor-pointer'
                     >
-                        <Button text={'Contact Us'} color={'accentGreen-dark'} />
+                        <motion.button
+                            className="text-xs lg:text-base group relative px-4 py-2 font-medium transition-colors duration-[400ms] font-montserrat bg-accentGreen-dark  text-white shadow-md hover:bg-accentGreen hover:border-accentGreen transform hover:scale-105"
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            variants={buttonVariants}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                        >
+                            Contact Now
+                        </motion.button>
                     </ScrollLink>
                 </div>
             </div>

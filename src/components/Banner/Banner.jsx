@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import banner2 from '../assets/fiberRoll.jpg';
 // import banner3 from '../assets/Underground.jpeg';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -93,17 +94,24 @@ const Banner = () => {
                                         >
                                             {slide.text}
                                         </motion.h2>
-                                        <motion.button
-                                            key={`button-${slide.id}`}
-                                            className="font-montserrat mt-4 px-4 md:px-8 py-2 md:py-3 bg-accentRed-dark border-2 border-accentRed-dark text-white text-sm md:text-xl font-semibold shadow-md hover:bg-accentRed hover:border-accentRed transition-transform transform hover:scale-105"
-                                            initial="initial"
-                                            animate="animate"
-                                            exit="exit"
-                                            variants={buttonVariants}
-                                            transition={{ duration: 0.5, delay: 0.5 }}
+                                        <ScrollLink
+                                            to='About'
+                                            smooth={true}
+                                            duration={500}
+                                            className='cursor-pointer'
                                         >
-                                            {slide.buttonText}
-                                        </motion.button>
+                                            <motion.button
+                                                key={`button-${slide.id}`}
+                                                className="font-montserrat mt-4 px-4 md:px-8 py-2 md:py-3 bg-accentRed-dark border-2 border-accentRed-dark text-white text-sm md:text-xl font-semibold shadow-md hover:bg-accentRed hover:border-accentRed transition-transform transform hover:scale-105"
+                                                initial="initial"
+                                                animate="animate"
+                                                exit="exit"
+                                                variants={buttonVariants}
+                                                transition={{ duration: 0.5, delay: 0.5 }}
+                                            >
+                                                {slide.buttonText}
+                                            </motion.button>
+                                        </ScrollLink>
                                     </>
                                 )}
                             </AnimatePresence>

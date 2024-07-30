@@ -5,21 +5,21 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className='relative h-[400px] w-[100%] group'
+        <div className='relative h-[400px] w-[100%] group hover:shadow-primary-light hover:shadow-lg hover:scale-110 transition-all duration-300'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)
 
             }
         >
-            <div className=' h-[50%] flex flex-col bg-accentRed text-white justify-center'>
-                <h2 className={`ml-auto w-6/12 text-xl lg:text-2xl text-left font-extrabold font-serif rotate-90 transition-colors duration-[400ms]`}>{title}</h2>
+            <div className=' h-[50%] flex flex-col bg-primary-light text-white justify-center'>
+                <h2 className={`ml-auto w-6/12 text-xl lg:text-2xl text-left font-extrabold font-oswald rotate-90 transition-all duration-[400ms]`}>{title}</h2>
             </div>
             <div className='h-[50%] flex flex-row bg-white'>
                 <div className='w-12/12 px-4 py-2'>
-                    <p className='text-sm font-semibold'>{desc}</p>
-                    <ul className='flex flex-col py-2'>
+                    <p className='text-xs font-poppins text-primary-light'>{desc}</p>
+                    <ul className='flex flex-col py-1'>
                         {list.map((item, index) => (
-                            <li key={index} className='text-base text-slate-800 '>{item}</li>
+                            <li key={index} className='text-sm'>{item}</li>
                         ))}
                     </ul>
                 </div>
@@ -33,10 +33,10 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
                 <img src={imgSrc} className='h-full w-full object-cover' alt="" />
             </motion.div>
             {/* Border animation */}
-            <span className={`absolute left-0 top-0 h-[4px] w-0 bg-black transition-all duration-100 group-hover:w-full`} />
-            <span className={`absolute right-0 top-0 h-0 w-[4px] bg-black transition-all delay-100 duration-100 group-hover:h-full`} />
-            <span className={`absolute bottom-0 right-0 h-[4px] w-0 bg-black transition-all delay-200 duration-100 group-hover:w-full`} />
-            <span className={`absolute bottom-0 left-0 h-0 w-[4px] bg-black transition-all delay-300 duration-100 group-hover:h-full`} />
+            <span className={`absolute left-0 top-0 h-[2px] w-0 bg-black transition-all duration-100 group-hover:w-full`} />
+            <span className={`absolute right-0 top-0 h-0 w-[2px] bg-black transition-all delay-100 duration-100 group-hover:h-full`} />
+            <span className={`absolute bottom-0 right-0 h-[2px] w-0 bg-black transition-all delay-200 duration-100 group-hover:w-full`} />
+            <span className={`absolute bottom-0 left-0 h-0 w-[2px] bg-black transition-all delay-300 duration-100 group-hover:h-full`} />
         </div>
     );
 };
