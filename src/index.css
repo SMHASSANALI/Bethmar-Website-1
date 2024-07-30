@@ -80,7 +80,17 @@ body {
     background-size: 200% 200%;
     animation: gradient-animation 15s ease-in-out infinite;
   }
-  
+
+.bg-moving-gradient3 {
+    background: linear-gradient(150deg, #ffffff 20%, #6d0a08 40%, #ffffff 20%);
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease-in-out infinite;
+  }
+
+.text-stroke{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+  }
 
 @keyframes gradient-animation {
 0% {

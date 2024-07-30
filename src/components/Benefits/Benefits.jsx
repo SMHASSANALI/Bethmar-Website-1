@@ -11,10 +11,10 @@ const Benefits = () => {
     });
 
     return (
-        <div className='py-12 h-[100vh] items-center'>
+        <div className=' lg:h-[100vh] items-center'>
             <motion.div
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 200 }}
-                transition={{ duration: 1, ease: "linear" }}
+                transition={{ duration: 0.5, ease: "linear" }}
                 ref={ref}
                 className='relative max-w-[1400px] px-8 mx-auto bg-primary-light bg-opacity-50 backdrop-blur-sm shadow-lg z-10 rounded'
             >

@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        rotateGradient: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      animation: {
+        "rotate-gradient": "rotateGradient 15s linear infinite",
+      },
       backgroundImage: {
         "text-gradient": "linear-gradient(90deg, #ff7e5f, #feb47b)", // Example gradient colors
       },

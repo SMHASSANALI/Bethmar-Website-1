@@ -56,22 +56,44 @@ const CounterSection = () => {
     };
 
     return (
-        <motion.div
-            className="py-12 min-h-[70vh] flex items-center"
-            initial="hidden"
-            animate="visible"
-            variants={sectionVariants}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-        >
-            <div className="w-full mx-auto bg-white p-8">
-                <h2 className="mx-auto font-semibold text-xl lg:text-3xl text-center text-primary font-montserrat pb-4">Delivering Exceptional Results with Our Expert Infrastructure Construction Services</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-poppins">
-                    {counters.map((counter, index) => (
-                        <Counter key={index} end={counter.end} label={counter.label} />
-                    ))}
+        <>
+            <div className='py-2 overflow-hidden lg:mx-0 mx-4'>
+                <div className='flex justify-center items-center relative '>
+                    <motion.div
+                        className="absolute w-[150vw] h-[28.5vh] z-10 animate-rotate-gradient"
+                        style={{
+                            background: 'radial-gradient(circle, #6d0a08 100%, #6d0a08 100%)',
+                        }}
+                        animate={{
+                            rotate: 360,
+                        }}
+                        transition={{
+                            repeat: Infinity,
+                            duration: 15,
+                            ease: "linear",
+                        }}
+                    ></motion.div>
+                    <motion.div
+                        className="flex items-center bg-white w-full relative z-20"
+                        initial="hidden"
+                        animate="visible"
+                        variants={sectionVariants}
+                        transition={{ duration: 0.8, ease: "easeInOut" }}
+                    >
+                        <div className="w-full mx-auto p-8 bg-white">
+                            <h2 className="mx-auto font-semibold text-2xl lg:text-4xl text-center text-primary font-oswald pb-4">
+                                Delivering Exceptional Results with Our Expert Infrastructure Construction Services
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-poppins">
+                                {counters.map((counter, index) => (
+                                    <Counter key={index} end={counter.end} label={counter.label} />
+                                ))}
+                            </div>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
-        </motion.div>
+        </>
     );
 };
 

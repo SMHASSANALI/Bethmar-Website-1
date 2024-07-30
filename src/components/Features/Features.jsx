@@ -7,11 +7,15 @@ import {
     motion,
     useMotionTemplate,
     useMotionValue,
+    useScroll,
     useSpring,
+    useTransform,
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
+import B from '../../assets/B.png'
+
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
@@ -66,40 +70,53 @@ const FeatureCard = ({ image, title, description }) => {
                 </div>
                 <h2 className='w-6/12 text-xl bg-clip-text text-transparent bg-gradient-to-t from-accentRed-dark to-accentRed-light py-4 font-oswald text-left'>{title}</h2>
             </div>
-            <p className='text-sm text-primaryhite font-montserrat text-pretty h-2/5'>{description}</p>
+            <p className='text-sm text-primary font-montserrat text-pretty h-2/5'>{description}</p>
         </motion.div >
     );
 };
-
-
 
 const Features = () => {
     const { ref, inView } = useInView({
         threshold: 0.2,
         triggerOnce: true,
-    })
+    });
+    const imgRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: imgRef,
+        offset: ["end start", "start end"]
+    });
 
-    const divStyle = {
-        transform: inView ? "none" : "translateX(-200px)",
-        opacity: inView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-    }
-
+    const y = useTransform(scrollYProgress, [0.2, 0.7], ['350px', '-300px']);
+    const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (
-        <div id='About' className='flex rounded h-auto lg:min-h-[120vh] items-center'>
-            <div ref={ref} style={divStyle} className='max-w-[1400px] px-4 mx-auto py-12'>
-                <div className='w-full xl:w-6/12 mx-auto'>
+        <div ref={imgRef} id='About' className='flex rounded items-center relative lg:h-[150vh]'>
+            <div
+                className='absolute z-10 left-20'>
+                <motion.img
+                    src={B}
+                    alt=""
+                    className='h-[80%] w-[80%] object-cover'
+                    style={{ y, rotate }} />
+            </div>
+            <div ref={ref} className='max-w-[1400px] px-4 mx-auto py-12'>
+                <div className='w-full xl:w-6/12 mx-auto '>
                     <h4 className='text-base lg:text-xl text-center font-semibold font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                         Innovative
                     </h4>
-                    <motion.h2
-                        animate={{ opacity: inView ? 1 : 0 }}
-                        transition={{ duration: 1, ease: "backIn" }}
-                        className='text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-12 pb-4 '>Providing Comprehensive Solutions for Your Infrastructure Needs</motion.h2>
-                    <p className='text-primary text-sm lg:text-base font-poppins text-center pb-6'>At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.</p>
+                    <div className='relative'>
+                        <motion.h2
+                            animate={{ opacity: inView ? 1 : 0 }}
+                            transition={{ duration: 2, ease: "backIn" }}
+                            className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-12 pb-4'>
+                            Providing Comprehensive Solutions for Your Infrastructure Needs
+                        </motion.h2>
+                    </div>
+                    <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-6'>
+                        At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
+                    </p>
                 </div>
-                <div className='max-w-[1400px] mx-auto gap-x-3 flex flex-col lg:flex-row pt-12 pb-6'>
+                <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-12 pb-6 z-50 relative'>
                     <FeatureCard
                         image={civil}
                         title="Civil Infrastructure Solutions"

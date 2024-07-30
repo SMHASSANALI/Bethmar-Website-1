@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } }
 };
 
@@ -27,7 +27,7 @@ const Services = () => {
     const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     return (
-        <div id='Services' className='my-12 min-h-[120vh] max-w-[1400px] rounded shadow-lg mx-auto bg-white flex items-center'>
+        <div id='Services' className='my-12 max-w-[1400px] rounded shadow-lg lg:mx-auto bg-white mx-4 flex items-center'>
             <div className='px-12 py-8'>
                 <div className='flex flex-col lg:flex-row pb-6'>
                     <motion.div
@@ -40,9 +40,12 @@ const Services = () => {
                         <h4 className='text-base lg:text-lg text-start font-poppins mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                             Reliable
                         </h4>
-                        <h1 className=' mx-auto font-semibold text-2xl lg:text-4xl font-oswald pb-4 lg:text-start text-center text-primary'>
+                        <motion.h1
+                            animate={{ opacity: inView ? 1 : 0, }}
+                            transition={{ duration: 1, ease: "linear" }}
+                            className=' mx-auto font-semibold text-2xl lg:text-4xl font-oswald pb-4 lg:text-start text-center text-primary'>
                             Services & Solutions for Your Needs
-                        </h1>
+                        </motion.h1>
                     </motion.div>
                     <motion.div
                         className='w-12/12 lg:w-6/12 ml-auto'
@@ -105,7 +108,7 @@ const Services = () => {
                     </motion.div>
                 </motion.div>
             </div>
-        </div>
+        </div >
     );
 };
 

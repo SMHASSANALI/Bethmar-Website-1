@@ -18,7 +18,7 @@ const Hero = () => {
     };
 
     return (
-        <div className='bg-white rounded min-h-[100vh] flex items-center'>
+        <div className='bg-white rounded min-h-[100vh] flex items-center py-12 lg:py-0'>
             <div
                 ref={ref}
                 className='h-[100vh] md:h-[80vh] xl:h-[70vh] px-4 mx-auto max-w-[1400px]   flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
