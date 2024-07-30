@@ -10,20 +10,31 @@ import ContactForm from '../components/ContactForm/ContactForm.jsx'
 import Benefits from '../components/Benefits/Benefits.jsx'
 import Seprator from '../components/Seprator/Seprator.jsx'
 import Banner from '../components/Banner/Banner.jsx'
+import BG from '../assets/svg/Background.svg'
 
 const Home = () => {
+
+    const bgStyle = {
+        backgroundImage: `url(${BG})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    }
+
     return (
-        <div className='bg-slate-200'>
+        <div className='bg-[#f0fcfe]'>
             <Navbar />
             <Banner />
             <Hero />
-            <Features />
+            <div style={bgStyle} className='border'>
+                <Features />
+            </div>
             <Services />
-            <Seprator color={'bg-accentGreen-dark'} />
+            <Seprator color={'bg-moving-gradient'} />
             <Benefits />
             <Slider />
             <CounterSection />
-            <Seprator color={'bg-accentRed-dark'} />
+            <Seprator color={'bg-moving-gradient1'} />
             <ContactForm />
             <Footer />
         </div>

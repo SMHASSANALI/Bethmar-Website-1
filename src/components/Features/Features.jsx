@@ -12,7 +12,6 @@ import {
 import { useInView } from 'react-intersection-observer';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Button from '../Button/Button';
-
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
@@ -59,7 +58,7 @@ const FeatureCard = ({ image, title, description }) => {
                 transform,
                 transformStyle: "preserve-3d"
             }}
-            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-white rounded hover:shadow-2xl'
+            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-white rounded shadow-lg hover:shadow-2xl'
         >
             <div className='flex flex-row items-center justify-between h-3/5'>
                 <div className='h-auto w-4/12 border-2 border-primary rounded-full p-4 flex items-center justify-center'>
@@ -80,9 +79,16 @@ const Features = () => {
         triggerOnce: true,
     })
 
+    const divStyle = {
+        transform: inView ? "none" : "translateX(-200px)",
+        opacity: inView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+    }
+
+
     return (
-        <div id='About' className='flex max-w-[1400px] mx-auto rounded h-auto lg:min-h-[120vh] items-center'>
-            <div ref={ref} className='px-4 mx-auto py-12'>
+        <div id='About' className='flex rounded h-auto lg:min-h-[120vh] items-center'>
+            <div ref={ref} style={divStyle} className='max-w-[1400px] px-4 mx-auto py-12'>
                 <div className='w-full xl:w-6/12 mx-auto'>
                     <h4 className='text-base lg:text-xl text-center font-semibold font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                         Innovative

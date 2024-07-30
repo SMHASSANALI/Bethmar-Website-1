@@ -7,6 +7,13 @@
 @tailwind utilities;
 
 /* Add this to your CSS file */
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .swiper-container {
     padding-bottom: 40px; /* Adjust the value to fit your layout */
 }
@@ -63,7 +70,13 @@ body {
 }
   
 .bg-moving-gradient {
-    background: linear-gradient(135deg, #1c1c1e, #27b344, #1c1c1e);
+    background: linear-gradient(135deg, #194d23, #27b344, #205029);
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease-in-out infinite;
+  }
+
+.bg-moving-gradient1 {
+    background: linear-gradient(135deg, #93100e, #ef4a46, #6d0a08);
     background-size: 200% 200%;
     animation: gradient-animation 15s ease-in-out infinite;
   }

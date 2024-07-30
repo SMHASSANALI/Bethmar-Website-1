@@ -27,7 +27,7 @@ const Services = () => {
     const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     return (
-        <div id='Services' className='my-12 min-h-[120vh] max-w-[1400px] rounded shadow-md mx-auto bg-white flex items-center'>
+        <div id='Services' className='my-12 min-h-[120vh] max-w-[1400px] rounded shadow-lg mx-auto bg-white flex items-center'>
             <div className='px-12 py-8'>
                 <div className='flex flex-col lg:flex-row pb-6'>
                     <motion.div

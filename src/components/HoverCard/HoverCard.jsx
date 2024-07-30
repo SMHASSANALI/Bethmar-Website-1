@@ -5,7 +5,7 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className='relative h-[400px] w-[100%] group hover:shadow-primary-light hover:shadow-lg hover:scale-110 transition-all duration-300'
+        <div className='relative h-[400px] w-[100%] group shadow-primary-light shadow-md hover:shadow-2xl hover:scale-110 transition-all duration-300'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)
 
