@@ -64,13 +64,13 @@ const FeatureCard = ({ image, title, description }) => {
             }}
             className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-white rounded shadow-lg hover:shadow-2xl'
         >
-            <div className='flex flex-row items-center justify-between h-3/5'>
-                <div className='h-auto w-4/12 border-2 border-primary rounded-full p-4 flex items-center justify-center'>
+            <div className='w-full flex lg:flex-row items-center justify-between h-3/5'>
+                <div className='w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
                     <img src={image} alt={title} />
                 </div>
-                <h2 className='w-6/12 text-xl bg-clip-text text-transparent bg-gradient-to-t from-accentRed-dark to-accentRed-light py-4 font-oswald text-left'>{title}</h2>
+                <h2 className='ml-4 lg:ml-2 w-8/12 text-xl bg-clip-text text-transparent bg-gradient-to-tr from-secondary to-accentRed-dark py-4 font-oswald text-left leading-none'>{title}</h2>
             </div>
-            <p className='text-sm text-primary font-montserrat text-pretty h-2/5'>{description}</p>
+            <p className='text-sm text-primary font-montserrat text-center h-2/5 lg:mt-0 mt-4'>{description}</p>
         </motion.div >
     );
 };
@@ -86,33 +86,31 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.2, 0.7], ['350px', '-300px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['330px', '-250px']);
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (
-        <div ref={imgRef} id='About' className='flex rounded items-center relative lg:h-[150vh]'>
+        <div ref={imgRef} id='About' className='flex rounded items-center relative lg:h-[120vh]'>
             <div
                 className='absolute z-10 left-20'>
                 <motion.img
                     src={B}
                     alt=""
-                    className='h-[80%] w-[80%] object-cover'
+                    className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
                     style={{ y, rotate }} />
             </div>
-            <div ref={ref} className='max-w-[1400px] px-4 mx-auto py-12'>
+            <div ref={ref} className='max-w-[1400px] px-4 mx-auto lg:py-0 py-8'>
                 <div className='w-full xl:w-6/12 mx-auto '>
-                    <h4 className='text-base lg:text-xl text-center font-semibold font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
+                    <h4 className='text-base md:text-xl font-medium text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
                         Innovative
                     </h4>
-                    <div className='relative'>
-                        <motion.h2
-                            animate={{ opacity: inView ? 1 : 0 }}
-                            transition={{ duration: 2, ease: "backIn" }}
-                            className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-12 pb-4'>
-                            Providing Comprehensive Solutions for Your Infrastructure Needs
-                        </motion.h2>
-                    </div>
-                    <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-6'>
+                    <motion.h2
+                        animate={{ opacity: inView ? 1 : 0 }}
+                        transition={{ duration: 2, ease: "backIn" }}
+                        className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-5 pb-3 lg:pt-10 lg:pb-6'>
+                        Providing Comprehensive Solutions for Your Infrastructure Needs
+                    </motion.h2>
+                    <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>
                         At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
                     </p>
                 </div>

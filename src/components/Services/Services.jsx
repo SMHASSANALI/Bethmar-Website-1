@@ -28,7 +28,7 @@ const Services = () => {
 
     return (
         <div id='Services' className='my-12 max-w-[1400px] rounded shadow-lg lg:mx-auto bg-white mx-4 flex items-center'>
-            <div className='px-12 py-8'>
+            <div className='px-4 lg:px-12 py-8'>
                 <div className='flex flex-col lg:flex-row pb-6'>
                     <motion.div
                         className='w-12/12 lg:w-4/12'
@@ -37,13 +37,13 @@ const Services = () => {
                         animate={inView ? 'visible' : 'hidden'}
                         variants={fadeInUp}
                     >
-                        <h4 className='text-base lg:text-lg text-start font-poppins mb-2 md:mb-4 xl:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
+                        <h4 className='text-base md:text-xl font-medium text-start font-poppins mb-3 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                             Reliable
                         </h4>
                         <motion.h1
                             animate={{ opacity: inView ? 1 : 0, }}
                             transition={{ duration: 1, ease: "linear" }}
-                            className=' mx-auto font-semibold text-2xl lg:text-4xl font-oswald pb-4 lg:text-start text-center text-primary'>
+                            className=' mx-auto font-semibold text-2xl lg:text-4xl font-oswald lg:pb-0 pb-2 lg:text-start text-center text-primary'>
                             Services & Solutions for Your Needs
                         </motion.h1>
                     </motion.div>
@@ -61,7 +61,7 @@ const Services = () => {
                     </motion.div>
                 </div>
                 <motion.div
-                    className='grid md:grid-cols-5 grid-cols-2 gap-4 pt-12'
+                    className='grid md:grid-cols-5 grid-cols-1 gap-x-4 gap-y-8 pt-6 lg:pt-12'
                     initial='hidden'
                     animate={inView ? 'visible' : 'hidden'}
                     variants={container}

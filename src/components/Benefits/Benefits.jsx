@@ -11,20 +11,20 @@ const Benefits = () => {
     });
 
     return (
-        <div className=' lg:h-[100vh] items-center'>
+        <div className='h-[75vh] lg:h-[90vh] items-center'>
             <motion.div
                 animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 200 }}
                 transition={{ duration: 0.5, ease: "linear" }}
                 ref={ref}
-                className='relative max-w-[1400px] px-8 mx-auto bg-primary-light bg-opacity-50 backdrop-blur-sm shadow-lg z-10 rounded'
+                className='relative max-w-[1400px] mx-4 px-2 lg:px-8 lg:mx-auto bg-primary-dark bg-opacity-50 backdrop-blur-sm shadow-lg z-10 rounded'
             >
-                <div className='flex flex-col md:flex-row h-full py-12'>
-                    <div className='w-full md:w-6/12 flex md:flex-col flex-row justify-between md:mb-0 mb-4'>
-                        <div className='w-8/12 lg:w-10/12'>
-                            <h4 className='text-xl md:text-3xl font-medium text-start font-poppins md:pt-0 pt-[6px] bg-clip-text text-transparent bg-gradient-to-t from-accentRed to-accentRed-dark'>
+                <div className='flex flex-col md:flex-row h-full py-4 lg:py-12'>
+                    <div className='w-full md:w-6/12 flex md:flex-col flex-row justify-between lg:mb-0 mb-2'>
+                        <div className='w-12/12 lg:w-10/12'>
+                            <h4 className='text-base md:text-xl font-medium text-start font-poppins pb-2 lg:pb-4 bg-clip-text text-transparent bg-gradient-to-t from-accentRed to-accentRed-dark'>
                                 Benefits
                             </h4>
-                            <h2 className='font-semibold text-2xl lg:text-4xl font-oswald pt-4 text-white'>
+                            <h2 className='font-semibold text-2xl lg:text-4xl mb-1 lg:mb-0 font-oswald text-white'>
                                 Choose Bethmar for your infrastructure projects and experience the benefits of expertise
                             </h2>
                         </div>

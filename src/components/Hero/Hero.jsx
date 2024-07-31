@@ -18,17 +18,17 @@ const Hero = () => {
     };
 
     return (
-        <div className='bg-white rounded min-h-[100vh] flex items-center py-12 lg:py-0'>
+        <div className='bg-white rounded min-h-[80vh] flex items-center py-0'>
             <div
                 ref={ref}
-                className='h-[100vh] md:h-[80vh] xl:h-[70vh] px-4 mx-auto max-w-[1400px]   flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
+                className='h-[85vh] lg:h-[70vh] px-4 mx-auto max-w-[1400px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
                 <motion.div
                     animate={{ x: inView ? 0 : -700 }}
                     transition={{ duration: 2, ease: 'backInOut' }}
                     exit={{ opacity: 0 }}
-                    className='w-full xl:w-1/2 px-12 py-8 bg-opacity-50 backdrop-blur-lg bg-primary-light z-10 rounded'>
-                    <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
-                    <p className='text-xs xl:text-base font-light py-8 text-white'>Bethmar is a leading infrastructure construction company based in the UK. We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management diversions, and high-speed solutions. With expertise in construction of spill tanks, replacing water mains, EV chargers installation, DNO liaison, meter installation, and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
+                    className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-opacity-50 backdrop-blur-lg bg-primary-dark z-10 rounded'>
+                    <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
+                    <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure construction company based in the UK. We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management diversions, and high-speed solutions. With expertise in construction of spill tanks, replacing water mains, EV chargers installation, DNO liaison, meter installation, and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
                     <div className='gap-x-6 flex'>
                         <ScrollLink
                             to='Contact'

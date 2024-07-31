@@ -11,7 +11,7 @@ const ContactForm = () => {
 
 
     return (
-        <div id="Contact" className=" max-w-[1400px] py-8  mx-auto min-h-[100vh]">
+        <div id="Contact" className=" max-w-[1400px] my-12 py-12  mx-auto min-h-[100vh]">
             <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12">
                 <div
                     ref={ref}

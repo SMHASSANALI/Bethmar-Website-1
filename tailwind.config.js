@@ -50,6 +50,10 @@ export default {
           light: "#383838",
           dark: "#000000",
         },
+        secondary: {
+          DEFAULT: "#3f000e",
+          dark: "#221e1f",
+        },
       },
     },
   },

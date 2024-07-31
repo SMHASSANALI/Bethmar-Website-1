@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import banner1 from '../../assets/Banner/Banner1.png';
 import banner2 from '../../assets/Banner/Banner2.png';
-// import banner3 from '../assets/Underground.jpeg';
+import banner3 from '../../assets/Banner/Banner3.jfif';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
@@ -48,7 +48,7 @@ const Banner = () => {
             id: 2,
             text: "Connecting the Dots, Between People & Possibilities.",
             buttonText: "Join Us",
-            background: ''
+            background: banner3
         },
     ];
 
@@ -58,7 +58,7 @@ const Banner = () => {
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)) , url(${currentSlideData.background})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'repeat',
-        backgroundSize: 'fit',
+        backgroundSize: 'cover',
     };
 
     return (

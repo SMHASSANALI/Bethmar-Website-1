@@ -24,12 +24,12 @@ const Slider = () => {
 
     return (
         <div ref={ref} className="flex items-center">
-            <div className='text-justify w-full mx-auto content-center pt-12'>
+            <div className='text-justify w-full mx-auto content-center lg:py-12 border'>
                 <div className='max-w-[1400px] mx-auto '>
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.1 }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className='mx-auto font-semibold text-2xl lg:text-4xl text-center font-poppins pb-4  mb-2 md:mb-4 xl:mb-6 text-primary'>Meet Our Clients</motion.h2>
+                        className='mx-auto font-semibold text-2xl lg:text-4xl text-center font-poppins mb-3 lg:mb-6 text-primary'>Meet Our Clients</motion.h2>
                     <motion.div
                         animate={{ y: inView ? 1 : 200, opacity: inView ? 1 : 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
