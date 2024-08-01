@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
         <div className='flex items-center justify-center'>
-            <div className='bg-[#f0f0f0] w-screen'>
+            <div className='bg-[#fafafa] w-screen'>
                 <Navbar />
                 <Banner />
                 <Hero />

@@ -26,15 +26,15 @@ const ContactForm = () => {
                             <motion.p
                                 animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
                                 transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-xl py-2 font-poppins flex font-regular'><span className='font-semibold'></span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</motion.p>
+                                className='text-sm lg:text-base py-2 font-poppins flex font-regular'><span className='font-semibold'></span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</motion.p>
                             <motion.p
                                 animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
                                 transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-xl py-2 font-poppins flex font-regular'><span className='font-semibold'></span> 01707322748</motion.p>
+                                className='text-sm lg:text-base py-2 font-poppins flex font-regular'><span className='font-semibold'></span> 01707322748</motion.p>
                             <motion.p
                                 animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
                                 transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-xl py-2 font-poppins flex font-regular pb-6'><span className='font-semibold'></span> info@bethmar.co.uk</motion.p>
+                                className='text-sm lg:text-base py-2 font-poppins flex font-regular pb-6'><span className='font-semibold'></span> info@bethmar.co.uk</motion.p>
                         </div>
                         <div className='flex flex-col h-[350px]'>
                             <LocationMap />
@@ -43,26 +43,26 @@ const ContactForm = () => {
                     <div
                         className="md:w-1/2"
                     >
-                        <form className="max-w-xl mx-4 lg:mx-auto bg-white p-8 rounded shadow-lg">
+                        <form className="max-w-xl mx-4 lg:mx-auto bg-white p-8 rounded shadow-lg border border-slate-300">
                             <div className="mb-4">
                                 <label className="block text-primary mb-2 text-base" htmlFor="name">Name</label>
-                                <input autoComplete='name' className="w-full px-4 py-2 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-300" type="text" id="name" name="name" />
+                                <input autoComplete='name' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="name" name="name" />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-primary mb-2 text-base" htmlFor="email">Email</label>
-                                <input autoComplete='email' className="w-full px-4 py-2 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-300" type="email" id="email" name="email" />
+                                <input autoComplete='email' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="email" id="email" name="email" />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-primary mb-2 text-base" htmlFor="phone">Phone</label>
-                                <input autoComplete='Phone' className="w-full px-4 py-2 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-300" type="text" id="phone" name="phone" />
+                                <input autoComplete='Phone' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="phone" name="phone" />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-primary mb-2 text-base" htmlFor="subject">Subject</label>
-                                <input className="w-full px-4 py-2 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-300" type="text" id="subject" name="subject" />
+                                <input className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="subject" name="subject" />
                             </div>
                             <div className="mb-4">
                                 <label className="block text-primary mb-2 text-base" htmlFor="message">Message</label>
-                                <textarea className="w-full px-4 py-2 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-300" id="message" name="message" rows="4"></textarea>
+                                <textarea className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" id="message" name="message" rows="4"></textarea>
                             </div>
                             <div className="text-center">
                                 <button

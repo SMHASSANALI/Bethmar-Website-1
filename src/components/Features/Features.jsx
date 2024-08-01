@@ -14,7 +14,7 @@ import {
 import { useInView } from 'react-intersection-observer';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
-import B from '../../assets/B.png'
+import B from '../../assets/B1.png'
 
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
@@ -86,7 +86,7 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.1, 0.8], ['150px', '-150px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['200px', '-250px']);
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (

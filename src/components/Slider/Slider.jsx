@@ -25,7 +25,7 @@ const Slider = () => {
     return (
         <div ref={ref} className="flex items-center justify-center my-12">
             <div className='container text-justify w-full mx-auto content-center'>
-                <div className='max-w-[1400px] mx-auto '>
+                <div className='max-w-[1400px] mx-auto'>
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.1 }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -48,7 +48,7 @@ const Slider = () => {
                                 delay: 1500,
                                 disableOnInteraction: false
                             }}
-                            className='swiper-container mx-4 lg:mx-0'
+                            className='swiper-container mx-4 lg:mx-0 '
                         >
                             {customers.map((customer, index) => (
                                 <SwiperSlide key={index}>

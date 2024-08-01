@@ -24,12 +24,12 @@ body {
     margin-top: 20px;
 }
 .swiper-pagination-bullet {
-    background: #000; /* Change this to your desired color */
+    background: #555; /* Change this to your desired color */
     opacity: 1; /* Ensure bullets are fully opaque */
 }
 
 .swiper-pagination-bullet-active {
-    background: #27b344; /* Active bullet color */
+    background: #6d0a08; /* Active bullet color */
 }
 
 /* Webkit-based browsers */

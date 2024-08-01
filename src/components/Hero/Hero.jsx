@@ -27,7 +27,7 @@ const Hero = () => {
                         animate={{ x: inView ? 0 : -700 }}
                         transition={{ duration: 2, ease: 'backInOut' }}
                         exit={{ opacity: 0 }}
-                        className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-opacity-50 backdrop-blur-lg bg-primary-dark z-10 rounded'>
+                        className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-primary z-10 rounded'>
                         <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
                         <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure construction company based in the UK. We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management diversions, and high-speed solutions. With expertise in construction of spill tanks, replacing water mains, EV chargers installation, DNO liaison, meter installation, and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
                         <div className='gap-x-6 flex'>
@@ -37,7 +37,7 @@ const Hero = () => {
                                 duration={500}
                                 className='cursor-pointer'
                             >
-                                <Button text={'Learn More'} color={'black'} />
+                                <Button text={'Learn More'} color={'white'} />
                             </ScrollLink>
                             <ScrollLink
                                 to='Contact'

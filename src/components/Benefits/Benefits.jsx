@@ -17,7 +17,7 @@ const Benefits = () => {
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 200 }}
                     transition={{ duration: 0.5, ease: "linear" }}
                     ref={ref}
-                    className='relative max-w-[1400px] mx-4 px-2 lg:px-8 lg:mx-auto bg-primary-dark bg-opacity-50 backdrop-blur-sm shadow-lg z-10 rounded'
+                    className='relative max-w-[1400px] mx-4 px-6 lg:px-12 lg:py-6 py-3 lg:mx-auto bg-primary shadow-lg z-10 rounded'
                 >
                     <div className='flex flex-col md:flex-row h-full py-6'>
                         <div className='w-full md:w-6/12 flex md:flex-col flex-row justify-between lg:mb-0 mb-2'>

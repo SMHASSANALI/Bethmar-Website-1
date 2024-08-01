@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import banner1 from '../../assets/Banner/Banner1.png';
-import banner2 from '../../assets/Banner/Banner2.png';
-import banner3 from '../../assets/Banner/Banner3.jfif';
+// import banner1 from '../../assets/Banner/Banner1.png';
+// import banner2 from '../../assets/Banner/Banner2.png';
+// import banner3 from '../../assets/Banner/Banner3.jfif';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -31,24 +31,24 @@ const Banner = () => {
             id: 0,
             text: "Empowering Connections, Endless Possibilities.",
             buttonText: "Learn More",
-            background: banner1
+            background: ''
         },
         {
             id: 1,
             text: "Transforming Infrastructure, Enhancing Lives.",
             buttonText: "Get Started",
-            background: banner2
+            background: ''
         },
         {
             id: 2,
             text: "Connecting the Dots, Between People & Possibilities.",
-            buttonText: "Join Us",
-            background: banner3
+            buttonText: "Get Started",
+            background: ''
         },
     ];
 
     return (
-        <div className="mx-auto w-full max-h-[500px] overflow-hidden relative">
+        <div className="mx-auto w-full min-h-[300px] lg:min-h-[500px] overflow-hidden relative">
             <Carousel
                 showThumbs={false}
                 autoPlay
@@ -64,13 +64,14 @@ const Banner = () => {
             >
                 {slides.map((slide, index) => (
                     <div
-                        className="flex items-center min-h-[40vh] lg:min-h-[70vh] justify-center p-8"
+                        className="flex items-center justify-center p-8 min-h-[300px] lg:min-h-[500px]"
                         key={slide.id}
                         style={{
                             backgroundImage: `url(${slide.background})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',
+                            backgroundColor: '#000000',
                         }}
                     >
                         <AnimatePresence mode="wait">
