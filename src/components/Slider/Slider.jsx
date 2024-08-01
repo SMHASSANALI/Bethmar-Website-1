@@ -24,7 +24,7 @@ const Slider = () => {
 
     return (
         <div ref={ref} className="flex items-center">
-            <div className='text-justify w-full mx-auto content-center lg:py-12 border'>
+            <div className='text-justify w-full mx-auto content-center py-12 border'>
                 <div className='max-w-[1400px] mx-auto '>
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.1 }}

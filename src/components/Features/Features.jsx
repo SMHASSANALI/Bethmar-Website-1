@@ -70,7 +70,7 @@ const FeatureCard = ({ image, title, description }) => {
                 </div>
                 <h2 className='ml-4 lg:ml-2 w-8/12 text-xl bg-clip-text text-transparent bg-gradient-to-tr from-secondary to-accentRed-dark py-4 font-oswald text-left leading-none'>{title}</h2>
             </div>
-            <p className='text-sm text-primary font-montserrat text-center h-2/5 lg:mt-0 mt-4'>{description}</p>
+            <p className='text-sm text-primary font-montserrat text-left h-2/5 lg:mt-0 mt-4'>{description}</p>
         </motion.div >
     );
 };
@@ -101,13 +101,13 @@ const Features = () => {
             </div>
             <div ref={ref} className='max-w-[1400px] px-4 mx-auto lg:py-0 py-8'>
                 <div className='w-full xl:w-6/12 mx-auto '>
-                    <h4 className='text-base md:text-xl font-medium text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
+                    <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
                         Innovative
                     </h4>
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0 }}
                         transition={{ duration: 2, ease: "backIn" }}
-                        className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-5 pb-3 lg:pt-10 lg:pb-6'>
+                        className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
                         Providing Comprehensive Solutions for Your Infrastructure Needs
                     </motion.h2>
                     <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>

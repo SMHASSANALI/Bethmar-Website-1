@@ -75,7 +75,7 @@ const Banner = () => {
             >
                 {slides.map((slide, index) => (
                     <div
-                        className="flex items-center justify-center h-[50vh] lg:h-[70vh] p-8"
+                        className="flex items-center justify-center h-[35vh] lg:h-[70vh] p-8"
                         key={slide.id}
                         style={divStyle}
                     >

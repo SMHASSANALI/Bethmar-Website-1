@@ -37,7 +37,7 @@ const Services = () => {
                         animate={inView ? 'visible' : 'hidden'}
                         variants={fadeInUp}
                     >
-                        <h4 className='text-base md:text-xl font-medium text-start font-poppins mb-3 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
+                        <h4 className='text-base md:text-xl font-normalm text-start font-poppins mb-3 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                             Reliable
                         </h4>
                         <motion.h1

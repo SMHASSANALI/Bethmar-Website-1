@@ -17,32 +17,27 @@ const Footer = () => {
     return (
         <div style={divStyle} className="py-4 md:py-8 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between items-center mx-auto border-b border-gray-700 py-4 md:py-8 px-4 md:px-0">
-                <div className="text-sm md:text-base px-4">
-                    <img src={logo} alt="Company Logo" className="w-auto h-[40px] md:h-[80px] " />
-                    <p className='py-2'>Location: Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
-                    <p className='py-2'>Contact: 01707322748</p>
-                    <p className='py-2'>Email: info@bethmar.co.uk</p>
-                    <div className="flex space-x-4 mt-4">
-                        <a href='#'><FaSquareFacebook className='h-8 w-8 hover:text-accentRed-dark duration-300 transition-colors' /></a>
-                        <a href='#'><FaLinkedin className='h-8 w-8 hover:text-accentRed-dark duration-300 transition-colors' /></a>
-                    </div>
+                <div className="text-sm md:text-base px-4 w-12/12 lg:w-4/12 lg:mb-2 mb-6">
+                    <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto" />
+                    <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
+                    <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Contact :</span> 01707322748</p>
+                    <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> info@bethmar.co.uk</p>
                 </div>
-                <div className='flex justify-around md:w-1/2 w-auto py-4 md:py-0'>
+                <div className='flex lg:justify-around w-full lg:w-1/2 py-4 md:py-0'>
                     <div className="self-center px-4">
-                        <h4 className="mb-4 md:text-2xl font-serif text-lg font-bold text-accentRed-dark">Quick Links</h4>
-                        <ol className='md:text-base text-base px-1'>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to='/services'>Services</Link></li>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to='/about'>About Us</Link></li>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to='/contact'>Contact Us</Link></li>
-                        </ol>
+                        <h4 className="mb-4 text-base lg:text-lg font-oswald font-medium text-white ">Quick Links</h4>
+                        <div className="flex flex-col gap-2">
+                            <a className='flex items-center lg:text-sm text-xs' href='#'>What They Say About Us</a>
+                            <a className='flex items-center lg:text-sm text-xs' href='#'>People We Work With</a>
+                            <a className='flex items-center lg:text-sm text-xs' href='#'>Our Numbers</a>
+                        </div>
                     </div>
                     <div className="self-center px-4">
-                        <h4 className="mb-4 md:text-2xl font-serif text-lg font-bold text-accentRed-dark ">Our Projects</h4>
-                        <ol className='md:text-base text-base px-1'>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to="/#project">London Urban Fibre Optic Expansion</Link></li>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to="/#project">Rural Broadband Initiative</Link></li>
-                            <li className='py-1 md:py-2 hover:decoration-accentRed-dark hover:underline hover:decoration-2 transition duration-300'><Link to="/#project">Smart City Infrastructure Development</Link></li>
-                        </ol>
+                        <h4 className="mb-4 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
+                        <div className="flex flex-col gap-2">
+                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-2' />Facebook</a>
+                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-2' />Linkedin</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,6 +46,9 @@ const Footer = () => {
                     <div className='self-center'>
                         <a href="#terms" className="mr-4">Terms & Conditions</a>
                         <span>© 2024 Bethmar Ltd. All rights reserved.</span>
+                    </div>
+                    <div className=''>
+                        <p className='text-xs font-extralight font-mono text-gray-400'>Designed and Developed by SASKA Solutions</p>
                     </div>
                 </div>
             </div>
