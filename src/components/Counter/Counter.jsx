@@ -84,7 +84,7 @@ const CounterSection = () => {
                             <h2 className="mx-auto font-semibold text-2xl lg:text-4xl text-center text-primary font-oswald pb-4">
                                 Delivering Exceptional Results with Our Expert Infrastructure Construction Services
                             </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-poppins">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-poppins">
                                 {counters.map((counter, index) => (
                                     <Counter key={index} sym={counter.sym} end={counter.end} label={counter.label} />
                                 ))}
