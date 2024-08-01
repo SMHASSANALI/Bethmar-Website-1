@@ -18,53 +18,56 @@ const Hero = () => {
     };
 
     return (
-        <div className='bg-white rounded min-h-[80vh] flex items-center lg:py-0 py-12'>
-            <div
-                ref={ref}
-                className='h-[85vh] lg:h-[70vh] px-4 mx-auto max-w-[1400px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
-                <motion.div
-                    animate={{ x: inView ? 0 : -700 }}
-                    transition={{ duration: 2, ease: 'backInOut' }}
-                    exit={{ opacity: 0 }}
-                    className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-opacity-50 backdrop-blur-lg bg-primary-dark z-10 rounded'>
-                    <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
-                    <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure construction company based in the UK. We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management diversions, and high-speed solutions. With expertise in construction of spill tanks, replacing water mains, EV chargers installation, DNO liaison, meter installation, and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
-                    <div className='gap-x-6 flex'>
-                        <ScrollLink
-                            to='About'
-                            smooth={true}
-                            duration={500}
-                            className='cursor-pointer'
-                        >
-                            <Button text={'Learn More'} color={'black'} />
-                        </ScrollLink>
-                        <ScrollLink
-                            to='Contact'
-                            smooth={true}
-                            duration={500}
-                            className='cursor-pointer'
-                        >
-                            <motion.button
-                                className="text-xs lg:text-base group relative px-4 py-2 font-medium transition-colors duration-[400ms] font-montserrat bg-accentRed-dark  text-white shadow-md hover:bg-accentRed hover:border-accentRed transform hover:scale-105"
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                variants={buttonVariants}
-                                transition={{ duration: 0.5, delay: 0.5 }}
+        <div className='flex items-center justify-center my-12'>
+            <div className='bg-white w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
+                <div
+                    ref={ref}
+                    className='px-4 mx-auto max-w-[1400px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
+                    <motion.div
+                        animate={{ x: inView ? 0 : -700 }}
+                        transition={{ duration: 2, ease: 'backInOut' }}
+                        exit={{ opacity: 0 }}
+                        className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-opacity-50 backdrop-blur-lg bg-primary-dark z-10 rounded'>
+                        <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
+                        <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure construction company based in the UK. We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management diversions, and high-speed solutions. With expertise in construction of spill tanks, replacing water mains, EV chargers installation, DNO liaison, meter installation, and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
+                        <div className='gap-x-6 flex'>
+                            <ScrollLink
+                                to='About'
+                                smooth={true}
+                                duration={500}
+                                className='cursor-pointer'
                             >
-                                Contact Now
-                            </motion.button>
-                        </ScrollLink>
-                    </div>
-                </motion.div>
-                <motion.div
-                    animate={{ opacity: inView ? 1 : 0, scale: inView ? 1.5 : 0.5 }}
-                    transition={{ duration: 1, ease: "easeInOut" }}
-                    className='xl:w-1/2  lg:h-[75%] mb-12 '>
-                    <img src={hero} alt="" className='h-full w-full object-cover' />
-                </motion.div>
+                                <Button text={'Learn More'} color={'black'} />
+                            </ScrollLink>
+                            <ScrollLink
+                                to='Contact'
+                                smooth={true}
+                                duration={500}
+                                className='cursor-pointer'
+                            >
+                                <motion.button
+                                    className="text-xs lg:text-base group relative px-4 py-2 font-medium transition-colors duration-[400ms] font-montserrat bg-accentRed-dark  text-white shadow-md hover:bg-accentRed hover:border-accentRed transform hover:scale-105"
+                                    initial="initial"
+                                    animate="animate"
+                                    exit="exit"
+                                    variants={buttonVariants}
+                                    transition={{ duration: 0.5, delay: 0.5 }}
+                                >
+                                    Contact Now
+                                </motion.button>
+                            </ScrollLink>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        animate={{ opacity: inView ? 1 : 0, scale: inView ? 1.5 : 0.5 }}
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                        className='xl:w-1/2  lg:h-[75%] mb-12 '>
+                        <img src={hero} alt="" className='h-full w-full object-cover' />
+                    </motion.div>
+                </div>
             </div>
         </div>
+
     )
 }
 

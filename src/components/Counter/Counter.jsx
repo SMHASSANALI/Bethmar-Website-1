@@ -56,8 +56,8 @@ const CounterSection = () => {
     };
 
     return (
-        <>
-            <div className='py-2 overflow-hidden lg:mx-0 mx-4'>
+        <div className='flex justify-center items-center bg-white w-full my-12'>
+            <div className='py-2 overflow-hidden lg:mx-0 mx-4 '>
                 <div className='flex justify-center items-center relative '>
                     <motion.div
                         className="absolute w-[150vw] h-[28.5vh] z-10 animate-rotate-gradient"
@@ -74,7 +74,7 @@ const CounterSection = () => {
                         }}
                     ></motion.div>
                     <motion.div
-                        className="flex items-center bg-white w-full relative z-20"
+                        className="flex items-center  relative z-20"
                         initial="hidden"
                         animate="visible"
                         variants={sectionVariants}
@@ -93,7 +93,7 @@ const CounterSection = () => {
                     </motion.div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

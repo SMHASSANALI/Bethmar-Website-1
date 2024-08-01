@@ -15,18 +15,20 @@ import Banner from '../components/Banner/Banner.jsx'
 const Home = () => {
 
     return (
-        <div className='bg-[#e9eced]'>
-            <Navbar />
-            <Banner />
-            <Hero />
-            <Features />
-            <Services />
-            <Seprator color={'bg-moving-gradient'} />
-            <Benefits />
-            <Slider />
-            <CounterSection />
-            <ContactForm />
-            <Footer />
+        <div className='flex items-center justify-center'>
+            <div className='bg-[#f0f0f0] w-screen'>
+                <Navbar />
+                <Banner />
+                <Hero />
+                <Features />
+                <Services />
+                <Seprator color={'bg-moving-gradient'} />
+                <Benefits />
+                <Slider />
+                <CounterSection />
+                <ContactForm />
+                <Footer />
+            </div>
         </div>
     )
 }

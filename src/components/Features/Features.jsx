@@ -86,65 +86,67 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.1, 0.8], ['330px', '-250px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['150px', '-150px']);
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (
-        <div ref={imgRef} id='About' className='flex rounded items-center relative lg:h-[120vh]'>
-            <div
-                className='absolute z-10 left-20'>
-                <motion.img
-                    src={B}
-                    alt=""
-                    className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
-                    style={{ y, rotate }} />
-            </div>
-            <div ref={ref} className='max-w-[1400px] px-4 mx-auto lg:py-0 py-8'>
-                <div className='w-full xl:w-6/12 mx-auto '>
-                    <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
-                        Innovative
-                    </h4>
-                    <motion.h2
-                        animate={{ opacity: inView ? 1 : 0 }}
-                        transition={{ duration: 2, ease: "backIn" }}
-                        className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
-                        Providing Comprehensive Solutions for Your Infrastructure Needs
-                    </motion.h2>
-                    <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>
-                        At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
-                    </p>
+        <div className='flex items-center justify-center my-12'>
+            <div ref={imgRef} id='About' className='container flex rounded items-center lg:py-6 py-12 relative'>
+                <div
+                    className='absolute z-10 left-20'>
+                    <motion.img
+                        src={B}
+                        alt=""
+                        className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
+                        style={{ y, rotate }} />
                 </div>
-                <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-12 pb-6 z-50 relative'>
-                    <FeatureCard
-                        image={civil}
-                        title="Civil Infrastructure Solutions"
-                        description="Our civil infrastructure services encompass a wide range of construction projects, from roads and bridges to buildings and utilities."
-                    />
-                    <FeatureCard
-                        image={fibre}
-                        title="Telecom Turnkey Solutions"
-                        description="We provide end-to-end telecom solutions, ensuring seamless connectivity and efficient communication."
-                    />
-                    <FeatureCard
-                        image={water}
-                        title="Water Management Services"
-                        description="Our expertise includes constructing water spill tanks and replacing water mains to maintain reliable water supply systems."
-                    />
-                    <FeatureCard
-                        image={power}
-                        title="Power Management Solutions"
-                        description="We offer EV charger installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
-                    />
-                </div>
-                <div className='flex mx-auto items-center justify-center'>
-                    <ScrollLink
-                        to='Services'
-                        smooth={true}
-                        duration={500}
-                        className='cursor-pointer'
-                    >
-                        <Button text={'Our Services'} color={'black'} />
-                    </ScrollLink>
+                <div ref={ref} className='max-w-[1400px] lg:px-0 px-4 mx-auto'>
+                    <div className='w-full xl:w-6/12 mx-auto '>
+                        <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
+                            Innovative
+                        </h4>
+                        <motion.h2
+                            animate={{ opacity: inView ? 1 : 0 }}
+                            transition={{ duration: 0.7, ease: "backIn" }}
+                            className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
+                            Providing Comprehensive Solutions for Your Infrastructure Needs
+                        </motion.h2>
+                        <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>
+                            At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
+                        </p>
+                    </div>
+                    <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-12 pb-6 z-50 relative'>
+                        <FeatureCard
+                            image={civil}
+                            title="Civil Infrastructure Solutions"
+                            description="Our civil infrastructure services encompass a wide range of construction projects, from roads and bridges to buildings and utilities."
+                        />
+                        <FeatureCard
+                            image={fibre}
+                            title="Telecom Turnkey Solutions"
+                            description="We provide end-to-end telecom solutions, ensuring seamless connectivity and efficient communication."
+                        />
+                        <FeatureCard
+                            image={water}
+                            title="Water Management Services"
+                            description="Our expertise includes constructing water spill tanks and replacing water mains to maintain reliable water supply systems."
+                        />
+                        <FeatureCard
+                            image={power}
+                            title="Power Management Solutions"
+                            description="We offer EV charger installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
+                        />
+                    </div>
+                    <div className='flex mx-auto items-center justify-center'>
+                        <ScrollLink
+                            to='Services'
+                            smooth={true}
+                            duration={500}
+                            className='cursor-pointer'
+                        >
+                            <Button text={'Our Services'} color={'black'} />
+                        </ScrollLink>
+                    </div>
                 </div>
             </div>
         </div>

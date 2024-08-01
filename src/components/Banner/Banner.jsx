@@ -5,24 +5,19 @@ import banner1 from '../../assets/Banner/Banner1.png';
 import banner2 from '../../assets/Banner/Banner2.png';
 import banner3 from '../../assets/Banner/Banner3.jfif';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [isExiting, setIsExiting] = useState(false);
 
     const handleSlideChange = (index) => {
-        setIsExiting(true);
-        setTimeout(() => {
-            setCurrentSlide(index);
-            setIsExiting(false);
-        }, 300);
+        setCurrentSlide(index);
     };
 
     const slideVariants = {
         initial: { opacity: 0, x: -100 },
         animate: { opacity: 1, x: 0 },
-        exit: { opacity: 0, x: -100 },
+        exit: { opacity: 0, x: 100 },
     };
 
     const buttonVariants = {
@@ -52,17 +47,8 @@ const Banner = () => {
         },
     ];
 
-    const currentSlideData = slides[currentSlide];
-
-    const divStyle = {
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0)) , url(${currentSlideData.background})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'repeat',
-        backgroundSize: 'cover',
-    };
-
     return (
-        <div className="">
+        <div className="mx-auto w-full max-h-[500px] overflow-hidden relative">
             <Carousel
                 showThumbs={false}
                 autoPlay
@@ -72,50 +58,64 @@ const Banner = () => {
                 onChange={handleSlideChange}
                 selectedItem={currentSlide}
                 stopOnHover={false}
+                showArrows={true}
+                showStatus={false}
+                showIndicators={true}
             >
                 {slides.map((slide, index) => (
                     <div
-                        className="flex items-center justify-center h-[35vh] lg:h-[70vh] p-8"
+                        className="flex items-center min-h-[40vh] lg:min-h-[70vh] justify-center p-8"
                         key={slide.id}
-                        style={divStyle}
+                        style={{
+                            backgroundImage: `url(${slide.background})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                        }}
                     >
-                        <div className="text-center space-y-8">
-                            <AnimatePresence>
-                                {!isExiting && currentSlide === index && (
-                                    <>
-                                        <motion.h2
-                                            key={`h2-${slide.id}`}
-                                            className="font-oswald mx-auto text-white text-xl md:text-5xl p-1 md:p-4 font-bold mt-4 bg-gray-900 bg-opacity-30 backdrop-blur-sm shadow-lg"
+                        <AnimatePresence mode="wait">
+                            {currentSlide === index && (
+                                <motion.div
+                                    key={slide.id}
+                                    initial="initial"
+                                    animate="animate"
+                                    exit="exit"
+                                    variants={slideVariants}
+                                    transition={{ duration: 0.5 }}
+                                    className="text-center space-y-8"
+                                >
+                                    <motion.h2
+                                        key={`h2-${slide.id}`}
+                                        className="font-oswald mx-auto text-white text-xl md:text-5xl p-1 md:p-4 font-bold mt-4 bg-gray-900 bg-opacity-30 backdrop-blur-sm shadow-lg"
+                                        initial="initial"
+                                        animate="animate"
+                                        exit="exit"
+                                        variants={slideVariants}
+                                        transition={{ duration: 0.5 }}
+                                    >
+                                        {slide.text}
+                                    </motion.h2>
+                                    <ScrollLink
+                                        to='About'
+                                        smooth={true}
+                                        duration={500}
+                                        className='cursor-pointer'
+                                    >
+                                        <motion.button
+                                            key={`button-${slide.id}`}
+                                            className="font-montserrat mt-4 px-6 py-2 bg-accentRed-dark text-white text-sm lg:text-lg font-semibold shadow-md hover:bg-accentRed hover:border-accentRed transition-transform transform hover:scale-105"
                                             initial="initial"
                                             animate="animate"
                                             exit="exit"
-                                            variants={slideVariants}
-                                            transition={{ duration: 0.5, delay: 0.5 }}
+                                            variants={buttonVariants}
+                                            transition={{ duration: 0.5 }}
                                         >
-                                            {slide.text}
-                                        </motion.h2>
-                                        <ScrollLink
-                                            to='About'
-                                            smooth={true}
-                                            duration={500}
-                                            className='cursor-pointer'
-                                        >
-                                            <motion.button
-                                                key={`button-${slide.id}`}
-                                                className="font-montserrat mt-4 px-6 py-2 bg-accentRed-dark text-white text-sm lg:text-lg font-semibold shadow-md hover:bg-accentRed hover:border-accentRed transition-transform transform hover:scale-105"
-                                                initial="initial"
-                                                animate="animate"
-                                                exit="exit"
-                                                variants={buttonVariants}
-                                                transition={{ duration: 0.5, delay: 0.5 }}
-                                            >
-                                                {slide.buttonText}
-                                            </motion.button>
-                                        </ScrollLink>
-                                    </>
-                                )}
-                            </AnimatePresence>
-                        </div>
+                                            {slide.buttonText}
+                                        </motion.button>
+                                    </ScrollLink>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </div>
                 ))}
             </Carousel>
@@ -124,4 +124,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
