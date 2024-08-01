@@ -7,6 +7,10 @@ import connect from '../../assets/customer/connect.png';
 import gigaclear from '../../assets/customer/gigaclear.png';
 import gNetwork from '../../assets/customer/gNetwork.png';
 import Kier from '../../assets/customer/Kier.png';
+import amey from '../../assets/customer/amey.png';
+import telent from '../../assets/customer/telent.png';
+import openreach from '../../assets/customer/openreach.png';
+import AffinityWater from '../../assets/customer/AffinityWater.png';
 import Virgin from '../../assets/customer/Virgin.png';
 import { Autoplay, Pagination } from "swiper/modules";
 import { useInView } from "react-intersection-observer";
@@ -15,11 +19,15 @@ const Slider = () => {
     const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
 
     const customers = [
-        { img: connect, text: 'Connect Fibre' },
-        { img: gigaclear, text: 'Giga Clear' },
-        { img: gNetwork, text: 'G-Network' },
-        { img: Kier, text: 'Kier' },
-        { img: Virgin, text: 'Virgin' }
+        { img: connect },
+        { img: gigaclear },
+        { img: gNetwork },
+        { img: Kier },
+        { img: Virgin },
+        { img: amey },
+        { img: openreach },
+        { img: AffinityWater },
+        { img: telent },
     ];
 
     return (
@@ -63,7 +71,6 @@ const Slider = () => {
                                             className='w-auto h-20 md:w-auto md:h-24 object-cover object-center mx-auto mb-4'
                                             whileHover={{ rotate: 10 }}
                                         />
-                                        <p className='text-center text-lg md:text-md font-medium text-primary'>{customer.text}</p>
                                     </motion.div>
                                 </SwiperSlide>
                             ))}

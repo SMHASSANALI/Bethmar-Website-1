@@ -38,9 +38,9 @@ const Services = () => {
                             animate={inView ? 'visible' : 'hidden'}
                             variants={fadeInUp}
                         >
-                            <h4 className='text-base md:text-xl font-normal text-center lg:text-start font-poppins mb-3 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
+                            {/* <h4 className='text-base md:text-xl font-normal text-center lg:text-start font-poppins mb-3 lg:mb-6 bg-clip-text text-transparent bg-gradient-to-b from-accentRed-dark to-accentRed-light'>
                                 Reliable
-                            </h4>
+                            </h4> */}
                             <motion.h1
                                 animate={{ opacity: inView ? 1 : 0, }}
                                 transition={{ duration: 1, ease: "linear" }}
@@ -57,7 +57,7 @@ const Services = () => {
                         >
                             <p className='text-sm  lg:text-base font-light font-poppins text-primary-light'>
                                 At Bethmar, we offer a wide range of infrastructure, telecom, and traffic management services to meet your specific requirements.
-                                From telecom turnkey solutions to traffic management diversions, our experienced team is dedicated to delivering high-quality results.
+                                From telecom turnkey solutions to traffic management solutions, our experienced team is dedicated to delivering high-quality results.
                             </p>
                         </motion.div>
                     </div>
@@ -79,7 +79,7 @@ const Services = () => {
                             <HoverCard
                                 title={'Civil'}
                                 desc={'Trenching & ducting on all surfaces including highways'}
-                                list={["In house reinstatement", "Planning", "HA permits", "TTRO Applications"]}
+                                list={["In house reinstatement", "Planning", "Access Cabinet", "Chambers"]}
                                 imgSrc={civil}
                             />
                         </motion.div>
@@ -87,7 +87,7 @@ const Services = () => {
                             <HoverCard
                                 title={'Traffic Management'}
                                 desc={''}
-                                list={["In house TM services", "TM Plans", "Diversion", "Manual Control", "High-speed solutions including IPV"]}
+                                list={["In house TM services", "TM Plans", "Diversion", "Manual Control", "High-speed solutions including IPV", "HA permits", "TTRO Applications"]}
                                 imgSrc={trafficManagement}
                             />
                         </motion.div>

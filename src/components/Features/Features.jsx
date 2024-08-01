@@ -100,11 +100,11 @@ const Features = () => {
                         className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
                         style={{ y, rotate }} />
                 </div>
-                <div ref={ref} className='max-w-[1400px] lg:px-0 px-4 mx-auto'>
+                <div ref={ref} className='max-w-[1600px] lg:px-0 px-4 mx-auto'>
                     <div className='w-full xl:w-6/12 mx-auto '>
-                        <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
+                        {/* <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
                             Innovative
-                        </h4>
+                        </h4> */}
                         <motion.h2
                             animate={{ opacity: inView ? 1 : 0 }}
                             transition={{ duration: 0.7, ease: "backIn" }}
@@ -112,14 +112,14 @@ const Features = () => {
                             Providing Comprehensive Solutions for Your Infrastructure Needs
                         </motion.h2>
                         <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>
-                            At Bethmar, we specialize in offering a wide range of infrastructure construction services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
+                            At Bethmar, we specialize in offering a wide range of infrastructure services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
                         </p>
                     </div>
                     <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-12 pb-6 z-50 relative'>
                         <FeatureCard
                             image={civil}
                             title="Civil Infrastructure Solutions"
-                            description="Our civil infrastructure services encompass a wide range of construction projects, from roads and bridges to buildings and utilities."
+                            description="Our civil infrastructure services encompass a wide range of construction projects, from roads to utilities."
                         />
                         <FeatureCard
                             image={fibre}
@@ -129,7 +129,7 @@ const Features = () => {
                         <FeatureCard
                             image={water}
                             title="Water Management Services"
-                            description="Our expertise includes constructing water spill tanks and replacing water mains to maintain reliable water supply systems."
+                            description="Our expertise includes constructing water spill tank and spill tank's bases ."
                         />
                         <FeatureCard
                             image={power}

@@ -26,7 +26,7 @@ const Home = () => {
                 <Benefits />
                 <Slider />
                 <CounterSection />
-                <ContactForm />
+                {/* <ContactForm /> */}
                 <Footer />
             </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const Counter = ({ end, label }) => {
+const Counter = ({ end, label, sym }) => {
     const controls = useAnimation();
     const [ref, inView] = useInView({
         triggerOnce: false,
@@ -36,6 +36,7 @@ const Counter = ({ end, label }) => {
                 style={{ count }}
             >
                 {displayCount}
+                <span className='ml-1'>{sym}</span>
             </motion.div>
             <p className="text-xs lg:text-base font-medium text-primary">{label}</p>
         </div>
@@ -44,10 +45,9 @@ const Counter = ({ end, label }) => {
 
 const CounterSection = () => {
     const counters = [
-        { end: 120, label: 'Projects Done' },
-        { end: 200, label: 'Satisfied Customers' },
-        { end: 50, label: 'Awards Won' },
-        { end: 30, label: 'Years of Experience' },
+        { end: 261, sym: "+", label: 'Projects Completed' },
+        { end: 100, sym: "%", label: 'Satisfied Customers' },
+        { end: 25, sym: "+", label: 'Years of Experience' },
     ];
 
     const sectionVariants = {
@@ -86,7 +86,7 @@ const CounterSection = () => {
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 font-poppins">
                                 {counters.map((counter, index) => (
-                                    <Counter key={index} end={counter.end} label={counter.label} />
+                                    <Counter key={index} sym={counter.sym} end={counter.end} label={counter.label} />
                                 ))}
                             </div>
                         </div>

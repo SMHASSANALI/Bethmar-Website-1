@@ -17,26 +17,26 @@ const Footer = () => {
     return (
         <div style={divStyle} className="py-4 md:py-8 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between items-center mx-auto border-b border-gray-700 py-4 md:py-8 px-4 md:px-0">
-                <div className="text-sm md:text-base px-4 w-12/12 lg:w-4/12 lg:mb-2 mb-6">
+                <div className="text-sm md:text-base px-4 w-12/12 lg:w-6/12 lg:mb-2 mb-6">
                     <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto" />
                     <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
-                    <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Contact :</span> 01707322748</p>
+                    {/* <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Contact :</span> 01707322748</p> */}
                     <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> info@bethmar.co.uk</p>
                 </div>
                 <div className='flex lg:justify-around w-full lg:w-1/2 py-4 md:py-0'>
-                    <div className="self-center px-4">
+                    {/* <div className="self-center px-4">
                         <h4 className="mb-4 text-base lg:text-lg font-oswald font-medium text-white ">Quick Links</h4>
                         <div className="flex flex-col gap-2">
                             <a className='flex items-center lg:text-sm text-xs' href='#'>What They Say About Us</a>
                             <a className='flex items-center lg:text-sm text-xs' href='#'>People We Work With</a>
                             <a className='flex items-center lg:text-sm text-xs' href='#'>Our Numbers</a>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="self-center px-4">
                         <h4 className="mb-4 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
-                        <div className="flex flex-col gap-2">
-                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-2' />Facebook</a>
-                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-2' />Linkedin</a>
+                        <div className="flex flex-row gap-2">
+                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
+                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
                         </div>
                     </div>
                 </div>
