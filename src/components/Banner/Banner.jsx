@@ -48,7 +48,7 @@ const Banner = () => {
     ];
 
     return (
-        <div className="mx-auto w-full min-h-[300px] xl:min-h-[600px] lg:min-h-[500px] overflow-hidden relative">
+        <div className="mx-auto w-full min-h-[300px] xl:min-h-[700px] lg:min-h-[500px] overflow-hidden relative">
             <Carousel
                 showThumbs={false}
                 autoPlay
@@ -64,7 +64,7 @@ const Banner = () => {
             >
                 {slides.map((slide, index) => (
                     <div
-                        className="flex items-center justify-center p-8 min-h-[300px] xl:min-h-[600px] lg:min-h-[500px]"
+                        className="flex items-center justify-center p-8 min-h-[300px] xl:min-h-[700px] lg:min-h-[500px]"
                         key={slide.id}
                         style={{
                             backgroundImage: `url(${slide.background})`,

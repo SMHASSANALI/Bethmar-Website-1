@@ -46,7 +46,7 @@ const Home = () => {
                     transition={{ duration: 2, ease: 'backInOut' }}
                     onClick={handleClick}
                     className='z-50 md:h-14 md:w-14 h-14 w-14 fixed top-[85%] right-5 cursor-pointer'>
-                    <img src={contact} alt="Contact" height={100} width={100} />
+                    <img src={contact} alt="Contact" height={100} width={100} className='hover:scale-125 transition-all ease-in-out duration-300' />
                 </motion.div>
                 {formVisible && (
                     <ContactForm onClose={handleClick} />
