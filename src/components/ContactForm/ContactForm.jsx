@@ -1,84 +1,32 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import LocationMap from '../LocationMap/LocationMap';
-import { useInView } from 'react-intersection-observer';
 
-const ContactForm = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5,
-        triggerOnce: true,
-    })
-
-
+const ContactForm = ({ onClose }) => {
     return (
-        <div className='flex justify-center items-center my-12'>
-            <div id="Contact" className=" max-w-[1400px] mx-auto container lg:py-6 py-12">
-                <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12">
-                    <div
-                        ref={ref}
-                        className="md:w-1/2 p-4 h-full flex flex-col gap-y-2"
-                    >
-                        <div className='flex flex-col'>
-                            <motion.h2
-                                animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className="mx-auto lg:mx-0 font-normal text-2xl lg:text-4xl font-oswald pb-4">Contact Us</motion.h2>
-                            <motion.p
-                                animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-base py-2 font-poppins flex font-regular'><span className='font-semibold'></span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</motion.p>
-                            <motion.p
-                                animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-base py-2 font-poppins flex font-regular'><span className='font-semibold'></span> 01707322748</motion.p>
-                            <motion.p
-                                animate={{ x: inView ? 0 : -500, opacity: inView ? 1 : 0 }}
-                                transition={{ ease: "easeInOut", duration: 0.5 }}
-                                className='text-sm lg:text-base py-2 font-poppins flex font-regular pb-6'><span className='font-semibold'></span> info@bethmar.co.uk</motion.p>
+        <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50'>
+            <div className='fixed shadow-2xl top-1/2 left-1/2 md:top-2/3 md:left-[85%] transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 w-[400px] bg-moving-gradient3'>
+                <h2 className='text-2xl mb-4 font-oswald text-white'>Contact Us</h2>
+                <form>
+                    <div className='flex flex-row justify-between'>
+                        <div className='mb-4'>
+                            <label className='block text-sm font-medium text-gray-300'>Full Name</label>
+                            <input type='text' className='text-xs mt-1 block w-full p-2 border border-gray-300 rounded focus:ring-primary-light' placeholder='Enter Full Name' />
                         </div>
-                        <div className='flex flex-col h-[350px]'>
-                            <LocationMap />
+                        <div className='mb-4'>
+                            <label className='block text-sm font-medium text-gray-300'>Email</label>
+                            <input type='email' className='text-xs mt-1 block w-full p-2 border border-gray-300 rounded focus:ring-primary-light' placeholder='Your Email Address' />
                         </div>
                     </div>
-                    <div
-                        className="md:w-1/2"
-                    >
-                        <form className="max-w-xl mx-4 lg:mx-auto bg-white p-8 rounded shadow-lg border border-slate-300">
-                            <div className="mb-4">
-                                <label className="block text-primary mb-2 text-base" htmlFor="name">Name</label>
-                                <input autoComplete='name' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="name" name="name" />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-primary mb-2 text-base" htmlFor="email">Email</label>
-                                <input autoComplete='email' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="email" id="email" name="email" />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-primary mb-2 text-base" htmlFor="phone">Phone</label>
-                                <input autoComplete='Phone' className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="phone" name="phone" />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-primary mb-2 text-base" htmlFor="subject">Subject</label>
-                                <input className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" type="text" id="subject" name="subject" />
-                            </div>
-                            <div className="mb-4">
-                                <label className="block text-primary mb-2 text-base" htmlFor="message">Message</label>
-                                <textarea className="w-full px-4 py-2 border border-slate-300 text-primary-light text-sm rounded focus:outline-none focus:ring-2 focus:ring-accentRed-light bg-slate-100" id="message" name="message" rows="4"></textarea>
-                            </div>
-                            <div className="text-center">
-                                <button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="font-montserrat px-6 py-3 bg-accentRed-dark  text-sm md:text-base shadow-md hover:bg-accentRed transition-all duration-300 text-white"
-                                    type="submit"
-                                >
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                    <div className='mb-4'>
+                        <label className='block text-sm font-medium text-gray-300'>Message</label>
+                        <textarea className='text-xs mt-1 block w-full p-2 border border-gray-300 rounded focus:ring-primary-light' placeholder='Any questions?' />
                     </div>
-                </div>
+                    <div className='flex justify-end'>
+                        <button type='button' onClick={onClose} className='mr-2 py-2 px-4 border-gray-100 border text-white text-sm'>Cancel</button>
+                        <button type='submit' className='py-2 px-4 bg-accentRed-dark hover:bg-accentRed transition-colors duration-300 text-white text-sm'>Submit</button>
+                    </div>
+                </form>
             </div>
-        </div >
+        </div>
     );
 };
 

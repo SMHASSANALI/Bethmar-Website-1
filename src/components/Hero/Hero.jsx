@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../Button/Button'
 import hero from '../../assets/Banner/Infrastructure_hero.jpg'
 import { motion } from 'framer-motion'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
+import ContactForm from '../ContactForm/ContactForm';
 
 const Hero = () => {
+    const [formVisible, setFormVisible] = useState(false);
     const { ref, inView } = useInView({
         threshold: 0.5,
         triggerOnce: true,
@@ -17,12 +19,16 @@ const Hero = () => {
         exit: { opacity: 0, y: 100 },
     };
 
+    const handleClick = () => {
+        setFormVisible(!formVisible);
+    };
+
     return (
         <div className='flex items-center justify-center my-12'>
             <div className='bg-white w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
                 <div
                     ref={ref}
-                    className='lg:mx-4 px-4 max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
+                    className='lg:mx-auto px-4 max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
                     <motion.div
                         animate={{ x: inView ? 0 : -700 }}
                         transition={{ duration: 2, ease: 'backInOut' }}
@@ -43,7 +49,7 @@ const Hero = () => {
                                 <Button text={'Learn More'} color={'white'} />
                             </ScrollLink>
                             <ScrollLink
-                                to='Contact'
+                                onClick={handleClick}
                                 smooth={true}
                                 duration={500}
                                 className='cursor-pointer'
@@ -56,7 +62,7 @@ const Hero = () => {
                                     variants={buttonVariants}
                                     transition={{ duration: 0.5, delay: 0.5 }}
                                 >
-                                    Contact Now
+                                    Get a Quote
                                 </motion.button>
                             </ScrollLink>
                         </div>
@@ -69,6 +75,9 @@ const Hero = () => {
                     </motion.div>
                 </div>
             </div>
+            {formVisible && (
+                <ContactForm onClose={handleClick} />
+            )}
         </div>
 
     )

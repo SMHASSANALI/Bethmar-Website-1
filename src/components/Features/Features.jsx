@@ -86,7 +86,7 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.1, 0.8], ['300px', '-250px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['250px', '-250px']);
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (

@@ -30,7 +30,7 @@ const Services = () => {
         <div className='flex justify-center items-center my-12 py-12'>
             <div id='Services' className='lg:py-6 py-12 container max-w-[1400px] rounded shadow-lg lg:mx-auto bg-white mx-4 flex items-center'>
                 <div className='px-4 lg:px-12'>
-                    <div className='flex flex-col lg:flex-row pb-6'>
+                    <div className='flex flex-col lg:flex-row py-6'>
                         <motion.div
                             className='w-12/12 lg:w-4/12'
                             ref={ref}
@@ -62,7 +62,7 @@ const Services = () => {
                         </motion.div>
                     </div>
                     <motion.div
-                        className='grid md:grid-cols-2 xl:grid-cols-5 grid-cols-1 gap-x-4 gap-y-8 pt-6 lg:pt-12'
+                        className='grid md:grid-cols-2 xl:grid-cols-5 grid-cols-1 gap-x-4 gap-y-8 pt-6 lg:py-12'
                         initial='hidden'
                         animate={inView ? 'visible' : 'hidden'}
                         variants={container}

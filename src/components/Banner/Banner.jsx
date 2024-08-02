@@ -58,9 +58,9 @@ const Banner = () => {
                 onChange={handleSlideChange}
                 selectedItem={currentSlide}
                 stopOnHover={false}
-                showArrows={true}
+                showArrows={false}
                 showStatus={false}
-                showIndicators={true}
+                showIndicators={false}
             >
                 {slides.map((slide, index) => (
                     <div

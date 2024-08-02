@@ -8,9 +8,10 @@ const LocationMap = () => {
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen="false"
                 loading="lazy"
                 title="Google Maps"
+                referrerPolicy="no-referrer-when-downgrade"
                 className='w-full min-h-[80vh]'
             ></iframe>
         </div >
