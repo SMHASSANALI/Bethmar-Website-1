@@ -12,6 +12,7 @@ import Seprator from '../components/Seprator/Seprator.jsx';
 import Banner from '../components/Banner/Banner.jsx';
 import LocationMap from '../components/LocationMap/LocationMap.jsx';
 import contact from '../assets/contact.png';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     const [formVisible, setFormVisible] = useState(false);
@@ -39,9 +40,14 @@ const Home = () => {
                     <LocationMap />
                 </div>
                 <Footer />
-                <div onClick={handleClick} className='z-50 md:h-10 md:w-10 h-14 w-14 fixed top-[90%] right-2 cursor-pointer'>
+                <motion.div
+                    initial={{ scale: 2 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 2, ease: 'backInOut' }}
+                    onClick={handleClick}
+                    className='z-50 md:h-14 md:w-14 h-14 w-14 fixed top-[85%] right-5 cursor-pointer'>
                     <img src={contact} alt="Contact" height={100} width={100} />
-                </div>
+                </motion.div>
                 {formVisible && (
                     <ContactForm onClose={handleClick} />
                 )}

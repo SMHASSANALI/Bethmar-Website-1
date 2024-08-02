@@ -12,7 +12,7 @@ const LocationMap = () => {
                 loading="lazy"
                 title="Google Maps"
                 referrerPolicy="no-referrer-when-downgrade"
-                className='w-full min-h-[80vh]'
+                className='w-full min-h-[70vh]'
             ></iframe>
         </div >
     );
