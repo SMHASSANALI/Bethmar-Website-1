@@ -22,7 +22,7 @@ const Hero = () => {
             <div className='bg-white w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
                 <div
                     ref={ref}
-                    className='px-4 mx-auto max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
+                    className='lg:mx-4 px-4 max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
                     <motion.div
                         animate={{ x: inView ? 0 : -700 }}
                         transition={{ duration: 2, ease: 'backInOut' }}
@@ -64,7 +64,7 @@ const Hero = () => {
                     <motion.div
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1.5 : 0.5 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
-                        className='xl:w-1/2  lg:h-[75%] mb-12 '>
+                        className='xl:w-1/2 mx-12 md:h-[300px] lg:h-[75%] overflow mb-12 '>
                         <img src={hero} alt="" className='h-full w-full object-cover' />
                     </motion.div>
                 </div>
