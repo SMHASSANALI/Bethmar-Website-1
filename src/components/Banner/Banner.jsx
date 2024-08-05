@@ -45,7 +45,7 @@ const Banner = () => {
     ];
 
     return (
-        <div className="mx-auto w-full min-h-[300px] xl:min-h-[600px] lg:min-h-[450px] overflow-hidden relative">
+        <div id='Banner' className="mx-auto w-full min-h-[300px] xl:min-h-[600px] lg:min-h-[450px] overflow-hidden relative">
             <Carousel
                 showThumbs={false}
                 autoPlay
