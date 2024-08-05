@@ -17,7 +17,7 @@ const HoverCard = ({ title, list, imgSrc, desc }) => {
             <div className='h-[50%] flex flex-row bg-white'>
                 <div className='w-12/12 px-4 py-2'>
                     <p className='text-xs font-poppins text-primary-light'>{desc}</p>
-                    <ul className='flex flex-col py-1'>
+                    <ul className='flex flex-col py-1 list-disc px-4'>
                         {list.map((item, index) => (
                             <li key={index} className='text-sm'>{item}</li>
                         ))}
