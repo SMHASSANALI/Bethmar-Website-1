@@ -27,8 +27,8 @@ const Services = () => {
     const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     return (
-        <div id='Services' className='flex justify-center items-center my-12'>
-            <div className='lg:py-6 py-2 container max-w-[1400px] rounded shadow-lg lg:mx-auto bg-white mx-4 flex items-center'>
+        <div id='Services' className='flex justify-center items-center lg:py-12'>
+            <div className='lg:py-6 py-2 container max-w-[1400px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
                 <div className='px-4 lg:px-12'>
                     <div className='flex flex-col lg:flex-row py-6'>
                         <motion.div

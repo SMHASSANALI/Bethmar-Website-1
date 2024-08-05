@@ -56,9 +56,9 @@ const CounterSection = () => {
     };
 
     return (
-        <div className='flex justify-center items-center bg-white shadow-lg w-full my-12'>
-            <div className='py-2 overflow-hidden lg:mx-0 mx-4 '>
-                <div className='flex justify-center items-center relative '>
+        <div className='flex justify-center items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] shadow-lg w-full my-12'>
+            <div className='py-2 overflow-hidden lg:mx-0 mx-4'>
+                <div className='flex justify-center items-center relative'>
                     <motion.div
                         className="absolute w-[150vw] h-[28.5vh] z-10 animate-rotate-gradient"
                         style={{
@@ -80,7 +80,7 @@ const CounterSection = () => {
                         variants={sectionVariants}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                     >
-                        <div className="w-full mx-auto p-8 bg-white">
+                        <div className="w-full mx-auto p-8 bg-gradient-to-tr from-[#f5fded] to-[#fceded]">
                             <h2 className="mx-auto font-semibold text-2xl lg:text-4xl text-center text-primary font-oswald pb-4">
                                 Delivering Exceptional Results with Our Expert Infrastructure Construction Services
                             </h2>

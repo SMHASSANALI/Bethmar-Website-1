@@ -62,7 +62,7 @@ const FeatureCard = ({ image, title, description }) => {
                 transform,
                 transformStyle: "preserve-3d"
             }}
-            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-white rounded shadow-lg hover:shadow-2xl'
+            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] rounded shadow-lg hover:shadow-2xl'
         >
             <div className='w-full flex lg:flex-row items-center justify-between h-3/5'>
                 <div className='w-3/12 md:w-2/12 xl:w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
@@ -90,8 +90,8 @@ const Features = () => {
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (
-        <div className='flex items-center justify-center '>
-            <div ref={imgRef} id='About' className='container flex rounded items-center lg:py-6 py-12 relative'>
+        <div id='About' className='flex items-center justify-center py-12'>
+            <div ref={imgRef} className='container flex rounded items-center lg:py-6 py-12 relative'>
                 <div
                     className='absolute z-10 left-20'>
                     <motion.img

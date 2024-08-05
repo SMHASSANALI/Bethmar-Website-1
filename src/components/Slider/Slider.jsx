@@ -61,7 +61,7 @@ const Slider = () => {
                             {customers.map((customer, index) => (
                                 <SwiperSlide key={index}>
                                     <motion.div
-                                        className='flex flex-col items-center justify-center p-6 rounded-lg shadow-md cursor-pointer bg-white'
+                                        className='flex flex-col items-center justify-center p-6 rounded-lg shadow-md cursor-pointer bg-gradient-to-br from-[#edf7e3] to-[#fce9e9]'
                                         whileHover={{ scale: 1.05 }}
                                         whileTap={{ scale: 0.95 }}
                                     >

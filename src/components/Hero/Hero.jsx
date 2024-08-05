@@ -25,7 +25,7 @@ const Hero = () => {
 
     return (
         <div className='flex items-center justify-center'>
-            <div className='bg-white w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
+            <div className='bg-gradient-to-bl from-[#ebf6df] to-[#ffe9e9] w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
                 <div
                     ref={ref}
                     className='lg:mx-auto px-4 max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
