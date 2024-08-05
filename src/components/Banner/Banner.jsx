@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import banner1 from '../../assets/Banner/Banner1.png';
-// import banner2 from '../../assets/Banner/Banner2.png';
-// import banner3 from '../../assets/Banner/Banner3.jfif';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -64,7 +61,7 @@ const Banner = () => {
             >
                 {slides.map((slide, index) => (
                     <div
-                        className="flex items-center justify-center p-8 min-h-[300px] xl:min-h-[700px] lg:min-h-[500px]"
+                        className="flex items-center justify-center p-8 min-h-[300px] xl:min-h-[600px] lg:min-h-[500px]"
                         key={slide.id}
                         style={{
                             backgroundImage: `url(${slide.background})`,

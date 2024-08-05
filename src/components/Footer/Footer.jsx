@@ -3,7 +3,6 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import logo from '../../assets/Logo/bethmar.png'
 import Fiber from '../../assets/footer/Footer.jpeg'
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const divStyle = {
@@ -15,25 +14,16 @@ const Footer = () => {
     }
 
     return (
-        <div style={divStyle} className="py-6 md:py-6 text-white">
+        <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between  mx-auto border-b border-gray-700 px-4 md:px-0">
                 <div className="text-sm md:text-base px-4 w-full lg:w-8/12 md:mb-2 mb-6 flex flex-row gap-x-12">
                     <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto" />
                     <div className='self-center'>
                         <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
-                        {/* <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Contact :</span> 01707322748</p> */}
                         <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> info@bethmar.co.uk</p>
                     </div>
                 </div>
                 <div className='flex lg:justify-around w-full md:w-4/12 md:mb-2 mb-6'>
-                    {/* <div className="self-center px-4">
-                        <h4 className="mb-4 text-base lg:text-lg font-oswald font-medium text-white ">Quick Links</h4>
-                        <div className="flex flex-col gap-2">
-                            <a className='flex items-center lg:text-sm text-xs' href='#'>What They Say About Us</a>
-                            <a className='flex items-center lg:text-sm text-xs' href='#'>People We Work With</a>
-                            <a className='flex items-center lg:text-sm text-xs' href='#'>Our Numbers</a>
-                        </div>
-                    </div> */}
                     <div className="px-4 w-full">
                         <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
                         <div className="flex flex-row gap-2">
@@ -46,7 +36,6 @@ const Footer = () => {
             <div className="pt-4 text-center text-xs md:text-sm max-w-[1400px] mx-auto px-4 md:px-0 ">
                 <div className="flex justify-between items-center">
                     <div className='self-center'>
-                        {/* <a href="#terms" className="mr-4">Terms & Conditions</a> */}
                         <span>© 2024 Bethmar Ltd. All rights reserved.</span>
                     </div>
                     <div className=''>

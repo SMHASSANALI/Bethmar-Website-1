@@ -11,7 +11,7 @@ const Benefits = () => {
     });
 
     return (
-        <div className='flex justify-center items-center my-12 py-12'>
+        <div className='flex justify-center items-center'>
             <div className='items-center'>
                 <motion.div
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 200 }}
@@ -22,9 +22,6 @@ const Benefits = () => {
                     <div className='flex flex-col md:flex-row h-full py-6'>
                         <div className='w-full md:w-6/12 flex md:flex-col flex-row justify-between lg:mb-0 mb-2'>
                             <div className='w-10/12 lg:w-10/12'>
-                                {/* <h4 className='text-base md:text-xl font-normal text-start font-poppins pb-2 lg:pb-4 bg-clip-text text-transparent bg-gradient-to-t from-accentRed to-accentRed-dark'>
-                                    Benefits
-                                </h4> */}
                                 <h2 className='font-semibold text-2xl lg:text-4xl mb-1 lg:mb-0 font-oswald text-white'>
                                     Choose Bethmar for your infrastructure projects and experience the benefits of expertise
                                 </h2>

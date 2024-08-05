@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = ({ onClose }) => {
     return (
-        <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50'>
+        <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999]'>
             <div className='fixed shadow-2xl top-1/2 left-1/2 md:top-2/3 md:left-[85%] transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 w-[400px] bg-moving-gradient3'>
                 <h2 className='text-2xl mb-4 font-oswald text-white'>Contact Us</h2>
                 <form>

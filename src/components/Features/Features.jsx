@@ -86,11 +86,11 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.1, 0.8], ['250px', '-250px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['200px', '-200px']);
     const rotate = useTransform(scrollYProgress, [0, 1], [45, 0]);
 
     return (
-        <div className='flex items-center justify-center my-12 py-12'>
+        <div className='flex items-center justify-center '>
             <div ref={imgRef} id='About' className='container flex rounded items-center lg:py-6 py-12 relative'>
                 <div
                     className='absolute z-10 left-20'>
@@ -102,20 +102,17 @@ const Features = () => {
                 </div>
                 <div ref={ref} className='max-w-[1600px] lg:px-0 px-4 mx-auto'>
                     <div className='w-full xl:w-6/12 mx-auto '>
-                        {/* <h4 className='text-base md:text-xl font-normal text-center font-poppins bg-clip-text text-transparent bg-gradient-to-b from-accentRed-light to-accentRed-dark'>
-                            Innovative
-                        </h4> */}
                         <motion.h2
                             animate={{ opacity: inView ? 1 : 0 }}
                             transition={{ duration: 0.7, ease: "backIn" }}
                             className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
                             Providing Comprehensive Solutions for Your Infrastructure Needs
                         </motion.h2>
-                        <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6'>
+                        <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6 pt-0 lg:pt-2'>
                             At Bethmar, we specialize in offering a wide range of infrastructure services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
                         </p>
                     </div>
-                    <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-12 pb-6 z-50 relative'>
+                    <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
                         <FeatureCard
                             image={civil}
                             title="Civil Infrastructure Solutions"
@@ -137,7 +134,7 @@ const Features = () => {
                             description="We offer EV charger installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
                         />
                     </div>
-                    <div className='flex mx-auto items-center justify-center'>
+                    <div className='flex mx-auto items-center justify-center pt-2'>
                         <ScrollLink
                             to='Services'
                             smooth={true}

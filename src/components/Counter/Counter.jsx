@@ -56,7 +56,7 @@ const CounterSection = () => {
     };
 
     return (
-        <div className='flex justify-center items-center bg-white shadow-lg w-full my-12 py-12'>
+        <div className='flex justify-center items-center bg-white shadow-lg w-full my-12'>
             <div className='py-2 overflow-hidden lg:mx-0 mx-4 '>
                 <div className='flex justify-center items-center relative '>
                     <motion.div

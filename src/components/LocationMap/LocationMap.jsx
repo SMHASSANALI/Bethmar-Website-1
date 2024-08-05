@@ -3,17 +3,7 @@ import React from 'react';
 const LocationMap = () => {
     return (
         <div className="location-map w-full h-full">
-            <iframe
-                src="https://www.google.com/maps/d/embed?mid=11bl0fpbDXcvDE1g2jKBQ0YbPxKCOueM&ehbc=2E312F&noprof=1"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen="false"
-                loading="lazy"
-                title="Google Maps"
-                referrerPolicy="no-referrer-when-downgrade"
-                className='w-full min-h-[70vh]'
-            ></iframe>
+            <iframe src="https://my.atlist.com/map/5016a90e-b8b4-49e1-b224-ed25d6503d05/?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="500px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
         </div >
     );
 };

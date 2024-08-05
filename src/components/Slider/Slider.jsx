@@ -31,7 +31,7 @@ const Slider = () => {
     ];
 
     return (
-        <div ref={ref} className="flex items-center justify-center my-12">
+        <div ref={ref} className="flex items-center justify-center">
             <div className='container text-justify w-full mx-auto content-center'>
                 <div className='max-w-[1400px] mx-auto'>
                     <motion.h2
