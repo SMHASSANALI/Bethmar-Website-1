@@ -33,7 +33,7 @@ const Home = () => {
                 <Benefits />
                 <Slider />
                 <CounterSection />
-                <div className='bg-[#ffffff] min-h-[70vh]'>
+                <div className='bg-[#ffffff]'>
                     <h4 className='text-center font-oswald text-4xl font-bold mb-6 text-primary'>
                         We Are Located At
                     </h4>
