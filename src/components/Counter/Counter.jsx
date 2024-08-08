@@ -21,9 +21,12 @@ const Counter = ({ end, label, sym }) => {
     }, [controls, inView, end]);
 
     useEffect(() => {
-        count.onChange((v) => {
+        const unsubscribe = count.on("change", (v) => {
             setDisplayCount(Math.round(v));
-        });
+            return () => {
+                unsubscribe();
+            };
+        })
     }, [count]);
 
     return (

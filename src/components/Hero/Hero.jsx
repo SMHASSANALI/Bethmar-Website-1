@@ -49,6 +49,7 @@ const Hero = () => {
                                 <Button text={'Learn More'} color={'white'} />
                             </ScrollLink>
                             <ScrollLink
+                                to='Footer'
                                 onClick={handleClick}
                                 smooth={true}
                                 duration={500}
