@@ -3,9 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
-import banner1 from '../../assets/Banner/banner1.png'
-import banner2 from '../../assets/Banner/banner2.png'
-import banner3 from '../../assets/Banner/banner3.png'
+import bannerImage1 from '../../assets/Banner/bannerimage1.png'
+import bannerImage2 from '../../assets/Banner/bannerimage2.png'
+import bannerImage3 from '../../assets/Banner/bannerimage3.png'
 
 const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,19 +31,19 @@ const Banner = () => {
             id: 0,
             text: "Empowering Connections, Endless Possibilities.",
             buttonText: "Learn More",
-            background: banner3
+            background: bannerImage2
         },
         {
             id: 1,
             text: "Transforming Infrastructure, Enhancing Lives.",
             buttonText: "Learn More",
-            background: banner2
+            background: bannerImage3
         },
         {
             id: 2,
             text: "Connecting the Dots, Between People & Possibilities.",
             buttonText: "Learn More",
-            background: banner1
+            background: bannerImage1
         },
     ];
 
