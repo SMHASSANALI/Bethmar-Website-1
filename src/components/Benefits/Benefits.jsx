@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import Button from '../Button/Button'
 import CTA from '../CTA/CTA'
 import { motion, } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
