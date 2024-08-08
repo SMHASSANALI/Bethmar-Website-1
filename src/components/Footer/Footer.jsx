@@ -20,7 +20,7 @@ const Footer = () => {
                     <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto" />
                     <div className='self-center'>
                         <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
-                        <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> info@bethmar.co.uk</p>
+                        <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
                     </div>
                 </div>
                 <div className='flex lg:justify-around w-full md:w-4/12 md:mb-2 mb-6'>

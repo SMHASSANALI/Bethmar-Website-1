@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='z-[9999] w-full text-white bg-neutral-900 py-2 md:px-0 px-4 sticky top-0 content-center'>
-            <div className='flex flex-row items-center justify-between mx-auto px-4'>
+            <div className='flex flex-row items-center justify-between mx-auto max-w-[1400px]'>
                 <ScrollLink
                     to='Banner'
                     smooth={true}
@@ -47,7 +47,10 @@ const Navbar = () => {
                         duration={500}
                         className='cursor-pointer'
                     >
-                        Contact
+                        <button
+                            className="font-montserrat px-6 py-2 bg-accentRed-dark text-white text-sm lg:text-lg font-semibold shadow-md hover:bg-accentRed hover:border-accentRed transition-transform transform">
+                            Contact
+                        </button>
                     </ScrollLink>
                 </div>
             </div>

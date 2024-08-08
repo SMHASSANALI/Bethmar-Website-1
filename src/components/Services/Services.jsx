@@ -5,6 +5,7 @@ import telecom from '../../assets/Cards/FiberServices.jpg';
 import trafficManagement from '../../assets/Cards/TrafficManagementServices.jpg';
 import power from '../../assets/Cards/transformer.jpg';
 import water from '../../assets/Cards/Water.jpg';
+import bethmar from '../../assets/Cards/Bethmar.jpeg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -26,7 +27,7 @@ const container = {
 const Services = () => {
     const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
-    return (
+    return (<>
         <div id='Services' className='flex justify-center items-center lg:py-12'>
             <div className='lg:py-6 py-2 container max-w-[1400px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
                 <div className='px-4 lg:px-12'>
@@ -108,6 +109,7 @@ const Services = () => {
                 </div>
             </div >
         </div>
+    </>
     );
 };
 
