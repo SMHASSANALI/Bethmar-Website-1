@@ -31,7 +31,7 @@ const CTA = () => {
                 <p className='text-sm lg:text-base font-poppins text-center pb-2 lg:pb-4'>Contact Bethmar today for a consultation or quote on our comprehensive range of services.</p>
                 <div className='flex justify-center'>
                     <motion.button
-                        className="text-xs lg:text-base group relative px-4 py-2 font-medium transition-colors duration-[400ms] font-montserrat bg-accentRed-dark  text-white shadow-md hover:bg-accentRed hover:border-accentRed transform hover:scale-105"
+                        className="text-base group relative py-2 px-4 rounded font-medium transition-all duration-[400ms] font-montserrat bg-slate-200 text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
                         initial="initial"
                         animate="animate"
                         exit="exit"

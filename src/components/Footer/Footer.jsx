@@ -15,12 +15,12 @@ const Footer = () => {
 
     return (
         <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
-            <div className="max-w-[1400px] flex flex-col md:flex-row justify-between  mx-auto border-b border-gray-700 px-4 md:px-0">
-                <div className="text-sm md:text-base px-4 w-full lg:w-8/12 md:mb-2 mb-6 flex flex-row gap-x-12">
-                    <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto" />
+            <div className="max-w-[1400px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
+                <div className="text-sm md:text-base px-4 w-full lg:w-8/12 md:mb-2 mb-6 flex flex-col lg:flex-row gap-x-12 ">
+                    <img src={logo} alt="Company Logo" className="w-auto h-[60px] mb-3 lg:mx-0 mx-auto " />
                     <div className='self-center'>
-                        <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
-                        <p className='pb-1 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
+                        <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
+                        <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
                     </div>
                 </div>
                 <div className='flex lg:justify-around w-full md:w-4/12 md:mb-2 mb-6'>
@@ -39,7 +39,7 @@ const Footer = () => {
                         <span>© 2024 Bethmar Ltd. All rights reserved.</span>
                     </div>
                     <div className=''>
-                        <p className='text-xs font-extralight font-mono text-gray-400'>Designed and Developed by SASKA Solutions</p>
+                        <a href='https://www.saskasolutions.com/' target='_blank' className='border-b border-gray-400 text-xs font-extralight font-mono text-gray-400'>Designed and Developed by SASKA Solutions</a>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ const DrawOutlineButton = ({ children, color, ...rest }) => {
     return (
         <button
             {...rest}
-            className={`text-xs lg:text-base group relative px-4 py-2 font-medium text-${color} transition-colors duration-[400ms] hover:text-${color}`}
+            className={`text-base group relative px-4 py-2 font-medium text-${color} transition-colors duration-[400ms] hover:text-${color}`}
         >
             <span className='flex items-center'>{children} <FaArrowRight className={`text-sm ml-2 transition-all duration-100 group-hover:ml-4`} /></span>
 

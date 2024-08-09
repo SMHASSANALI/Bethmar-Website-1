@@ -39,7 +39,7 @@ const Hero = () => {
                             We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management, and high-speed solutions.
                             With expertise in construction of spill tanks, EV chargers installation, DNO liaison, meter installation,
                             and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
-                        <div className='gap-x-6 flex'>
+                        <div className='gap-x-3 lg:gap-x-6 flex'>
                             <ScrollLink
                                 to='About'
                                 smooth={true}
@@ -56,7 +56,7 @@ const Hero = () => {
                                 className='cursor-pointer'
                             >
                                 <motion.button
-                                    className="text-xs lg:text-base group relative px-4 py-2 font-medium transition-colors duration-[400ms] font-montserrat bg-accentRed-dark  text-white shadow-md hover:bg-accentRed hover:border-accentRed transform hover:scale-105"
+                                    className="text-base rounded group relative py-2 px-4 font-medium transition-all duration-[400ms] font-montserrat bg-slate-200  text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
                                     initial="initial"
                                     animate="animate"
                                     exit="exit"
