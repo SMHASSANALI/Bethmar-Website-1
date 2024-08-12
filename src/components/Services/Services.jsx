@@ -5,7 +5,6 @@ import telecom from '../../assets/Cards/FiberServices.jpg';
 import trafficManagement from '../../assets/Cards/TrafficManagementServices.jpg';
 import power from '../../assets/Cards/transformer.jpg';
 import water from '../../assets/Cards/Water.jpg';
-import bethmar from '../../assets/Cards/Bethmar.jpeg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
