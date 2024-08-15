@@ -15,7 +15,6 @@ import { useInView } from 'react-intersection-observer';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
 import B from '../../assets/B1.png';
-import EUSRtrainer from '../../assets/trainer/EUSR_training.jpg';
 
 
 const ROTATION_RANGE = 32.5;
@@ -148,9 +147,6 @@ const Features = () => {
                         </ScrollLink>
                     </div>
                 </div>
-            </div>
-            <div className='max-w-[1400px] lg:h-[250px] object-contain overflow-hidden border flex items-center justify-center'>
-                <img src={EUSRtrainer} alt="" />
             </div>
         </div>
     );
