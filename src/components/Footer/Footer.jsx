@@ -16,18 +16,15 @@ const Footer = () => {
 
     return (
         <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
-            <div className="max-w-[1400px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
-                <div className='w-6/12 md:w-2/12 md:mb-2 mb-6'>
-                    <img src={EUSRtrainer} alt="" />
-                </div>
-                <div className="text-sm md:text-base px-4 w-full lg:w-6/12 md:mb-2 mb-6 flex flex-col lg:flex-row justify-around  gap-x-8">
-                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[70px] mb-3" />
-                    <div className='self-center'>
+            <div className="max-w-[1600px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
+                <div className="text-sm md:text-base px-4 w-full lg:w-7/12 md:mb-2 mb-6 flex flex-col lg:flex-row justify-around  gap-x-8">
+                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[75px] mb-3" />
+                    <div className='self-center w-full'>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
                     </div>
                 </div>
-                <div className='flex lg:justify-between w-full md:w-2/12 md:mb-2 mb-6'>
+                <div className='flex lg:justify-between w-full md:w-1/12 md:mb-2 mb-6'>
                     <div className="px-4">
                         <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
                         <div className="flex flex-row gap-2">
@@ -35,6 +32,9 @@ const Footer = () => {
                             <a className='flex items-center lg:text-sm text-xs' href='#'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
                         </div>
                     </div>
+                </div>
+                <div className='w-6/12 md:w-2/12 md:mb-2 mb-6'>
+                    <img src={EUSRtrainer} alt="" />
                 </div>
             </div>
             <div className="pt-4 text-center text-xs md:text-sm max-w-[1400px] mx-auto px-4 md:px-0 ">
