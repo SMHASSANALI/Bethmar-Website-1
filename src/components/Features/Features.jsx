@@ -14,7 +14,9 @@ import {
 import { useInView } from 'react-intersection-observer';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
-import B from '../../assets/B1.png'
+import B from '../../assets/B1.png';
+import EUSRtrainer from '../../assets/trainer/EUSR_training.jpg';
+
 
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
@@ -91,7 +93,7 @@ const Features = () => {
     const rotate = useTransform(scrollYProgress, [0, 0.8], [45, 0]);
 
     return (
-        <div id='About' className='flex items-center justify-center py-12 relative'>
+        <div id='About' className='flex flex-col items-center justify-center py-12 relative'>
             <div ref={imgRef} className='container flex rounded items-center lg:py-6 py-12 relative'>
                 <div
                     className='absolute z-10 left-20'>
@@ -146,6 +148,9 @@ const Features = () => {
                         </ScrollLink>
                     </div>
                 </div>
+            </div>
+            <div className='w-full h-auto'>
+                <img src={EUSRtrainer} alt="" />
             </div>
         </div>
     );
