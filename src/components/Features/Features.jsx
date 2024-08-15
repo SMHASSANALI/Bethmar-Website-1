@@ -149,7 +149,7 @@ const Features = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-auto'>
+            <div className='w-full h-auto flex items-center justify-center'>
                 <img src={EUSRtrainer} alt="" />
             </div>
         </div>
