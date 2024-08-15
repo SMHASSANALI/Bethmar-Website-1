@@ -84,7 +84,7 @@ const Banner = () => {
                                     exit="exit"
                                     variants={slideVariants}
                                     transition={{ duration: 0.5 }}
-                                    className="flex flex-col items-start justify-start lg:max-w-[800px] max-w-[200px]"
+                                    className="flex flex-col items-start justify-start w-6/12"
                                 >
                                     <motion.h2
                                         key={`h2-${slide.id}`}
