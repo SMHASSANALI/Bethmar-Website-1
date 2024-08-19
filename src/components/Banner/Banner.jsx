@@ -149,16 +149,16 @@ const Banner = () => {
     }
     return (
         <div id='Banner' className="flex lg:flex-row flex-col mx-auto max-w-[1500px] min-h-[300px] lg:min-h-[500px] py-4 gap-4">
-            <div style={divStyle} className='w-full lg:w-6/12 flex flex-col items-start justify-center p-4'>
-                <h1 className='text-5xl font-semibold text-white leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
-                <p className='text-lg font-regular font-montserrat mt-3 px-1 text-slate-300'>Connecting the Dots, Between People & Possibilities.</p>
+            <div className='w-full lg:w-6/12 flex flex-col items-start justify-center p-4'>
+                <h1 className='text-5xl font-semibold text-primary leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
+                <p className='text-lg font-regular font-montserrat mt-3 px-1 text-slate-700'>Connecting the Dots, Between People & Possibilities.</p>
                 <ScrollLink
                     to='About'
                     smooth={true}
                     duration={500}
                     className='cursor-pointer my-6'
                 >
-                    <Button text={'Build Better'} color={'white'} />
+                    <Button text={'Build Better'} color={'primary'} />
                 </ScrollLink>
 
             </div>
