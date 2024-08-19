@@ -69,7 +69,7 @@ const Services = () => {
                         </motion.div>
                     </div>
                     <motion.div
-                        className='grid md:grid-cols-2 xl:grid-cols-5 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:py-8'
+                        className='grid md:grid-cols-2 xl:grid-cols-5 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:px-4 lg:py-8'
                         initial='hidden'
                         animate={inView ? 'visible' : 'hidden'}
                         variants={container}
