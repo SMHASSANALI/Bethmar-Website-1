@@ -35,7 +35,7 @@ const Hero = () => {
                         exit={{ opacity: 0 }}
                         className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-primary z-10 rounded'>
                         <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
-                        <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure company based in the UK. We specialize in providing Full Turnkey Telecom Service, civil infrastructure solutions, traffic management, and high-speed solutions. With expertise in construction of spill tanks, EV charging installation, DNO liaison, meter installation, and solar park data centre solutions, we are committed to delivering exceptional services.</p>
+                        <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure company based in the UK. We specialize in providing Full Turnkey Telecom Service, civil infrastructure solutions, traffic management, and high-speed solutions. With expertise in construction of spill tanks, EV charging installation, DNO liaison, meter installation, and solar park data centre solutions, we are committed to delivering exceptional services since <span className='font-bold'>2013</span>.</p>
                         <div className='gap-x-3 lg:gap-x-6 flex'>
                             <ScrollLink
                                 to='About'

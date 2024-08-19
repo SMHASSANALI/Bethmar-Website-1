@@ -142,38 +142,36 @@ import Button from '../Button/Button'
 const Banner = () => {
 
     const divStyle = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${BG})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${img3})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
     }
     return (
-        <div id='Banner' className="flex lg:flex-row flex-col mx-auto max-w-[1500px] min-h-[300px] lg:min-h-[500px] py-4 gap-4">
-            <div className='w-full lg:w-6/12 flex flex-col items-start justify-center p-4'>
-                <h1 className='text-5xl font-semibold text-primary leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
-                <p className='text-lg font-regular font-montserrat mt-3 px-1 text-slate-700'>Connecting the Dots, Between People & Possibilities.</p>
-                <ScrollLink
-                    to='About'
-                    smooth={true}
-                    duration={500}
-                    className='cursor-pointer my-6'
-                >
-                    <Button text={'Build Better'} color={'primary'} />
-                </ScrollLink>
-
+        <div id='Banner' className="flex lg:flex-row flex-col mx-auto max-w-[1500px] min-h-[300px] lg:min-h-[500px] py-4 gap-4 bg-[#f6f6f6]">
+            <div style={divStyle} className='w-full lg:w-6/12 flex flex-col items-start justify-center p-4'>
+                <div className='py-8 px-12 bg-primary bg-opacity-50 backdrop-blur-sm'>
+                    <h1 className='text-5xl font-semibold text-white leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
+                    <p className='text-lg font-regular font-montserrat my-3 px-1 text-slate-300'>Connecting the Dots, Between People & Possibilities.</p>
+                    <ScrollLink
+                        to='About'
+                        smooth={true}
+                        duration={500}
+                        className='cursor-pointer'
+                    >
+                        <Button text={'Build Better'} color={'white'} />
+                    </ScrollLink>
+                </div>
             </div>
             <div className="grid grid-cols-6 gap-2 lg:gap-4 mx-auto w-full lg:px-0 px-4 lg:w-6/12">
                 <div className='col-span-2 h-[150px] lg:h-[300px] overflow-hidden'>
                     <img src={img1} alt="" className='w-full h-full object-cover object-center' />
                 </div>
-                <div className=' col-span-2 h-[150px] lg:h-[300px] overflow-hidden'>
-                    <div className='col-span-2 mb-2 h-[75px] lg:h-[150px] overflow-hidden'>
-                        <img src={img2} alt="" className='w-auto h-auto object-cover object-center' />
-                    </div>
-                    <div className='col-span-2 mt-2 h-[75px] lg:h-[150px] overflow-hidden'>
-                        <img src={img3} alt="" className='w-auto h-auto object-cover object-center' />
-                    </div>
+                <div className='col-span-2 h-[150px] lg:h-[300px] overflow-hidden border'>
+                    <img src={img2} alt="" className='w-auto h-full object-cover object-center' />
                 </div>
+                {/* <div className='col-span-2 mb-2 h-[75px] lg:h-[150px] overflow-hidden'>
+                    </div> */}
                 <div className='col-span-2 h-[150px] lg:h-[300px] overflow-hidden'>
                     <img src={img4} alt="" className='w-auto h-auto object-cover object-center' />
                 </div>

@@ -69,7 +69,7 @@ const Services = () => {
                         </motion.div>
                     </div>
                     <motion.div
-                        className='grid md:grid-cols-2 xl:grid-cols-5 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:px-4 lg:py-8'
+                        className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:px-4 lg:py-8'
                         initial='hidden'
                         animate={inView ? 'visible' : 'hidden'}
                         variants={container}
@@ -81,14 +81,19 @@ const Services = () => {
                                 list={["MDU's", "RFSI", "Break Fix", "Emergency Work"]}
                                 imgSrc={telecom}
                             /> */}
-                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
-                                Telecom
+                            <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
+                                Telecom Design and Planning
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> MDU's</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> RFSI</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Break Fix</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Emergency Work</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Design/ Validation/Surveys</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> MDUs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Subducting/Roping</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Blown Fibre Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Overhead Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Fibre Splicing & Testing</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EL Joint User Pole installations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Network Upgrades</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Civil Avoidance</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -98,14 +103,19 @@ const Services = () => {
                                 list={["In house reinstatement", "Planning", "Access Cabinet", "Chambers"]}
                                 imgSrc={civil}
                             /> */}
-                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
-                                Civil
+                            <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
+                                Utility Civil Engineering
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> In house reinstatement</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Planning</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Access Cabinet</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Chambers</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Opencut Trench Duct Laying</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Slip lining</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Main Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Power Cabinet</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Water Tank base construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EV Charging Stations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Box & Chamber construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Duct Blockage Repairs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Surface Reinstatement</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -115,47 +125,19 @@ const Services = () => {
                                 list={["In house TM services", "TM Plans", "Diversion", "Manual Control", "High-speed solutions including IPV", "HA permits", "TTRO Applications"]}
                                 imgSrc={trafficManagement}
                             /> */}
-                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                            <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Traffic Management
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> In house TM services</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TM Plans</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Manual Control</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> High-speed solutions including IPV</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> HA permits</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TTRO Applications</li>
-                            </ul>
-                        </motion.div>
-                        <motion.div variants={fadeInUp}>
-                            {/* <HoverCard
-                                title={'Water'}
-                                desc={''}
-                                list={["Construction of spill tanks", "Replacing water mains"]}
-                                imgSrc={water}
-                            /> */}
-                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
-                                Water
-                            </h2>
-                            <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Construction of spill tanks</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Replacing water mains</li>
-                            </ul>
-                        </motion.div>
-                        <motion.div variants={fadeInUp}>
-                            {/* <HoverCard
-                                title={'Power'}
-                                desc={''}
-                                list={["EV chargers installation including feeder pillars", "DNO liaison & meter installation", "Solutions for solar park and data center"]}
-                                imgSrc={power}
-                            /> */}
-                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
-                                Power
-                            </h2>
-                            <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EV chargers installation including feeder pillars</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> DNO liaison & meter installation</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Solutions for solar park and data center</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Temporary Multi-Phase Traffic lights</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Pedestrian Signals</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Lane Closures</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> High-speed Traffic Management</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> CAD Drawings</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Bespoken Sign Production</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Road Closures & Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Advanced Warning Signs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TTRO Submissions</li>
                             </ul>
                         </motion.div>
                     </motion.div>
