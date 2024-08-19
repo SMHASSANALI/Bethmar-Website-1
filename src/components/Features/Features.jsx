@@ -15,6 +15,9 @@ import { useInView } from 'react-intersection-observer';
 import { Link as ScrollLink } from 'react-scroll';
 import Button from '../Button/Button';
 import B from '../../assets/B1.png';
+import Background from '../../assets/BG/Background.webp';
+
+
 
 
 const ROTATION_RANGE = 32.5;
@@ -54,6 +57,7 @@ const FeatureCard = ({ image, title, description }) => {
         y.set(0);
     };
 
+
     return (
         <motion.div
             ref={ref}
@@ -91,9 +95,18 @@ const Features = () => {
     const y = useTransform(scrollYProgress, [0.1, 0.8], ['200px', '-200px']);
     const rotate = useTransform(scrollYProgress, [0, 0.8], [45, 0]);
 
+    const divStyle = {
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1)), url(${Background})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    };
+
+
+
     return (
-        <div id='About' className='flex flex-col items-center justify-center py-12 relative'>
-            <div ref={imgRef} className='container flex rounded items-center lg:py-6 py-12 relative'>
+        <div style={divStyle} id='About' className='flex flex-col items-center justify-center py-12 relative'>
+            <div ref={imgRef} className='max-w-[1500px] flex rounded items-center lg:py-6 py-12 relative'>
                 <div
                     className='absolute z-10 left-20'>
                     <motion.img
@@ -102,7 +115,7 @@ const Features = () => {
                         className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
                         style={{ y, rotate }} />
                 </div>
-                <div ref={ref} className='max-w-[1600px] lg:px-0 px-4 mx-auto relative'>
+                <div ref={ref} className='max-w-[1500px] lg:px-0 px-4 mx-auto relative'>
                     <div className='w-full xl:w-6/12 mx-auto'>
                         <motion.h2
                             animate={{ opacity: inView ? 1 : 0 }}
@@ -111,14 +124,14 @@ const Features = () => {
                             Providing Comprehensive Solutions for Your Infrastructure Needs
                         </motion.h2>
                         <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6 pt-0 lg:pt-2'>
-                            At Bethmar, we specialize in offering a wide range of infrastructure services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
+                            At Bethmar, we specialize in offering a wide range of services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
                         </p>
                     </div>
-                    <div className='max-w-[1400px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
+                    <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
                         <FeatureCard
                             image={civil}
                             title="Civil Infrastructure Solutions"
-                            description="Our civil infrastructure services encompass a wide range of construction projects, from roads to utilities."
+                            description="Our civil services encompass a wide range of construction projects, from roads to private projects and utilities."
                         />
                         <FeatureCard
                             image={fibre}
@@ -133,7 +146,7 @@ const Features = () => {
                         <FeatureCard
                             image={power}
                             title="Power Management Solutions"
-                            description="We offer EV charger installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
+                            description="We offer EV charging installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
                         />
                     </div>
                     <div className='flex mx-auto items-center justify-center pt-2'>

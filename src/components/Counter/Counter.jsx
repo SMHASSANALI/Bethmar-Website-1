@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useMotionValue } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import excavator from '../../assets/BG/excavator.jpg'
 
 const Counter = ({ end, label, sym }) => {
     const controls = useAnimation();
@@ -41,7 +42,7 @@ const Counter = ({ end, label, sym }) => {
                 {displayCount}
                 <span className='ml-1'>{sym}</span>
             </motion.div>
-            <p className="text-xs lg:text-base font-medium text-primary">{label}</p>
+            <p className="text-xs lg:text-base font-medium text-white">{label}</p>
         </div>
     );
 };
@@ -58,8 +59,14 @@ const CounterSection = () => {
         visible: { opacity: 1, y: 0 },
     };
 
+    const divStyle = {
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${excavator})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+    }
     return (
-        <div className='flex justify-center items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] shadow-lg w-full my-12'>
+        <div className='flex justify-center items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] w-full my-12'>
             <div className='py-2 overflow-hidden lg:mx-0 mx-4'>
                 <div className='flex justify-center items-center relative'>
                     <motion.div
@@ -83,8 +90,8 @@ const CounterSection = () => {
                         variants={sectionVariants}
                         transition={{ duration: 0.8, ease: "easeInOut" }}
                     >
-                        <div className="w-full mx-auto p-8 bg-gradient-to-tr from-[#f5fded] to-[#fceded]">
-                            <h2 className="mx-auto font-semibold text-2xl lg:text-4xl text-center text-primary font-oswald pb-4">
+                        <div style={divStyle} className="w-full mx-auto p-8">
+                            <h2 className="mx-auto font-semibold text-2xl lg:text-4xl text-center text-white font-oswald pb-4">
                                 Delivering Exceptional Results with Our Expert Infrastructure Construction Services
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 font-poppins">
@@ -96,7 +103,7 @@ const CounterSection = () => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

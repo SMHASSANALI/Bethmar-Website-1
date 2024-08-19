@@ -49,9 +49,10 @@ const Home = () => {
         return 'top-[85%]'; // Start at 85%
     };
 
+
     return (
         <div className=''>
-            <div className='bg-[#ffffff] relative'>
+            <div className='relative '>
                 <Navbar />
                 <Banner />
                 <Hero />

@@ -25,13 +25,13 @@ const CTA = () => {
     };
 
     return (
-        <div style={divStyle} className='bg-fixed relative flex items-center top-[-10vh] left-0 lg:h-[500px] h-[350px]'>
-            <div className='max-w-[1400px] px-4 mx-auto text-white'>
+        <div style={divStyle} className='bg-fixed relative flex items-center top-[-10vh] w-[99.3vw] left-0 lg:h-[80vh] h-[60vh]'>
+            <div className='mx-auto text-white'>
                 <h2 className='mx-auto font-semibold text-2xl lg:text-4xl text-center font-oswald text-white mb-4 lg:mb-8'>Transforming Infrastructure with Innovative Solutions</h2>
                 <p className='text-sm lg:text-base font-poppins text-center pb-2 lg:pb-4'>Contact Bethmar today for a consultation or quote on our comprehensive range of services.</p>
                 <div className='flex justify-center'>
                     <motion.button
-                        className="text-base group relative py-2 px-4 rounded font-medium transition-all duration-[400ms] font-montserrat bg-slate-200 text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
+                        className="text-base group relative py-2 px-4 font-medium transition-all duration-[400ms] font-montserrat bg-slate-200 text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
                         initial="initial"
                         animate="animate"
                         exit="exit"

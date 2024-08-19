@@ -25,20 +25,17 @@ const Hero = () => {
 
     return (
         <div className='flex items-center justify-center'>
-            <div className='bg-gradient-to-bl from-[#ebf6df] to-[#ffe9e9] w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
+            <div className='bg-gradient-to-bl from-[#f0f6e9] to-[#f7d4d4] w-full rounded min-h-[80%] flex items-center lg:py-6 py-12'>
                 <div
                     ref={ref}
-                    className='lg:mx-auto px-4 max-w-[1600px] flex xl:flex-row flex-col justify-center items-center overflow-hidden '>
+                    className='lg:mx-auto lg:px-0 px-4 max-w-[1500px] flex xl:flex-row flex-col justify-center items-center overflow-hidden'>
                     <motion.div
                         animate={{ x: inView ? 0 : -700 }}
                         transition={{ duration: 2, ease: 'backInOut' }}
                         exit={{ opacity: 0 }}
                         className='w-full xl:w-1/2 px-6 lg:px-12 py-4 lg:py-8 bg-primary z-10 rounded'>
                         <h1 className='text-2xl xl:text-4xl font-oswald font-bold pb-4 lg:pb-8 leading-none text-white'>Building Infrastructure Solutions for a Connected World</h1>
-                        <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure company based in the UK.
-                            We specialize in providing telecom turnkey solutions, civil infrastructure solutions, traffic management, and high-speed solutions.
-                            With expertise in construction of spill tanks, EV chargers installation, DNO liaison, meter installation,
-                            and solar park data center solutions, we are committed to delivering exceptional services since 2013.</p>
+                        <p className='text-xs xl:text-base font-light pb-3 lg:pb-6 text-white'>Bethmar is a leading infrastructure company based in the UK. We specialize in providing Full Turnkey Telecom Service, civil infrastructure solutions, traffic management, and high-speed solutions. With expertise in construction of spill tanks, EV charging installation, DNO liaison, meter installation, and solar park data centre solutions, we are committed to delivering exceptional services.</p>
                         <div className='gap-x-3 lg:gap-x-6 flex'>
                             <ScrollLink
                                 to='About'
@@ -56,7 +53,7 @@ const Hero = () => {
                                 className='cursor-pointer'
                             >
                                 <motion.button
-                                    className="text-base rounded group relative py-2 px-4 font-medium transition-all duration-[400ms] font-montserrat bg-slate-200  text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
+                                    className="text-base group relative py-2 px-4 font-medium transition-all duration-[400ms] font-montserrat bg-slate-200  text-primary shadow-md hover:bg-white hover:border-white transform hover:scale-105"
                                     initial="initial"
                                     animate="animate"
                                     exit="exit"

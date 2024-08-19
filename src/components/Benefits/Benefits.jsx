@@ -16,7 +16,7 @@ const Benefits = () => {
                     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 200 }}
                     transition={{ duration: 0.5, ease: "linear" }}
                     ref={ref}
-                    className='container lg:w-10/12 relative max-w-[1400px] px-6 lg:px-12 lg:py-6 py-3 lg:mx-auto bg-primary shadow-lg z-10 rounded'
+                    className='container relative max-w-[1500px] px-6 lg:px-12 lg:py-12 py-3 lg:mx-auto bg-primary shadow-lg z-10 rounded'
                 >
                     <div className='flex flex-col md:flex-row h-full py-6'>
                         <div className='w-full md:w-6/12 flex md:flex-col flex-row justify-between lg:mb-0 mb-2'>
@@ -28,10 +28,10 @@ const Benefits = () => {
                         </div>
                         <div className='w-full md:w-6/12 h-full'>
                             <p className='text-xs lg:text-base font-poppins text-white'>
-                                Telecom turnkey solutions, civil infrastructure
+                                Full telecom turnkey , civil infrastructure
                                 solutions, traffic management, hi-speed solutions, construction
-                                of spill tanks & spill tank bases, EV chargers installation,
-                                DNO liaison and meter installation, solar park data center solutions,
+                                of spill tanks & spill tank bases, EV charging installation,
+                                DNO liaison and meter installation, solar park data centre,
                                 and more. With over 25 years of experience in the industry,
                                 Bethmar is a trusted company based in the UK that delivers reliable and
                                 efficient infrastructure solution.

@@ -33,7 +33,7 @@ const Slider = () => {
     return (
         <div ref={ref} className="flex items-center justify-center">
             <div className='container text-justify w-full mx-auto content-center'>
-                <div className='max-w-[1400px] mx-auto'>
+                <div className='max-w-[1500px] mx-auto'>
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.1 }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}

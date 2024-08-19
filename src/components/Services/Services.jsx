@@ -7,6 +7,8 @@ import power from '../../assets/Cards/transformer.jpg';
 import water from '../../assets/Cards/Water.jpg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { RiArrowRightSFill } from 'react-icons/ri';
+import Background from '../../assets/BG/Background.webp';
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
@@ -23,12 +25,20 @@ const container = {
     }
 };
 
+const divStyle = {
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url(${Background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+};
+
+
 const Services = () => {
     const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });
 
     return (<>
-        <div id='Services' className='flex justify-center items-center lg:py-12 '>
-            <div className='lg:py-6 py-2 container max-w-[1400px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
+        <div style={divStyle} id='Services' className='flex justify-center items-center lg:py-12 '>
+            <div className='lg:py-6 py-2 container max-w-[1600px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
                 <div className='lg:px-12'>
                     <div className='flex flex-col lg:flex-row py-6'>
                         <motion.div
@@ -54,7 +64,7 @@ const Services = () => {
                         >
                             <p className='text-sm  lg:text-base font-light font-poppins text-primary-light'>
                                 At Bethmar, we offer a wide range of infrastructure, telecom, and traffic management services to meet your specific requirements.
-                                From telecom turnkey solutions to traffic management solutions, our experienced team is dedicated to delivering high-quality results.
+                                From full telecom turnkey to traffic management solutions, our experienced team is dedicated to delivering high-quality results.
                             </p>
                         </motion.div>
                     </div>
@@ -65,44 +75,88 @@ const Services = () => {
                         variants={container}
                     >
                         <motion.div variants={fadeInUp}>
-                            <HoverCard
+                            {/* <HoverCard
                                 title={'Telecom'}
                                 desc={'Turnkey solutions with design validation & built'}
                                 list={["MDU's", "RFSI", "Break Fix", "Emergency Work"]}
                                 imgSrc={telecom}
-                            />
+                            /> */}
+                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                                Telecom
+                            </h2>
+                            <ul >
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> MDU's</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> RFSI</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Break Fix</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Emergency Work</li>
+                            </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            <HoverCard
+                            {/* <HoverCard
                                 title={'Civil'}
                                 desc={'Trenching & ducting on all surfaces including highways'}
                                 list={["In house reinstatement", "Planning", "Access Cabinet", "Chambers"]}
                                 imgSrc={civil}
-                            />
+                            /> */}
+                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                                Civil
+                            </h2>
+                            <ul >
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> In house reinstatement</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Planning</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Access Cabinet</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Chambers</li>
+                            </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            <HoverCard
+                            {/* <HoverCard
                                 title={'Traffic Management'}
                                 desc={''}
                                 list={["In house TM services", "TM Plans", "Diversion", "Manual Control", "High-speed solutions including IPV", "HA permits", "TTRO Applications"]}
                                 imgSrc={trafficManagement}
-                            />
+                            /> */}
+                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                                Traffic Management
+                            </h2>
+                            <ul >
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> In house TM services</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TM Plans</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Manual Control</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> High-speed solutions including IPV</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> HA permits</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TTRO Applications</li>
+                            </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            <HoverCard
+                            {/* <HoverCard
                                 title={'Water'}
                                 desc={''}
                                 list={["Construction of spill tanks", "Replacing water mains"]}
                                 imgSrc={water}
-                            />
+                            /> */}
+                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                                Water
+                            </h2>
+                            <ul >
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Construction of spill tanks</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Replacing water mains</li>
+                            </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            <HoverCard
+                            {/* <HoverCard
                                 title={'Power'}
                                 desc={''}
                                 list={["EV chargers installation including feeder pillars", "DNO liaison & meter installation", "Solutions for solar park and data center"]}
                                 imgSrc={power}
-                            />
+                            /> */}
+                            <h2 className='text-xl font-light font-poppins text-gray-700 mb-2'>
+                                Power
+                            </h2>
+                            <ul >
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EV chargers installation including feeder pillars</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> DNO liaison & meter installation</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Solutions for solar park and data center</li>
+                            </ul>
                         </motion.div>
                     </motion.div>
                 </div>
