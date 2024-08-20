@@ -36,9 +36,9 @@ export default {
       },
       colors: {
         accentRed: {
-          DEFAULT: "#e22823",
-          light: "#ef4a46",
-          dark: "#a91c1a",
+          DEFAULT: "#EB1C17",
+          light: "#EF4A46",
+          dark: "#BF1510",
         },
         accentGreen: {
           DEFAULT: "#089a27",

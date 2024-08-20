@@ -28,8 +28,8 @@ const Footer = () => {
                     <div className="px-4">
                         <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
                         <div className="flex flex-row gap-2">
-                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
-                            <a className='flex items-center lg:text-sm text-xs' href='#'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
+                            <a className='flex items-center lg:text-sm text-xs' target='_blank' href=''><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
+                            <a className='flex items-center lg:text-sm text-xs' target='_blank' href='https://www.linkedin.com/in/bethmar-limited-47a762244/?trk=public_post_reshare_feed-actor-name&originalSubdomain=uk'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
                         </div>
                     </div>
                 </div>
