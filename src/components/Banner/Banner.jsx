@@ -150,10 +150,10 @@ const Banner = () => {
     return (
         <section className='bg-[#f6f6f6]'>
             <div id='Banner' className="flex lg:flex-row flex-col mx-auto max-w-[1500px] min-h-[300px] lg:min-h-[500px] py-4 gap-4">
-                <div style={divStyle} className='w-full lg:w-6/12 flex flex-col items-start justify-center p-4'>
-                    <div className='py-8 px-12 bg-primary bg-opacity-50 backdrop-blur-sm'>
+                <div style={divStyle} className='w-full lg:w-6/12 flex flex-col items-center justify-center p-4'>
+                    <div className='py-8 px-12 bg-primary-light bg-opacity-30 backdrop-blur-sm rounded'>
                         <h1 className='text-5xl font-semibold text-white leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
-                        <p className='text-lg font-regular font-montserrat my-3 px-1 text-slate-300'>Connecting the Dots, Between People & Possibilities.</p>
+                        <p className='text-lg font-regular font-montserrat my-3 px-1 text-slate-200'>Connecting the Dots, Between People & Possibilities.</p>
                         <ScrollLink
                             to='About'
                             smooth={true}

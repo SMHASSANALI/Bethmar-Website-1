@@ -129,19 +129,19 @@ const Features = () => {
                     </div>
                     <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
                         <FeatureCard
-                            image={civil}
-                            title="Civil Infrastructure Solutions"
-                            description="Our civil services encompass a wide range of construction projects, from roads to private projects and utilities."
-                        />
-                        <FeatureCard
                             image={fibre}
                             title="Telecom Turnkey Solutions"
                             description="We provide end-to-end telecom solutions, ensuring seamless connectivity and efficient communication."
                         />
                         <FeatureCard
+                            image={civil}
+                            title="Civil Infrastructure Solutions"
+                            description="Our civil services encompass a wide range of construction projects, from roads to private projects and utilities."
+                        />
+                        <FeatureCard
                             image={water}
                             title="Water Management Services"
-                            description="Our expertise includes constructing water spill tank and spill tank's bases."
+                            description="Our expertise include open cut trenches, slip lining, spill tank base builds and much more!"
                         />
                         <FeatureCard
                             image={power}
