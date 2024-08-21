@@ -51,8 +51,8 @@ const Home = () => {
 
 
     return (
-        <div className=''>
-            <div className='relative '>
+        <div className='bg-[#f9f9f9]'>
+            <div className='relative'>
                 <Navbar />
                 <Banner />
                 <Hero />
@@ -62,7 +62,7 @@ const Home = () => {
                 <Benefits />
                 <Slider />
                 <CounterSection />
-                <div className='bg-[#ffffff]'>
+                <div>
                     <h4 className='text-center font-oswald text-4xl font-bold mb-6 text-primary'>
                         We Are Located At
                     </h4>
@@ -74,9 +74,9 @@ const Home = () => {
                     animate={{ scale: 1 }}
                     transition={{ duration: 2, ease: 'easeInOut' }}
                     onClick={handleClick}
-                    className={`z-50 md:h-14 md:w-14 h-14 w-14 fixed ${calculatePosition()} right-5 cursor-pointer`}
+                    className={`z-50 md:h-14 md:w-14 h-14 w-14 fixed ${calculatePosition()} right-1 cursor-pointer`}
                 >
-                    <img src={contact} alt="Contact" height={100} width={100} className='hover:scale-125 transition-all ease-in-out duration-300' />
+                    <img src={contact} alt="Contact" height={100} width={100} className='hover:scale-110 transition-all ease-in-out duration-300' />
                 </motion.div>
                 {formVisible && (
                     <ContactForm onClose={handleClick} />

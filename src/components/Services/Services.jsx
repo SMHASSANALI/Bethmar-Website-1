@@ -1,13 +1,7 @@
 import React from 'react';
-import HoverCard from '../HoverCard/HoverCard';
-import civil from '../../assets/Cards/CivilServices.jpg';
-import telecom from '../../assets/Cards/FiberServices.jpg';
-import trafficManagement from '../../assets/Cards/TrafficManagementServices.jpg';
-import power from '../../assets/Cards/transformer.jpg';
-import water from '../../assets/Cards/Water.jpg';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { RiArrowRightSFill } from 'react-icons/ri';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import Background from '../../assets/BG/Background.webp';
 
 const fadeInUp = {
@@ -38,7 +32,7 @@ const Services = () => {
 
     return (<>
         <div style={divStyle} id='Services' className='flex justify-center items-center lg:py-12 '>
-            <div className='lg:py-6 py-2 container max-w-[1600px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
+            <div className='lg:py-6 py-2 container max-w-[1500px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
                 <div className='lg:px-12'>
                     <div className='flex flex-col lg:flex-row py-6'>
                         <motion.div
@@ -85,15 +79,15 @@ const Services = () => {
                                 Telecom Design and Planning
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Design/ Validation/Surveys</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> MDUs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Subducting/Roping</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Blown Fibre Cabling</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Overhead Cabling</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Fibre Splicing & Testing</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EL Joint User Pole installations</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Network Upgrades</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Civil Avoidance</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Design/ Validation/Surveys</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> MDUs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Subducting/Roping</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Blown Fibre Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Overhead Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Fibre Splicing & Testing</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> EL Joint User Pole installations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Network Upgrades</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Civil Avoidance</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -107,15 +101,15 @@ const Services = () => {
                                 Utility Civil Engineering
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Opencut Trench Duct Laying</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Slip lining</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Main Diversions</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Power Cabinet</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Water Tank base construction</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> EV Charging Stations</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Box & Chamber construction</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Duct Blockage Repairs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Surface Reinstatement</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Opencut Trench Duct Laying</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Slip lining</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Main Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Power Cabinet</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Water Tank base construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> EV Charging Stations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Box & Chamber construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Duct Blockage Repairs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Surface Reinstatement</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -129,15 +123,15 @@ const Services = () => {
                                 Traffic Management
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Temporary Multi-Phase Traffic lights</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Pedestrian Signals</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Lane Closures</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> High-speed Traffic Management</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> CAD Drawings</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Bespoken Sign Production</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Road Closures & Diversions</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> Advanced Warning Signs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< RiArrowRightSFill size={15} /></span> TTRO Submissions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Temporary Multi-Phase Traffic lights</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Pedestrian Signals</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Lane Closures</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> High-speed Traffic Management</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> CAD Drawings</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Bespoken Sign Production</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Road Closures & Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Advanced Warning Signs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> TTRO Submissions</li>
                             </ul>
                         </motion.div>
                     </motion.div>
