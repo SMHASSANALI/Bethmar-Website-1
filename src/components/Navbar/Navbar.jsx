@@ -229,6 +229,15 @@ const Navbar = () => {
             {menuOpen && (
                 <div className="md:hidden flex flex-col items-start gap-4 mt-4 font-poppins text-sm rounded-lg py-2">
                     <ScrollLink
+                        to='Banner'
+                        smooth={true}
+                        duration={500}
+                        className='cursor-pointer border-b border-slate-500 w-full'
+                        onClick={toggleMenu}
+                    >
+                        Home
+                    </ScrollLink>
+                    <ScrollLink
                         to='About'
                         smooth={true}
                         duration={500}
@@ -247,33 +256,6 @@ const Navbar = () => {
                         Services
                     </ScrollLink>
                     <ScrollLink
-                        to='CaseStudies'
-                        smooth={true}
-                        duration={500}
-                        className='cursor-pointer border-b border-slate-500 w-full'
-                        onClick={toggleMenu}
-                    >
-                        Case Studies
-                    </ScrollLink>
-                    <ScrollLink
-                        to='News'
-                        smooth={true}
-                        duration={500}
-                        className='cursor-pointer border-b border-slate-500 w-full'
-                        onClick={toggleMenu}
-                    >
-                        News
-                    </ScrollLink>
-                    <ScrollLink
-                        to='Careers'
-                        smooth={true}
-                        duration={500}
-                        className='cursor-pointer border-b border-slate-500 w-full'
-                        onClick={toggleMenu}
-                    >
-                        Careers
-                    </ScrollLink>
-                    <ScrollLink
                         to='Contact'
                         smooth={true}
                         duration={500}
@@ -290,7 +272,7 @@ const Navbar = () => {
                         className='cursor-pointer'
                     >
                         <button
-                            className="font-montserrat px-4 py-1 bg-yellow-500 text-white text-sm lg:text-base font-semibold rounded-md shadow-md hover:bg-yellow-600 transition-all transform">
+                            className="font-montserrat py-1 px-4 bg-accentRed text-white text-xs md:text-sm font-medium hover:bg-accentRed-dark transition-all transform">
                             Let's Talk
                         </button>
                     </ScrollLink>
