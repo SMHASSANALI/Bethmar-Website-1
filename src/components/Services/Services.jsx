@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import Background from '../../assets/BG/Background.webp';
 
 const fadeInUp = {
@@ -79,15 +79,15 @@ const Services = () => {
                                 Telecom Design and Planning
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Design/ Validation/Surveys</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> MDUs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Subducting/Roping</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Blown Fibre Cabling</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Overhead Cabling</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Fibre Splicing & Testing</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> EL Joint User Pole installations</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Network Upgrades</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Civil Avoidance</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Design/ Validation/Surveys</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> MDUs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Subducting/Roping</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Blown Fibre Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Overhead Cabling</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Fibre Splicing & Testing</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> EL Joint User Pole installations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Network Upgrades</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Civil Avoidance</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -101,15 +101,15 @@ const Services = () => {
                                 Utility Civil Engineering
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Opencut Trench Duct Laying</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Slip lining</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Main Diversions</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Power Cabinet</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Water Tank base construction</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> EV Charging Stations</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Box & Chamber construction</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Duct Blockage Repairs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Surface Reinstatement</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Opencut Trench Duct Laying</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Slip lining</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Main Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Power Cabinet</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Water Tank base construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> EV Charging Stations</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Box & Chamber construction</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Duct Blockage Repairs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Surface Reinstatement</li>
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
@@ -123,15 +123,15 @@ const Services = () => {
                                 Traffic Management
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Temporary Multi-Phase Traffic lights</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Pedestrian Signals</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Lane Closures</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> High-speed Traffic Management</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> CAD Drawings</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Bespoken Sign Production</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Road Closures & Diversions</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> Advanced Warning Signs</li>
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='bg-accentRed my-1 text-white'>< MdOutlineKeyboardArrowRight size={15} /></span> TTRO Submissions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Temporary Multi-Phase Traffic lights</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Pedestrian Signals</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Lane Closures</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> High-speed Traffic Management</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> CAD Drawings</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Bespoken Sign Production</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Road Closures & Diversions</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Advanced Warning Signs</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> TTRO Submissions</li>
                             </ul>
                         </motion.div>
                     </motion.div>
