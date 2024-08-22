@@ -69,12 +69,6 @@ const Services = () => {
                         variants={container}
                     >
                         <motion.div variants={fadeInUp}>
-                            {/* <HoverCard
-                                title={'Telecom'}
-                                desc={'Turnkey solutions with design validation & built'}
-                                list={["MDU's", "RFSI", "Break Fix", "Emergency Work"]}
-                                imgSrc={telecom}
-                            /> */}
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Telecom Design and Planning
                             </h2>
@@ -91,12 +85,6 @@ const Services = () => {
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            {/* <HoverCard
-                                title={'Civil'}
-                                desc={'Trenching & ducting on all surfaces including highways'}
-                                list={["In house reinstatement", "Planning", "Access Cabinet", "Chambers"]}
-                                imgSrc={civil}
-                            /> */}
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Utility Civil Engineering
                             </h2>
@@ -113,12 +101,6 @@ const Services = () => {
                             </ul>
                         </motion.div>
                         <motion.div variants={fadeInUp}>
-                            {/* <HoverCard
-                                title={'Traffic Management'}
-                                desc={''}
-                                list={["In house TM services", "TM Plans", "Diversion", "Manual Control", "High-speed solutions including IPV", "HA permits", "TTRO Applications"]}
-                                imgSrc={trafficManagement}
-                            /> */}
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Traffic Management
                             </h2>
