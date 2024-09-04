@@ -1,60 +1,103 @@
-import React from 'react'
-import img1 from '../../assets/Banner/1.jpg'
-import img2 from '../../assets/Banner/2.jpg'
-import img3 from '../../assets/Banner/3.jpg'
-import img4 from '../../assets/Banner/4.jpg'
-import img5 from '../../assets/Banner/5.jpg'
-import img6 from '../../assets/Banner/6.jpg'
-import BG from '../../assets/Banner/bannerBG.jpg'
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import Button from '../Button/Button'
+import React, { useState } from 'react'
+import bannerImg from '../../assets/Banner/BannerImage.jpg'
+import { Link as ScrollLink } from 'react-scroll';
+import { motion } from 'framer-motion'
+import { FaCheckDouble } from 'react-icons/fa6';
+import ContactForm from '../ContactForm/ContactForm';
 
 const Banner = () => {
-
     const divStyle = {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${img3})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(${bannerImg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
     }
+
+    const [formVisible, setFormVisible] = useState(false);
+
+    const handleClick = () => {
+        setFormVisible(!formVisible);
+    };
+
+    const buttonVariants = {
+        initial: { opacity: 0, y: 100 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: 100 },
+    };
+
+    const textAnimationVariants = {
+        initial: { color: 'transparent' }, // Start with white text
+        animate: { color: '#ffffff' }, // Transition to black text
+    };
+
+    const divAnimationVariants = {
+        initial: { x: '-100%' },
+        animate: { x: '0%' },
+    };
+
     return (
-        <section className='bg-[#f9f9f9] py-12'>
-            <div id='Banner' className="flex lg:flex-row mx-auto flex-col max-w-[1500px] min-h-[300px] lg:max-h-[450px] xl:min-h-[500px] py-5 gap-4">
-                <div style={divStyle} className='w-full xl:w-6/12 flex flex-col items-center justify-center xl:p-0 p-4 rounded'>
-                    <div className='px-4 py-2 md:py-6 md:px-4 xl:py-8 xl:px-12 bg-primary-light bg-opacity-30 backdrop-blur-sm rounded-lg'>
-                        <h1 className='text-3xl xl:text-5xl lg:text-4xl font-semibold text-white leading-tight font-oswald'>Transforming Infrastructure,<br /> Enhancing Lives.</h1>
-                        <p className='text-base lg:text-lg font-regular font-montserrat my-3 px-1 text-slate-200'>Connecting the Dots, Between People & Possibilities.</p>
+        <section style={divStyle} className='flex items-center h-[70vh] w-full'>
+            <div id='Banner' className='max-w-[1500px] ml-auto flex-row  px-4 lg:w-6/12'>
+                <div className='py-6 px-4 xl:py-8 xl:px-12 bg-gradient-to-tr from-primary to-primary-dark rounded-lg'>
+                    <h1 className='text-3xl xl:text-5xl lg:text-4xl font-semibold text-white tracking-wide leading-tight font-oswald max-w-2xl'>
+                        Transforming{' '}
+                        <motion.span
+                            className="relative inline-block"
+                            style={{ overflow: 'hidden', position: 'relative' }}
+                        >
+                            <motion.span
+                                initial="initial"
+                                animate="animate"
+                                variants={textAnimationVariants}
+                                transition={{ duration: 1.5, delay: 0.5 }}
+                                style={{ mixBlendMode: 'difference' }}
+                                className="relative z-20"
+                            >
+                                infrastructure,
+                            </motion.span>
+                            <motion.div
+                                className="absolute inset-0 bg-white z-10 rounded"
+                                initial="initial"
+                                animate="animate"
+                                variants={divAnimationVariants}
+                                transition={{ duration: 1.5, delay: 1.5 }}
+                            />
+                        </motion.span>
+                        Enhancing Lives.
+                    </h1>
+                    <p className='text-base lg:text-lg font-light font-Poppins my-4 px-1 text-slate-100'>Providing comprehensive turnkey telecom services, civil infrastructure solutions, traffic management, and high-speed solutions.</p>
+                    <ul className='text-sm font-light font-Poppins mt-8 mb-4 px-1 text-slate-100 space-y-2'>
+                        <li className='flex flex-row items-center gap-x-2' ><FaCheckDouble size={18} className='text-accentRed' /> Full Turnkey Telecom</li>
+                        <li className='flex flex-row items-center gap-x-2' ><FaCheckDouble size={18} className='text-accentRed' /> Over 25 years of industry experience</li>
+                        <li className='flex flex-row items-center gap-x-2' ><FaCheckDouble size={18} className='text-accentRed' /> EUSR CERTIFIED</li>
+                    </ul>
+                    <div className=''>
                         <ScrollLink
-                            to='About'
+                            to='Footer'
+                            onClick={handleClick}
                             smooth={true}
                             duration={500}
                             className='cursor-pointer'
                         >
-                            <Button text={'Build Better'} color={'white'} />
+                            <motion.button
+                                className="text-base group relative py-2 px-4 font-medium transition-all duration-[400ms] font-montserrat bg-accentRed-dark text-white shadow-md hover:bg-accentRed transform hover:scale-105"
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                variants={buttonVariants}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                            >
+                                Get a Quote
+                            </motion.button>
                         </ScrollLink>
                     </div>
                 </div>
-                <div className="grid grid-cols-6 gap-2 lg:gap-2 w-full xl:w-6/12 xl:px-0 px-4">
-                    <div className='col-span-2 h-[150px] lg:h-[250px] xl:h-[300px] overflow-hidden rounded'>
-                        <img src={img1} alt="" className='w-full h-full object-cover object-center' />
-                    </div>
-                    <div className='col-span-2 h-[150px] lg:h-[250px] xl:h-[300px] overflow-hidden rounded'>
-                        <img src={img2} alt="" className='w-auto h-full object-cover object-center' />
-                    </div>
-                    <div className='col-span-2 h-[150px] lg:h-[250px] xl:h-[300px] overflow-hidden rounded'>
-                        <img src={img4} alt="" className='w-full h-full object-cover object-center' />
-                    </div>
-                    <div className='col-span-4 xl:h-[150px] h-[100px] overflow-hidden rounded'>
-                        <img src={img5} alt="" className='w-auto h-auto object-cover object-center' />
-                    </div>
-                    <div className='col-span-2 xl:h-[150px] h-[100px] overflow-hidden rounded'>
-                        <img src={img6} alt="" className='w-auto h-auto object-cover object-center' />
-                    </div>
-                </div>
             </div>
+            {formVisible && (
+                <ContactForm onClose={handleClick} />
+            )}
         </section>
-
     )
 }
 
-export default Banner
+export default Banner;
