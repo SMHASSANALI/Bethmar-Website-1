@@ -37,7 +37,7 @@ const Slider = () => {
                     <motion.h2
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.1 }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className='mx-auto font-semibold text-2xl lg:text-4xl text-center font-poppins mb-3 lg:mb-6 text-primary'>Meet Our Clients</motion.h2>
+                        className='lg:text-4xl text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>Meet Our Clients</motion.h2>
                     <motion.div
                         animate={{ y: inView ? 1 : 200, opacity: inView ? 1 : 0 }}
                         transition={{ duration: 1, ease: "easeInOut" }}

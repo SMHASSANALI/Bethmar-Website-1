@@ -60,7 +60,7 @@ const Hero = () => {
                                     variants={buttonVariants}
                                     transition={{ duration: 0.5, delay: 0.5 }}
                                 >
-                                    Get a Quote
+                                    Contact Us
                                 </motion.button>
                             </ScrollLink>
                         </div>
@@ -70,7 +70,7 @@ const Hero = () => {
                         transition={{ duration: 1, ease: "easeInOut" }}
                         className='xl:w-1/2 mx-12 md:h-[300px] lg:h-[75%] mb-12 relative'>
                         <img src={hero} alt="" className='h-full w-full object-cover object-center ' />
-                        <div className='absolute inset-0 h-full w-full z-10 bg-primary bg-opacity-50'></div>
+                        <div className='absolute inset-0 h-full w-full z-10 bg-primary bg-opacity-20'></div>
                     </motion.div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import logo from '../../assets/Logo/bethmar.png'
 import Fiber from '../../assets/footer/Footer.jpeg'
 import EUSRtrainer from '../../assets/trainer/EUSR_training.jpg';
+import Chas from '../../assets/trainer/chas.png';
 
 const Footer = () => {
     const divStyle = {
@@ -17,25 +18,29 @@ const Footer = () => {
     return (
         <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
-                <div className="text-sm md:text-base px-4 w-full lg:w-8/12 md:mb-2 mb-6 flex flex-col lg:flex-row justify-around  gap-x-8">
-                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-2/12 h-[60px] mb-3" />
+                <div className="text-sm md:text-base w-full lg:w-6/12 mb-2 flex flex-col justify-around">
+                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[70px] mb-3" />
                     <div className='self-center w-full'>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
                     </div>
                 </div>
-                <div className='flex lg:justify-between w-full lg:w-2/12 md:mb-2 mb-6'>
-                    <div className="px-4">
-                        <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4>
-                        <div className="flex flex-row gap-2">
-                            <a className='flex items-center lg:text-sm text-xs' target='_blank' href=''><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
-                            <a className='flex items-center lg:text-sm text-xs' target='_blank' href='https://www.linkedin.com/in/bethmar-limited-47a762244/?trk=public_post_reshare_feed-actor-name&originalSubdomain=uk'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
+                <div className='flex flex-col lg:justify-between w-full lg:w-4/12 md:mb-2 mb-0'>
+                    {/* <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4> */}
+                    <div className="flex flex-row gap-x-6 lg:ml-auto pb-6">
+                        <a className='flex items-center lg:text-sm text-xs' target='_blank' href=''><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
+                        <a className='flex items-center lg:text-sm text-xs' target='_blank' href='https://www.linkedin.com/in/bethmar-limited-47a762244/?trk=public_post_reshare_feed-actor-name&originalSubdomain=uk'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
+                    </div>
+                    <div className='flex flex-row gap-x-2'>
+                        <div className='w-6/12 md:mb-2 mb-6'>
+                            <img src={EUSRtrainer} alt="" className='w-auto h-[70px]' />
+                        </div>
+                        <div className='w-6/12 md:mb-2 mb-6 bg-slate-900 items-center flex justify-center'>
+                            <img src={Chas} alt="" className='w-auto h-[70px]' />
                         </div>
                     </div>
                 </div>
-                <div className='w-6/12 lg:w-2/12 md:mb-2 mb-6'>
-                    <img src={EUSRtrainer} alt="" className='w-auto h-[70px]' />
-                </div>
+
             </div>
             <div className="pt-4 text-center text-xs md:text-sm max-w-[1400px] mx-auto px-4 md:px-0 ">
                 <div className="flex justify-between items-center">

@@ -66,7 +66,7 @@ const FeatureCard = ({ image, title, description }) => {
             style={{
                 transform,
                 transformStyle: "preserve-3d",
-                position: "relative"  // Ensure this is set
+                position: "relative"
             }}
             className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] rounded shadow-lg hover:shadow-2xl'
         >
@@ -118,14 +118,17 @@ const Features = () => {
                 <div ref={ref} className='max-w-[1500px] lg:px-0 px-4 mx-auto relative'>
                     <div className='w-full xl:w-6/12 mx-auto'>
                         <motion.h2
-                            animate={{ opacity: inView ? 1 : 0 }}
-                            transition={{ duration: 0.7, ease: "backIn" }}
+                            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+                            transition={{ duration: 1, ease: "backIn" }}
                             className=' text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
                             Providing Comprehensive Solutions for Your Infrastructure Needs
                         </motion.h2>
-                        <p className='z-20 relative text-primary text-sm lg:text-base font-poppins text-center pb-0 lg:pb-6 pt-0 lg:pt-2'>
+                        <motion.p
+                            animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 100 }}
+                            transition={{ duration: 1, ease: "backIn" }}
+                            className='z-20 relative text-center pb-0 lg:pb-6 pt-0 lg:pt-2 text-sm lg:text-base font-light font-Poppins my-4 px-1 text-primary-light'>
                             At Bethmar, we specialize in offering a wide range of services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
-                        </p>
+                        </motion.p>
                     </div>
                     <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
                         <FeatureCard

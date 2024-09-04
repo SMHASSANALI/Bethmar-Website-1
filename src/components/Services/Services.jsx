@@ -32,8 +32,8 @@ const Services = () => {
 
     return (<>
         <div style={divStyle} id='Services' className='flex justify-center items-center lg:py-12 '>
-            <div className='lg:py-6 py-2 container max-w-[1500px] rounded shadow-lg lg:mx-auto bg-gradient-to-br from-[#efffef] to-[#ffe8e8] mx-4 flex items-center'>
-                <div className='lg:px-12'>
+            <div className='lg:py-6 py-2 container max-w-[1500px] rounded lg:mx-auto mx-4 flex items-center'>
+                <div className=''>
                     <div className='flex flex-col lg:flex-row py-6'>
                         <motion.div
                             className='lg:px-0 px-4 w-12/12 lg:w-4/12'
@@ -56,19 +56,19 @@ const Services = () => {
                             animate={inView ? 'visible' : 'hidden'}
                             variants={fadeInUp}
                         >
-                            <p className='text-sm  lg:text-base font-light font-poppins text-primary-light'>
+                            <p className='text-sm lg:text-base font-light font-poppins text-primary-light'>
                                 At Bethmar, we offer a wide range of infrastructure, telecom, and traffic management services to meet your specific requirements.
                                 From full telecom turnkey to traffic management solutions, our experienced team is dedicated to delivering high-quality results.
                             </p>
                         </motion.div>
                     </div>
                     <motion.div
-                        className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:px-4 lg:py-8'
+                        className='grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 lg:gap-x-4 gap-y-8 py-6 lg:px-0 px-4 lg:py-0 '
                         initial='hidden'
                         animate={inView ? 'visible' : 'hidden'}
                         variants={container}
                     >
-                        <motion.div variants={fadeInUp}>
+                        <motion.div variants={fadeInUp} className='rounded shadow-lg bg-white hover:shadow-xl p-4'>
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Telecom Design and Planning
                             </h2>
@@ -84,7 +84,7 @@ const Services = () => {
                                 <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Civil Avoidance</li>
                             </ul>
                         </motion.div>
-                        <motion.div variants={fadeInUp}>
+                        <motion.div variants={fadeInUp} className='rounded shadow-lg bg-white hover:shadow-xl p-4'>
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Utility Civil Engineering
                             </h2>
@@ -100,7 +100,7 @@ const Services = () => {
                                 <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Surface Reinstatement</li>
                             </ul>
                         </motion.div>
-                        <motion.div variants={fadeInUp}>
+                        <motion.div variants={fadeInUp} className='rounded shadow-lg bg-white hover:shadow-xl p-4'>
                             <h2 className='text-xl font-medium font-poppins text-gray-700 mb-2'>
                                 Traffic Management
                             </h2>

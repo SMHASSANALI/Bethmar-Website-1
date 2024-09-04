@@ -65,7 +65,7 @@ const Banner = () => {
                         </motion.span>
                         Enhancing Lives.
                     </h1>
-                    <p className='text-base lg:text-lg font-light font-Poppins my-4 px-1 text-slate-100'>Providing comprehensive turnkey telecom services, civil infrastructure solutions, traffic management, and high-speed solutions.</p>
+                    <p className='text-base lg:text-lg font-light font-Poppins my-4 px-1 text-slate-100'>Providing full turnkey telecom services, civil infrastructure solutions, traffic management, and high-speed solutions.</p>
                     <ul className='text-sm font-light font-Poppins mt-8 mb-4 px-1 text-slate-100 space-y-2'>
                         <li className='flex flex-row items-center gap-x-2' ><FaCheckDouble size={18} className='text-accentRed' /> Full Turnkey Telecom</li>
                         <li className='flex flex-row items-center gap-x-2' ><FaCheckDouble size={18} className='text-accentRed' /> Over 25 years of industry experience</li>

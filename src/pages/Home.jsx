@@ -44,7 +44,7 @@ const Home = () => {
 
     const calculatePosition = () => {
         if (bottomReached) {
-            return 'top-[65%]'; // Stop at 65% when the bottom is reached
+            return 'top-[55%]'; // Stop at 65% when the bottom is reached
         }
         return 'top-[85%]'; // Start at 85%
     };
@@ -59,11 +59,11 @@ const Home = () => {
                 <Features />
                 <Services />
                 <Seprator color={'bg-moving-gradient'} />
-                <Benefits />
                 <Slider />
+                <Benefits />
                 <CounterSection />
                 <div>
-                    <h4 className='text-center font-oswald text-4xl font-bold mb-6 text-primary'>
+                    <h4 className='lg:text-4xl text-primary mx-auto font-semibold text-2xl xl:text-4xl text-center font-oswald pt-3 pb-3 lg:pt-6 lg:pb-6'>
                         We Are Located At
                     </h4>
                     <LocationMap />
