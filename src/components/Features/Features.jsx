@@ -5,10 +5,7 @@ import water from '../../assets/svg/Water.svg';
 import power from '../../assets/svg/Power.svg';
 import {
     motion,
-    useMotionTemplate,
-    useMotionValue,
     useScroll,
-    useSpring,
     useTransform,
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -17,67 +14,104 @@ import Button from '../Button/Button';
 import B from '../../assets/B1.png';
 import Background from '../../assets/BG/Background.webp';
 
+import fibreimg from '../../assets/Banner/1.jpg'
+import civilimg from '../../assets/Banner/2.jpg'
+import waterimg from '../../assets/Banner/4.jpg'
+import powerimg from '../../assets/Banner/7.jpg'
+import { useState } from 'react';
 
 
 
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
+// const ROTATION_RANGE = 32.5;
+// const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const FeatureCard = ({ image, title, description }) => {
-    const ref = useRef(null);
+// const FeatureCard = ({ image, title, description }) => {
+//     const ref = useRef(null);
 
-    const x = useMotionValue(0);
-    const y = useMotionValue(0);
+//     const x = useMotionValue(0);
+//     const y = useMotionValue(0);
 
-    const xSpring = useSpring(x);
-    const ySpring = useSpring(y);
+//     const xSpring = useSpring(x);
+//     const ySpring = useSpring(y);
 
-    const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
+//     const transform = useMotionTemplate`rotateX(${xSpring}deg) rotateY(${ySpring}deg)`;
 
-    const handleMouseMove = (e) => {
-        if (!ref.current) return [0, 0];
+//     const handleMouseMove = (e) => {
+//         if (!ref.current) return [0, 0];
 
-        const rect = ref.current.getBoundingClientRect();
+//         const rect = ref.current.getBoundingClientRect();
 
-        const width = rect.width;
-        const height = rect.height;
+//         const width = rect.width;
+//         const height = rect.height;
 
-        const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
-        const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
+//         const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
+//         const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
 
-        const rX = (mouseY / width - HALF_ROTATION_RANGE) * -1;
-        const rY = (mouseX / height - HALF_ROTATION_RANGE);
+//         const rX = (mouseY / width - HALF_ROTATION_RANGE) * -1;
+//         const rY = (mouseX / height - HALF_ROTATION_RANGE);
 
-        x.set(rX);
-        y.set(rY);
-    };
+//         x.set(rX);
+//         y.set(rY);
+//     };
 
-    const handleMouseLeave = () => {
-        x.set(0);
-        y.set(0);
-    };
+//     const handleMouseLeave = () => {
+//         x.set(0);
+//         y.set(0);
+//     };
 
 
+//     return (
+//         <motion.div
+//             ref={ref}
+//             onMouseMove={handleMouseMove}
+//             onMouseLeave={handleMouseLeave}
+//             style={{
+//                 transform,
+//                 transformStyle: "preserve-3d",
+//                 position: "relative"
+//             }}
+//             className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] rounded shadow-lg hover:shadow-2xl'
+//         >
+//             <div className='w-full flex lg:flex-row items-center justify-between h-3/5'>
+//                 <div className='w-3/12 md:w-2/12 xl:w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
+//                     <img src={image} alt={title} />
+//                 </div>
+//                 <h2 className='ml-4 lg:ml-2 w-8/12 text-xl bg-clip-text text-transparent bg-gradient-to-tr from-secondary to-accentRed-dark py-4 font-oswald text-left leading-none'>{title}</h2>
+//             </div>
+//             <p className='text-sm text-primary font-montserrat text-left h-2/5 lg:mt-0 mt-4'>{description}</p>
+//         </motion.div >
+//     );
+// };
+
+const HoverCards = ({ image, title, description, svg }) => {
+    const [isHovered, setIsHovered] = useState(false);
     return (
-        <motion.div
-            ref={ref}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            style={{
-                transform,
-                transformStyle: "preserve-3d",
-                position: "relative"
-            }}
-            className='w-full lg:w-3/12 p-10 flex flex-col items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] rounded shadow-lg hover:shadow-2xl'
-        >
-            <div className='w-full flex lg:flex-row items-center justify-between h-3/5'>
-                <div className='w-3/12 md:w-2/12 xl:w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
-                    <img src={image} alt={title} />
+        <div className='h-full w-full flex flex-col max-w-lg relative group min-h-[40vh] cursor-pointer'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}>
+            <motion.div
+                initial={{ y: 0 }}
+                animate={{ y: isHovered ? "80%" : 0 }}
+                transition={{ duration: 0.5, ease: 'easeIn', }}
+                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform '>
+                <img src={image} alt="" className='h-auto w-full' />
+            </motion.div>
+            <div className='bg-neutral-50 min-h-[35vh] px-4 py-4 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in '>
+                <div className='flex flex-row items-center gap-6'>
+                    <div className='w-3/12 md:w-2/12 xl:w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
+                        <img src={svg} alt={''} />
+                    </div>
+                    <h1 className='text-2xl font-semibold px-2 py-6 w-12/12 leading-none text-slate-900'>
+                        {title}
+                    </h1>
                 </div>
-                <h2 className='ml-4 lg:ml-2 w-8/12 text-xl bg-clip-text text-transparent bg-gradient-to-tr from-secondary to-accentRed-dark py-4 font-oswald text-left leading-none'>{title}</h2>
+                <div className='flex flex-row items-center gap-6'>
+                    <p className='text-base font-light px-2 py-0 w-11/12 text-pretty leading-5 pt-4 text-slate-700'>
+                        {description}
+                    </p>
+                </div>
             </div>
-            <p className='text-sm text-primary font-montserrat text-left h-2/5 lg:mt-0 mt-4'>{description}</p>
-        </motion.div >
+        </div>
     );
 };
 
@@ -131,23 +165,27 @@ const Features = () => {
                         </motion.p>
                     </div>
                     <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
-                        <FeatureCard
-                            image={fibre}
+                        <HoverCards
+                            image={fibreimg}
+                            svg={fibre}
                             title="Telecom Turnkey Solutions"
                             description="We provide end-to-end telecom solutions, ensuring seamless connectivity and efficient communication."
                         />
-                        <FeatureCard
-                            image={civil}
+                        <HoverCards
+                            image={civilimg}
+                            svg={civil}
                             title="Civil Infrastructure Solutions"
                             description="Our civil services encompass a wide range of construction projects, from roads to private projects and utilities."
                         />
-                        <FeatureCard
-                            image={water}
+                        <HoverCards
+                            image={waterimg}
+                            svg={water}
                             title="Water Management Services"
                             description="Our expertise include open cut trenches, slip lining, spill tank base builds and much more!"
                         />
-                        <FeatureCard
-                            image={power}
+                        <HoverCards
+                            image={powerimg}
+                            svg={power}
                             title="Power Management Solutions"
                             description="We offer EV charging installations, DNO liaison, and comprehensive solar park solutions to support sustainable energy infrastructure."
                         />

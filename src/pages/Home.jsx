@@ -58,8 +58,8 @@ const Home = () => {
                 <Hero />
                 <Features />
                 <Services />
-                <Seprator color={'bg-moving-gradient'} />
                 <Slider />
+                <Seprator color={'bg-moving-gradient'} />
                 <Benefits />
                 <CounterSection />
                 <div>

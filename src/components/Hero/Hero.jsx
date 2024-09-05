@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../Button/Button'
-import hero from '../../assets/Banner/bannerBG.jpg'
+import hero from '../../assets/Banner/3.jpg'
 import { motion } from 'framer-motion'
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { useInView } from 'react-intersection-observer';
@@ -33,7 +33,7 @@ const Hero = () => {
                         animate={{ x: inView ? 0 : -700 }}
                         transition={{ duration: 2, ease: 'backInOut' }}
                         exit={{ opacity: 0 }}
-                        className='w-full xl:w-1/2 lg:px-12 lg:py-8 z-10 py-6 px-4 xl:py-8 xl:px-12 bg-gradient-to-tr from-primary to-primary-dark rounded-lg'>
+                        className='w-full xl:w-1/2 lg:px-12 lg:py-8 z-10 py-6 px-4 xl:py-8 xl:px-12 bg-primary-dark bg-opacity-60 backdrop-blur-sm rounded-lg'>
                         <h1 className='tracking-wide leading-tight font-oswald text-2xl lg:text-4xl font-semibold text-white'>Building Infrastructure Solutions for a Connected World</h1>
                         <p className='text-sm lg:text-base font-light font-Poppins my-4 px-1 text-slate-100'>Bethmar is a leading infrastructure company based in the UK. We specialize in providing Full Turnkey Telecom Service, civil infrastructure solutions, traffic management, and high-speed solutions. With expertise in construction of spill tanks, EV charging installation, DNO liaison, meter installation, and solar park data centre solutions, we are committed to delivering exceptional services since <span className='font-bold'>2013</span>.</p>
                         <div className='gap-x-3 lg:gap-x-6 flex'>
