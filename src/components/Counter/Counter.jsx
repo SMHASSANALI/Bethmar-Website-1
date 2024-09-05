@@ -66,7 +66,7 @@ const CounterSection = () => {
         backgroundRepeat: 'no-repeat',
     }
     return (
-        <div className='flex justify-center items-center bg-gradient-to-tr from-[#f5fded] to-[#fceded] w-full my-12'>
+        <div className='flex justify-center items-center bg-gradient-to-tr w-full mb-12'>
             <div className='py-2 overflow-hidden lg:mx-0 mx-4'>
                 <div className='flex justify-center items-center relative'>
                     <motion.div

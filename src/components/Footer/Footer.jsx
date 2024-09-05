@@ -19,7 +19,7 @@ const Footer = () => {
         <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
                 <div className="text-sm md:text-base w-full lg:w-6/12 mb-2 flex flex-col justify-around">
-                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[70px] mb-3" />
+                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[75px] mb-3" />
                     <div className='self-center w-full'>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>

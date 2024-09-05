@@ -126,7 +126,7 @@ const Features = () => {
         offset: ["end start", "start end"]
     });
 
-    const y = useTransform(scrollYProgress, [0.1, 0.8], ['200px', '-200px']);
+    const y = useTransform(scrollYProgress, [0.1, 0.8], ['300px', '-300px']);
     const rotate = useTransform(scrollYProgress, [0, 0.8], [45, 0]);
 
     const divStyle = {
@@ -142,7 +142,7 @@ const Features = () => {
         <div style={divStyle} id='About' className='flex flex-col items-center justify-center py-12 relative'>
             <div ref={imgRef} className='max-w-[1500px] flex rounded items-center lg:py-6 py-12 relative'>
                 <div
-                    className='absolute z-10 left-20'>
+                    className='absolute z-10 left-00'>
                     <motion.img
                         src={B}
                         alt=""
@@ -195,7 +195,7 @@ const Features = () => {
                             to='Services'
                             smooth={true}
                             duration={500}
-                            className='cursor-pointer'
+                            className='cursor-pointer '
                         >
                             <Button text={'Our Services'} color={'black'} />
                         </ScrollLink>
