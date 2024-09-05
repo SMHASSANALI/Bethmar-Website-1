@@ -93,7 +93,7 @@ const HoverCards = ({ image, title, description, svg }) => {
                 initial={{ y: 0 }}
                 animate={{ y: isHovered ? "80%" : 0 }}
                 transition={{ duration: 0.5, ease: 'easeIn', }}
-                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform '>
+                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform md:block hidden'>
                 <img src={image} alt="" className='h-auto w-full' />
             </motion.div>
             <div className='bg-neutral-50 min-h-[35vh] px-4 py-4 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in '>
