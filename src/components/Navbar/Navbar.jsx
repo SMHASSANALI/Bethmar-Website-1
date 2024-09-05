@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className='z-[9999] w-full text-white bg-neutral-900 sticky top-0'>
             {/* Top bar with social media links and tagline */}
             <section className=' bg-neutral-800'>
-                <div className='hidden md:flex justify-start items-center max-w-[1500px] text-xs flex-row  mx-auto py-2 md:py-1'>
+                <div className='md:flex justify-start items-center max-w-[1500px] text-xs flex-row  mx-auto py-1'>
                     <div className='flex items-center gap-4 px-4'>
                         <a href="https://www.facebook.com"
                             className='flex items-end gap-1 group transition-colors duration-300'
@@ -49,7 +49,7 @@ const Navbar = () => {
             </section>
 
             {/* Main Navbar */}
-            <div className='flex flex-row items-center justify-between mx-auto max-w-[1500px] py-2 md:py-1 px-4'>
+            <div className='flex flex-row items-center justify-between mx-auto max-w-[1500px] py-1 px-4'>
                 <ScrollLink
                     to='Banner'
                     smooth={true}
@@ -151,7 +151,7 @@ const Navbar = () => {
                         >
                             Contact
                         </ScrollLink>
-                        <div className='flex flex-row gap-3 w-full justify-start my-2'>
+                        {/* <div className='flex flex-row gap-3 w-full justify-start my-2'>
                             <a href="https://www.facebook.com" className='flex items-end gap-1 group text-white hover:text-blue-600 transition-colors duration-300' target="_blank" rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 48 48">
                                     <path fill="#3F51B5" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M34.368,25H31v13h-5V25h-3v-4h3v-2.41c0.002-3.508,1.459-5.59,5.592-5.59H35v4h-2.287C31.104,17,31,17.6,31,18.723V21h4L34.368,25z"></path>
@@ -165,7 +165,7 @@ const Navbar = () => {
                             <a href="https://www.jcoffey.com" className='pb-1 flex items-end gap-1 group text-white hover:text-green-500 transition-colors duration-300' target="_blank" rel="noopener noreferrer">
                                 <img src={jCoffey} className='size-5' />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 )
             }
