@@ -26,7 +26,6 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col lg:justify-between w-full lg:w-4/12 md:mb-2 mb-0'>
-                    {/* <h4 className="mb-2 text-base lg:text-lg font-oswald font-medium text-white">Find Us At</h4> */}
                     <div className="flex flex-row gap-x-6 lg:ml-auto pb-6">
                         <a className='flex items-center lg:text-sm text-xs' target='_blank' href=''><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
                         <a className='flex items-center lg:text-sm text-xs' target='_blank' href='https://www.linkedin.com/in/bethmar-limited-47a762244/?trk=public_post_reshare_feed-actor-name&originalSubdomain=uk'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
@@ -47,7 +46,7 @@ const Footer = () => {
                     <div className='self-center'>
                         <span>© 2024 Bethmar Ltd. All rights reserved.</span>
                     </div>
-                    <div className=''>
+                    <div>
                         <a href='https://www.saskasolutions.com/' target='_blank' className='border-b border-gray-400 text-xs font-extralight font-mono text-gray-400'>Designed and Developed by SASKA Solutions</a>
                     </div>
                 </div>

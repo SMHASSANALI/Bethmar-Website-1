@@ -1,105 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Add this to your CSS file */
 body {
-    font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .swiper-container {
-    padding-bottom: 40px; /* Adjust the value to fit your layout */
+  padding-bottom: 40px;
 }
 
 .swiper-pagination {
-    position: relative;
-    bottom: 0;
-    margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
 }
 .swiper-pagination-bullet {
-    background: #555; /* Change this to your desired color */
-    opacity: 1; /* Ensure bullets are fully opaque */
+  background: #555;
+  opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background: #6d0a08; /* Active bullet color */
+  background: #6d0a08;
 }
 
-/* Webkit-based browsers */
 ::-webkit-scrollbar {
-    width: 12px;  /* Width of the scrollbar */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;  /* Background of the scrollbar track */
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;  /* Color of the scrollbar handle */
-    border-radius: 6px;  /* Rounded corners */
+  background: #888;
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;  /* Color of the scrollbar handle on hover */
+  background: #555;
 }
 
-/* Firefox */
 html {
-    scrollbar-width: thin;  /* Make the scrollbar thinner */
-    scrollbar-color: #888 #f1f1f1;  /* Color of the scrollbar handle and track */
-    scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar-thumb {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 html::-webkit-scrollbar-track {
-    border-radius: 6px;
+  border-radius: 6px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-  
+
 .bg-moving-gradient {
-    background: linear-gradient(135deg, #194d23, #27b344, #205029);
-    background-size: 200% 200%;
-    animation: gradient-animation 15s ease-in-out infinite;
-  }
-
-.bg-moving-gradient1 {
-    background: linear-gradient(135deg, #93100e, #ef4a46, #6d0a08);
-    background-size: 200% 200%;
-    animation: gradient-animation 15s ease-in-out infinite;
-  }
-
-.bg-moving-gradient3 {
-    background: linear-gradient(150deg, #221e1f , #3f000e, #221e1f);
-    background-size: 200% 200%;
-    animation: gradient-animation 15s ease-in-out infinite;
-  }
-
-.text-stroke{
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-  }
+  background: linear-gradient(135deg, #194d23, #27b344, #205029);
+  background-size: 200% 200%;
+  animation: gradient-animation 15s ease-in-out infinite;
+}
 
 @keyframes gradient-animation {
-0% {
+  0% {
     background-position: 0% 0%;
-}
-50% {
+  }
+  50% {
     background-position: 100% 100%;
-}
-100% {
+  }
+  100% {
     background-position: 0% 0%;
-}
+  }
 }

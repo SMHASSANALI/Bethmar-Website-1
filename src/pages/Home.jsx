@@ -16,7 +16,6 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
     const [formVisible, setFormVisible] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
     const [bottomReached, setBottomReached] = useState(false);
 
     const handleClick = () => {
@@ -28,11 +27,9 @@ const Home = () => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
 
-        // Calculate the distance to the bottom
         const distanceFromBottom = documentHeight - (currentPosition + windowHeight);
 
-        setScrollPosition(currentPosition);
-        setBottomReached(distanceFromBottom <= 100); // Adjust this value as needed
+        setBottomReached(distanceFromBottom <= 100);
     };
 
     useEffect(() => {
@@ -44,9 +41,9 @@ const Home = () => {
 
     const calculatePosition = () => {
         if (bottomReached) {
-            return 'top-[55%]'; // Stop at 65% when the bottom is reached
+            return 'top-[55%]';
         }
-        return 'top-[85%]'; // Start at 85%
+        return 'top-[85%]';
     };
 
 
