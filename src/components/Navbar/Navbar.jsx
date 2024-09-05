@@ -41,7 +41,7 @@ const Navbar = () => {
 
                         <a href="https://www.jcoffey.com" className='rounded-sm overflow-hidden flex items-end gap-1 group text-white hover:text-green-500 transition-colors duration-300' target="_blank" rel="noopener noreferrer">
                             <img src={jCoffey} className='size-6' />
-                            <span className='text-sm font-poppins group-hover:text-green-500 transition-colors duration-300'>J. Coffey</span>
+                            <span className='text-sm font-poppins group-hover:text-green-500 transition-colors duration-300'>J Coffey</span>
                         </a>
                     </div>
                 </div>

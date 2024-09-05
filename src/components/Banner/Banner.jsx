@@ -39,9 +39,9 @@ const Banner = () => {
     };
 
     return (
-        <section style={divStyle} className='flex items-center h-[70vh] w-full'>
-            <div id='Banner' className='max-w-[1500px] ml-auto flex-row px-4 lg:w-6/12'>
-                <div className='py-6 px-4 xl:py-8 xl:px-12 bg-primary bg-opacity-60 backdrop-blur-sm rounded-lg relative overflow-hidden'>
+        <section style={divStyle} className='flex items-center h-[35vh] md:h-[40vh] lg:h-[70vh] w-full'>
+            <div id='Banner' className='max-w-[1500px] md:ml-auto flex-row px-4 sm:w-full md:w-6/12'>
+                <div className='p-2 md:py-8 md:px-12 bg-primary bg-opacity-60 backdrop-blur-sm rounded-lg relative md:top-0 top-[-50px] overflow-hidden'>
                     <motion.div
                         key={currentSlide}
                         variants={slideVariants}
@@ -49,7 +49,7 @@ const Banner = () => {
                         animate="animate"
                         exit="exit"
                         transition={{ duration: 0.5 }}
-                        className='text-3xl xl:text-5xl lg:text-4xl font-semibold lg:text-left text-center text-white tracking-wider leading-normal font-oswald max-w-2xl'
+                        className='text-2xl lg:text-4xl font-semibold lg:text-left text-center text-white tracking-wider leading-normal font-oswald max-w-2xl'
                     >
                         {slides[currentSlide]}
                     </motion.div>

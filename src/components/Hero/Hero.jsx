@@ -68,7 +68,7 @@ const Hero = () => {
                     <motion.div
                         animate={{ opacity: inView ? 1 : 0, scale: inView ? 1.5 : 0.5 }}
                         transition={{ duration: 1, ease: "easeInOut" }}
-                        className='xl:w-1/2 mx-12 md:h-[300px] lg:h-[75%] mb-12 relative'>
+                        className='md:w-1/2 mx-12 md:h-[300px] lg:h-[50%] mb-12 relative'>
                         <img src={hero} alt="" className='h-full w-full object-cover object-center ' />
                         <div className='absolute inset-0 h-full w-full z-10 bg-primary bg-opacity-20'></div>
                     </motion.div>

@@ -19,22 +19,23 @@ import civilimg from '../../assets/Banner/2.jpg'
 import waterimg from '../../assets/Banner/4.jpg'
 import powerimg from '../../assets/Banner/7.jpg'
 import { useState } from 'react';
+
 const HoverCards = ({ image, title, description, svg }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className='h-full w-full flex flex-col max-w-lg relative group min-h-[40vh] cursor-pointer'
+        <div className='h-full w-full flex flex-col max-w-lg relative group lg:min-h-[40vh] cursor-pointer'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             <motion.div
                 initial={{ y: 0 }}
                 animate={{ y: isHovered ? "80%" : 0 }}
                 transition={{ duration: 0.5, ease: 'easeIn', }}
-                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform md:block hidden'>
+                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform lg:block hidden'>
                 <img src={image} alt="" className='h-auto w-full' />
             </motion.div>
-            <div className='bg-neutral-50 min-h-[35vh] px-4 py-4 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in '>
+            <div className='bg-neutral-50 h-auto md:min-h-[20vh] lg:min-h-[35vh] p-2 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in '>
                 <div className='flex flex-row items-center gap-6'>
-                    <div className='w-3/12 md:w-2/12 xl:w-4/12 border-2 border-primary rounded-xl p-4 flex items-center justify-center'>
+                    <div className='w-3/12 md:w-2/12 lg:w-4/12 border-2 border-primary rounded-xl md:p-4 flex items-center justify-center'>
                         <img src={svg} alt={''} />
                     </div>
                     <h1 className='text-2xl font-semibold px-2 py-6 w-12/12 leading-none text-slate-900'>
@@ -82,7 +83,7 @@ const Features = () => {
                     <motion.img
                         src={B}
                         alt=""
-                        className='h-[70%] lg:h-[80%] w-[70%] lg:w-[80%] object-cover'
+                        className='h-[40%] w-[40%] lg:h-[80%] lg:w-[80%] object-cover'
                         style={{ y, rotate }} />
                 </div>
                 <div ref={ref} className='max-w-[1500px] lg:px-0 px-4 mx-auto relative'>
@@ -100,7 +101,7 @@ const Features = () => {
                             At Bethmar, we specialize in offering a wide range of services to meet your unique requirements. With our expertise and dedication, we deliver top-quality solutions that exceed expectations.
                         </motion.p>
                     </div>
-                    <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 flex flex-col lg:flex-row pt-8 pb-6 z-50 relative'>
+                    <div className='max-w-[1500px] mx-auto gap-y-6 gap-x-3 grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 pt-8 pb-6 z-50 relative'>
                         <HoverCards
                             image={fibreimg}
                             svg={fibre}
