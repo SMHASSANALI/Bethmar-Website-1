@@ -23,19 +23,19 @@ import { useState } from 'react';
 const HoverCards = ({ image, title, description, svg }) => {
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div className='h-full w-full flex flex-col max-w-lg relative group lg:min-h-[40vh] cursor-pointer'
+        <div className='h-full w-full flex flex-col max-w-lg relative group lg:min-h-[40vh] cursor-pointer rounded-lg'
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}>
             <motion.div
                 initial={{ y: 0 }}
                 animate={{ y: isHovered ? "80%" : 0 }}
                 transition={{ duration: 0.5, ease: 'easeIn', }}
-                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform lg:block hidden'>
-                <img src={image} alt="" className='h-auto w-full' />
+                className='h-[35vh] overflow-hidden absolute inset-0 z-[-1] transform lg:block hidden rounded-lg'>
+                <img src={image} alt="" className='h-auto w-full rounded-lg' />
             </motion.div>
-            <div className='bg-neutral-50 h-auto md:min-h-[20vh] lg:min-h-[35vh] p-2 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in '>
+            <div className='bg-neutral-50 h-auto md:min-h-[20vh] lg:min-h-[35vh] p-4 flex flex-col transform group-hover:-translate-y-10 transition-all ease-in rounded'>
                 <div className='flex flex-row items-center gap-6'>
-                    <div className='w-3/12 md:w-2/12 lg:w-4/12 border-2 border-primary rounded-xl md:p-4 flex items-center justify-center'>
+                    <div className='w-3/12 md:w-2/12 lg:w-4/12 border-2 border-primary rounded-xl p-2 md:p-4 flex items-center justify-center'>
                         <img src={svg} alt={''} />
                     </div>
                     <h1 className='text-2xl font-semibold px-2 py-6 w-12/12 leading-none text-slate-900'>

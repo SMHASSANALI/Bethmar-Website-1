@@ -5,6 +5,7 @@ import logo from '../../assets/Logo/bethmar.png'
 import Fiber from '../../assets/footer/Footer.jpeg'
 import EUSRtrainer from '../../assets/trainer/EUSR_training.jpg';
 import Chas from '../../assets/trainer/chas.png';
+import Usag from '../../assets/trainer/USAGLogo.jpg';
 
 const Footer = () => {
     const divStyle = {
@@ -19,7 +20,7 @@ const Footer = () => {
         <div id='Footer' style={divStyle} className="py-6 md:py-6 text-white">
             <div className="max-w-[1400px] flex flex-col md:flex-row justify-between mx-auto border-b border-gray-700 px-4 md:px-0">
                 <div className="text-sm md:text-base w-full lg:w-6/12 mb-2 flex flex-col justify-around">
-                    <img src={logo} alt="Company Logo" className="w-6/12 lg:w-3/12 h-[75px] mb-3" />
+                    <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[75px] mb-3" />
                     <div className='self-center w-full'>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2,Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
@@ -30,12 +31,17 @@ const Footer = () => {
                         <a className='flex items-center lg:text-sm text-xs' target='_blank' href=''><FaSquareFacebook className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Facebook</a>
                         <a className='flex items-center lg:text-sm text-xs' target='_blank' href='https://www.linkedin.com/in/bethmar-limited-47a762244/?trk=public_post_reshare_feed-actor-name&originalSubdomain=uk'><FaLinkedin className='h-8 w-8 hover:scale-110 hover:-rotate-45 ease-in-out duration-300 transition-all mr-[2px]' />Linkedin</a>
                     </div>
-                    <div className='flex flex-row gap-x-2'>
-                        <div className='w-6/12 md:mb-2 mb-6'>
-                            <img src={EUSRtrainer} alt="" className='w-auto h-[70px]' />
+                    <div className='flex flex-row gap-y-2 items-center justify-between md:justify-end'>
+                        <div className='w-4/12 md:mb-2 mb-6'>
+                            <img src={Usag} alt="" className='w-auto h-[150px]' />
                         </div>
-                        <div className='w-6/12 md:mb-2 mb-6 bg-slate-900 items-center flex justify-center'>
-                            <img src={Chas} alt="" className='w-auto h-[70px]' />
+                        <div className='flex flex-col gap-x-2 w-6/12'>
+                            <div className='md:mb-2 mb-6'>
+                                <img src={EUSRtrainer} alt="" className='w-auto h-[70px]' />
+                            </div>
+                            <div className='md:mb-2 mb-6 bg-slate-900 items-center flex justify-center'>
+                                <img src={Chas} alt="" className='w-auto h-[70px]' />
+                            </div>
                         </div>
                     </div>
                 </div>
