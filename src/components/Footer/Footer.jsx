@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="text-sm md:text-base w-full lg:w-6/12 mb-2 flex flex-col justify-around">
                     <img src={logo} alt="Company Logo" className="w-4/12 lg:w-3/12 h-[75px] mb-3" />
                     <div className='self-center w-full'>
-                        <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 2, Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
+                        <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Location :</span> Suite 1, Wentworth Lodge, Great North Road, Welwyn Garden City, AL8 7SR</p>
                         <p className='pb-2 flex font-light'><span className='mr-2 text-nowrap font-montserrat font-medium'>Email :</span> contact@bethmar.co.uk</p>
                     </div>
                 </div>
