@@ -73,7 +73,7 @@ const Services = () => {
                                 Telecom Design and Planning
                             </h2>
                             <ul >
-                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Design/ Validation/Surveys</li>
+                                <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Design/Validation/Surveys</li>
                                 <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> MDUs</li>
                                 <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Subducting/Roping</li>
                                 <li className='flex flex-row gap-x-2 text-base font-light text-gray-600 items-start py-1'> <span className='my-1 text-white'>< TbArrowBadgeRightFilled fill='#ff0000' size={15} /></span> Blown Fibre Cabling</li>
