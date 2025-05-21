@@ -10,7 +10,7 @@ import ContactForm from '../components/ContactForm/ContactForm.jsx';
 import Benefits from '../components/Benefits/Benefits.jsx';
 import Seprator from '../components/Seprator/Seprator.jsx';
 import Banner from '../components/Banner/Banner.jsx';
-import LocationMap from '../components/LocationMap/LocationMap.jsx';
+import LocationMap from '../components/LocationMap/MapComponent.jsx';
 import contact from '../assets/contact.png';
 import { motion } from 'framer-motion';
 
